@@ -1,0 +1,113 @@
+---
+title: "Analysis of CMap signatures of COMPOUNDS and its effects on Cancer Immunomodulators Genes in Triple Negative Breast Cancer (TNBC) cell lines"
+output: html_notebook
+---
+
+In this notebook I am going to check the distribution of differential z-scores of expression data for the genes mapped as cancer immunomodulators by the TCGA PanImmune Group.
+The idea here is to compare the expression level for signatures with more than 3 replicates. After that, I will take a closer look at the signatures that seem to strongly modulate our genes of interest, and then subset this analysis by classes of drugs.
+
+
+```{r, warning=FALSE, message=FALSE}
+source("load_data.R")
+source("cp_subset_controls.R") #returns list of controls, contains functions to calculate threshold and returns "sig", the list of signatures with compounds and 3 or more replicates
+source("gene_modulation.R")
+source("cp_plots_pert.R")
+
+```
+
+#1. Collecting the data and classifying up and down modulation
+
+The classification is made based on a threshold calculated based on the controls. We take the mean of z-scores that separate the 1% and 99% of z-scores of expression of the controls.
+
+Not all cell lines on Cmap have controls. As such, the analysis is available only for cell lines from the following tissues:
+```{r}
+list_ctl %>% group_by(primary_site)
+```
+
+
+```{r}
+#Computing the threshold of "modulating z-score for all cell lines". One can search usig the cell line name, or a tissue of origin. Set to "FALSE" the variable that is not going to be used. Set list_cells = "all" to collect data to all cell lines (that have a control, and for experiments with more than 3 replicates)
+
+z_control <- get_z_list(list_cells = c("BT20", "MCF10A", "MDAMB231", "HS578T"), tissue = FALSE)
+
+#Using the threshold to classify the expression of all perturbations in a given cell line
+mod_list <- get_modsigs_per_cellid(z_control, tcga_genes[,1], signatures = sigs)
+
+head(mod_list)
+```
+#Adding annotation of compounds
+
+The default annotation was developed by the Broad Institute and is based on the mechanism of action of a compound. One can add more annotation and include different criteria to classification (eg, drugs with different MoA but used for the same type of cell lines)
+
+```{r}
+#Adding one annotation at the time - It is saved in the "pclsCustom.csv" file, so it only needs to be uploaded once
+
+# pcl_custom <- add_annot(pcl_custom, "BRD-K85606544", "neratinib", "CP_HER2_TARGET","HER2 Inhibitor", "CP","Drugbank","Treatment HER2+ breast cancer")
+# pcl_custom <- add_annot(pcl_custom, "BRD-K19687926", "lapatinib", "CP_HER2_TARGET","HER2 Antagonist", "CP","Drugbank","Treatment HER2+ breast cancer")
+# pcl_custom <- add_annot(pcl_custom, "BRD-M07438658", "lapatinib", "CP_HER2_TARGET","HER2 Antagonist", "CP","Drugbank","Treatment HER2+ breast cancer")
+```
+
+Another option involves uploading a csv file with new annotations:
+```{r}
+new_annots <- read.csv("data/newannot.csv", header = TRUE, row.names = 1, stringsAsFactors = FALSE)
+
+#including the pert_id information
+ids <- pertinfo %>% select(pert_id, pert_iname)
+new_annots <- merge(new_annots, ids, by = "pert_iname")
+```
+
+```{r}
+pcl_custom <- rbind(pcl_custom, new_annots)
+```
+
+#Case of Use 1: Boxplots of z-cores for a given gene across different drugs, grouped by cell lines and perturbagen classes
+```{r}
+#select the gene of interest (refer to pr_gene_id codes in tcga_genes table for other options)
+gene <- "1493"
+
+#select the PCLs of interest (refer to pcl_id on pcl annotation table)
+
+pcls <- c("CP_CDK46_INHIBITOR", "CP_HER2_TARGET" , "CP_PARP_INHIBITOR" )
+pcls_label <- c(control = "Controls", CP_CDK46_INHIBITOR = "CDK4/6 Inhibitors", CP_HER2_TARGET = "Drugs targeting HER2", CP_PARP_INHIBITOR = "PARP Inhibitors", CP_HER2_TARGET = "Drugs targeting HER2")
+
+
+#You can also change the label for each cell line.
+cell_label <-  c(MCF10A = "MCF10A - ER-PR-HER2-", BT20 = "BT20 - ER-PR-HER2-", HS578T = "HS578T - ER-PR-HER2-",  MDAMB231 = "MDAMB231 - ER-PR-HER2-", MCF7 = "MCF7 - ER+PR+HER2-", SKBR3 = "SKBR3 - ER-PR-HER2+")
+```
+
+```{r}
+plot_z_by_pcl(gene_id = gene, tidy_z = mod_list, my_pcl = pcls, pcl_annot = pcl_custom, pcl_labels = pcls_label)
+```
+
+
+In case you want to generate boxplots for all immunomodulator genes for a given class of compounds:
+```{r}
+#genes <- as.data.frame(tcga_genes$pr_gene_id)
+
+#apply(genes,1, plot_z_by_pcl, tidy_z = mod_list, my_pcl = pcls, pcl_annot = pcl_annot, pcl_labels = pcls_label)
+```
+
+
+
+#Case of Use 2: Plot the number of times that a compound up and down modulate genes, across all cell lines
+
+```{r}
+#The number of experiments across different cell lines and compounds may differ. You can adjust the x and y axis with the 'x_scale' and 'y_scale' parameters. The threshold for labelling points in the x and y axis are, respectively, 'x_label' and 'y_label'.
+
+plot_count_mod(mod_list, name_cp_pcl = "CP_PARP_INHIBITOR", by.pcl = TRUE, pcl_annot = pcl_custom, x_scale = c(0,25), y_scale = c(0,40), x_label = 15, y_label = 19)
+```
+
+A given compound is used in more than one signature. In this plot, we can see if a compound (or a class of compounds) has a more strong effect in up or down modulation across different genes - for example, the gene TLR4 has more cases of up-modulation (17) than down-modulation (2) in all experiments of the PARP Inhibitors in TNBC cell lines.
+
+
+#Case of Use 3: Plot heatmap of differential expression 
+
+The above case only counts the number of occurences of up and down modulation
+
+```{r}
+plot_heatmap_mod(tidy_mod = mod_list, name_cp_pcl = c("CP_PARP_INHIBITOR"), by.pcl = TRUE, by.cell = FALSE, pcl_annot = pcl_custom, filename = "heatmap.png", width = 15)
+```
+
+For an improved visualization, this plot is saved as a file in the current working directory (this can be changed in the 'filename' parameter).
+
+

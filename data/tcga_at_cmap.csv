@@ -1,0 +1,66 @@
+pr_gene_id	pr_gene_symbol	pr_gene_title	pr_is_lm	pr_is_bing	Gene	HGNC.Symbol	Friendly.Name	Gene.Family	Super.Category	Immune.Checkpoint	Function	Reference.s...PMID.	X10	Notes
+3146	HMGB1	high mobility group box 1	0	1	HMGB1	HMGB1	HMGB1	HMG-box	Other	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3115	HLA-DPB1	major histocompatibility complex, class II, DP beta 1	0	1	HLA-DPB1	HLA-DPB1	HLA-DPB1	MHC Class II	Antigen presentation	NA	MHC Class II	https://www.ncbi.nlm.nih.gov/pubmed/23162758/	NA	NA
+3383	ICAM1	intercellular adhesion molecule 1	1	1	ICAM1	ICAM1	ICAM1	NA	Cell adhesion	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3689	ITGB2	integrin subunit beta 2	0	1	ITGB2 (LFA1)	ITGB2	ITGB2	Integrin	Cell adhesion	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+7040	TGFB1	transforming growth factor beta 1	0	1	TGFB1	TGFB1	TGFB1	Cytokine	Ligand	Inhibitory	Immune suppression	https://www.ncbi.nlm.nih.gov/pubmed/26098609	NA	NA
+7423	VEGFB	vascular endothelial growth factor B	0	1	VEGFB	VEGFB	VEGFB	Growth factor	Ligand	Inhibitory	Immune suppressor	https://www.ncbi.nlm.nih.gov/pubmed/23890059 | https://www.ncbi.nlm.nih.gov/pubmed/21124841	NA	NA
+4283	CXCL9	chemokine (C-X-C motif) ligand 9	0	1	CXCL9	CXCL9	CXCL9	CXC chemokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/26503055 | https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3627	CXCL10	chemokine (C-X-C motif) ligand 10	0	1	CXCL10 (IP-10)	CXCL10	IP-10	CXC chemokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/26503055 | https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+6352	CCL5	chemokine (C-C motif) ligand 5	0	1	CCL5 (RANTES)	CCL5	RANTES	Chemokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/20233026 | https://www.ncbi.nlm.nih.gov/pubmed/26098609	NA	NA
+3553	IL1B	interleukin 1 beta	1	1	IL1B	IL1B	IL1B	Cytokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+958	CD40	CD40 molecule	1	1	CD40	CD40	CD40	TNFR	Receptor	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23460534 | https://www.ncbi.nlm.nih.gov/pubmed/24555495	NA	NA
+3001	GZMA	granzyme A	0	1	GZMA	GZMA	GZMA	Granzyme	Other	Stimulatory	Granzyme	https://www.ncbi.nlm.nih.gov/pubmed/26098609	NA	NA
+100507436	MICA	MHC class I polypeptide-related sequence A	0	1	MICA	MICA	MICA	MHC Class I	Antigen presentation	NA	Immune suppression	https://www.ncbi.nlm.nih.gov/pubmed/23890059 | https://www.ncbi.nlm.nih.gov/pubmed/10426993	NA	NA
+6403	SELP	selectin P	0	1	SELP	SELP	SELP	Selectin	Cell adhesion	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/19508173	NA	NA
+939	CD27	CD27 molecule	0	1	CD27 (TNFRSF7)	CD27	CD27	TNFR	Receptor	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/26098609	https://www.rndsystems.com/research-area/co--stimulatory-and-co--inhibitory-molecules	https://www.rndsystems.com/pathways/t-cell-co-signaling-pathway-lig-recept-interactions
+383	ARG1	arginase 1	0	1	ARG1	ARG1	ARG1	Enzyme	Other	Inhibitory	Immune suppression	https://www.ncbi.nlm.nih.gov/pubmed/19764983 | https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+4277	MICB	MHC class I polypeptide-related sequence B	0	1	MICB	MICB	MICB	MHC Class I	Antigen presentation	NA	Immune suppression	https://www.ncbi.nlm.nih.gov/pubmed/23890059 | https://www.ncbi.nlm.nih.gov/pubmed/10426993	NA	NA
+3559	IL2RA	interleukin 2 receptor subunit alpha	0	1	IL2RA (CD122)	IL2RA	IL2RA	Type I cytokine receptor	Receptor	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23352221/	NA	NA
+3902	LAG3	lymphocyte activating 3	0	1	LAG3	LAG3	LAG3	Immunoglobulin	Receptor	Inhibitory	NA	https://www.ncbi.nlm.nih.gov/pubmed/21086108 | https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+970	CD70	CD70 molecule	0	0	CD70	CD70	CD70	TNF	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/26098609	NA	NA
+1910	EDNRB	endothelin receptor type B	0	1	EDNRB	EDNRB	EDNRB	Receptor	Receptor	Inhibitory	Suppress T cell adhesion and homing	https://www.ncbi.nlm.nih.gov/pubmed/19567593/ | https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+8744	TNFSF9	tumor necrosis factor superfamily member 9	0	1	TNFSF9 (CD137L, 4-1BB-L)	TNFSF9	4-1BB-L	TNF	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/26751393	NA	NA
+7124	TNF	tumor necrosis factor	0	1	TNFA	TNF	TNF	Cytokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3592	IL12A	interleukin 12A	0	0	IL12	IL12A	IL12	Cytokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	IL12A, and IL12B genes
+941	CD80	CD80 molecule	0	0	CD80 (B7-1)	CD80	CD80	B7/CD28	Co-stimulator	Stimulatory	T cell activation	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+7292	TNFSF4	tumor necrosis factor superfamily member 4	0	0	TNFSF4 (OX40L)	TNFSF4	OX40L	TNF	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/25763356/	NA	NA
+3586	IL10	interleukin 10	0	1	IL10	IL10	IL10	Cytokine	Ligand	Inhibitory	Anti-inflammatory cytokine	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3604	TNFRSF9	tumor necrosis factor receptor superfamily member 9	0	1	TNFRSF9 (CD137, 4-1BB)	TNFRSF9	4-1BB	TNFR	Receptor	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/26751393	https://www.rndsystems.com/research-area/co--stimulatory-and-co--inhibitory-molecules	https://www.rndsystems.com/pathways/t-cell-co-signaling-pathway-lig-recept-interactions
+3565	IL4	interleukin 4	0	0	IL4	IL4	IL4	Cytokine	Ligand	Inhibitory	Differentiation of Th0 to Th2	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+5133	PDCD1	programmed cell death 1	0	0	PDCD1 (PD-1)	PDCD1	PD-1	B7/CD28	Receptor	Inhibitory	NA	https://www.ncbi.nlm.nih.gov/pubmed/26098609	NA	NA
+3596	IL13	interleukin 13	0	0	IL13	IL13	IL13	Cytokine	Ligand	Inhibitory	Anti-inflammatory cytokine	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3558	IL2	interleukin 2	0	0	IL2	IL2	IL2	Cytokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+959	CD40LG	CD40 ligand	0	0	CD40LG	CD40LG	CD40LG	TNF	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/26098609	NA	NA
+3804	KIR2DL3	killer cell immunoglobulin like receptor, two Ig domains and long cytoplasmic tail 3	0	0	KIR2DL3	KIR2DL3	KIR2DL3	KIR	Receptor	Inhibitory	NA	https://www.ncbi.nlm.nih.gov/pubmed/27054314 | https://www.ncbi.nlm.nih.gov/pubmed/20567250 | https://www.ncbi.nlm.nih.gov/pubmed/26000725	Lirilumab, IPH-2101	https://www.ncbi.nlm.nih.gov/pubmed/21154164
+3123	HLA-DRB1	major histocompatibility complex, class II, DR beta 1	0	1	HLA-DRB1	HLA-DRB1	HLA-DRB1	MHC Class II	Antigen presentation	NA	MHC Class II	https://www.ncbi.nlm.nih.gov/pubmed/23162758/	NA	NA
+3439	IFNA1	interferon, alpha 1	0	0	IFNA1	IFNA1	IFNA1	Cytokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3106	HLA-B	major histocompatibility complex, class I, B	0	1	HLA-B	HLA-B	HLA-B	MHC Class I	Antigen presentation	NA	MHC Class I	https://www.ncbi.nlm.nih.gov/pubmed/21062157	NA	NA
+3122	HLA-DRA	major histocompatibility complex, class II, DR alpha	1	1	HLA-DRA	HLA-DRA	HLA-DRA	MHC Class II	Antigen presentation	NA	MHC Class II	https://www.ncbi.nlm.nih.gov/pubmed/23162758/	NA	NA
+8764	TNFRSF14	tumor necrosis factor receptor superfamily member 14	0	1	TNFRSF14 (HVEM)	TNFRSF14	HVEM	TNFR	Receptor	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+953	ENTPD1	ectonucleoside triphosphate diphosphohydrolase 1	0	1	ENTPD1	ENTPD1	ENTPD1	Ectonucleotidase	Other	Stimulatory	Immune suppression	https://www.ncbi.nlm.nih.gov/pubmed/27054314	NA	NA
+11119	BTN3A1	butyrophilin subfamily 3 member A1	0	1	BTN3A1	BTN3A1	BTN3A1	Butyrophilins	Co-inhibitor	Stimulatory	Activation of γδ T cells	https://www.ncbi.nlm.nih.gov/pubmed/26449179	NA	NA
+3119	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1	0	1	HLA-DQB1	HLA-DQB1	HLA-DQB1	MHC Class II	Antigen presentation	NA	MHC Class II	https://www.ncbi.nlm.nih.gov/pubmed/23162758/	NA	NA
+3620	IDO1	indoleamine 2,3-dioxygenase 1	0	1	IDO1	IDO1	IDO1	Enzyme	Other	Inhibitory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3552	IL1A	interleukin 1 alpha	0	1	IL1A	IL1A	IL1A	Cytokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3458	IFNG	interferon, gamma	0	0	IFNG	IFNG	IFNG	Cytokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+29851	ICOS	inducible T-cell co-stimulator	0	0	ICOS	ICOS	ICOS	B7/CD28	Receptor	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/27054314	NA	NA
+7422	VEGFA	vascular endothelial growth factor A	0	1	VEGFA	VEGFA	VEGFA	Growth factor	Ligand	Inhibitory	Immune suppressor	https://www.ncbi.nlm.nih.gov/pubmed/23890059 | https://www.ncbi.nlm.nih.gov/pubmed/11444391	NA	NA
+3802	KIR2DL1	killer cell immunoglobulin like receptor, two Ig domains and long cytoplasmic tail 1	0	0	KIR2DL1	KIR2DL1	KIR2DL1	KIR	Receptor	Inhibitory	NA	https://www.ncbi.nlm.nih.gov/pubmed/27054314 | https://www.ncbi.nlm.nih.gov/pubmed/20567250 | https://www.ncbi.nlm.nih.gov/pubmed/26000725	Lirilumab, IPH-2101	https://www.ncbi.nlm.nih.gov/pubmed/21154164
+3440	IFNA2	interferon, alpha 2	0	0	IFNA2	IFNA2	IFNA2	Cytokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+3107	HLA-C	major histocompatibility complex, class I, C	0	1	HLA-C	HLA-C	HLA-C	MHC Class I	Antigen presentation	NA	MHC Class I	https://www.ncbi.nlm.nih.gov/pubmed/21062157	NA	NA
+940	CD28	CD28 molecule	0	1	CD28	CD28	CD28	B7/CD28	Co-stimulator	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/7584490	NA	NA
+3113	HLA-DPA1	major histocompatibility complex, class II, DP alpha 1	0	1	HLA-DPA1	HLA-DPA1	HLA-DPA1	MHC Class II	Antigen presentation	NA	MHC Class II	https://www.ncbi.nlm.nih.gov/pubmed/23162758/	NA	NA
+11118	BTN3A2	butyrophilin subfamily 3 member A2	0	1	BTN3A2	BTN3A2	BTN3A2	Butyrophilins	Co-inhibitor	Stimulatory	Higher expression leads to increased CD4+ infiltration	http://www.ncbi.nlm.nih.gov/pubmed/18398031 | http://www.ncbi.nlm.nih.gov/pubmed/22685580	NA	NA
+23308	ICOSLG	inducible T-cell co-stimulator ligand	0	1	ICOSLG (B7-H2)	ICOSLG	ICOSLG	Ligand	Co-stimulator	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/24778280	NA	NA
+3117	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1	0	1	HLA-DQA1	HLA-DQA1	HLA-DQA1	MHC Class II	Antigen presentation	NA	MHC Class II	https://www.ncbi.nlm.nih.gov/pubmed/23162758/	NA	NA
+3105	HLA-A	major histocompatibility complex, class I, A	0	1	HLA-A	HLA-A	HLA-A	MHC Class I	Antigen presentation	NA	MHC Class I	https://www.ncbi.nlm.nih.gov/pubmed/21062157	NA	NA
+7293	TNFRSF4	tumor necrosis factor receptor superfamily member 4	0	1	TNFRSF4 (CD134,OX40)	TNFRSF4	OX40	TNFR	Receptor	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/25763356/	https://www.rndsystems.com/research-area/co--stimulatory-and-co--inhibitory-molecules	https://www.rndsystems.com/pathways/t-cell-co-signaling-pathway-lig-recept-interactions
+5551	PRF1	perforin 1	0	1	PRF1	PRF1	PRF1	Pore	Other	Stimulatory	Allows infiltration by granzymes	https://www.ncbi.nlm.nih.gov/pubmed/17919943	NA	NA
+3120	HLA-DQB2	major histocompatibility complex, class II, DQ beta 2	0	1	HLA-DQB2	HLA-DQB2	HLA-DQB2	MHC Class II	Antigen presentation	NA	MHC Class II	https://www.ncbi.nlm.nih.gov/pubmed/23162758/	NA	NA
+57823	SLAMF7	SLAM family member 7	0	1	SLAMF7	SLAMF7	SLAMF7	SLAM	Co-inhibitor	Inhibitory	Inhibitory	https://www.ncbi.nlm.nih.gov/pubmed/25312647	NA	NA
+79679	VTCN1	V-set domain containing T cell activation inhibitor 1	0	0	VTCN1 (B7-H4)	VTCN1	VTCN1	B7/CD28	Co-inhibitor	Inhibitory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+80380	PDCD1LG2	programmed cell death 1 ligand 2	0	1	PDCD1LG2 (PD-L2, CD273, B7-DC)	PDCD1LG2	PD-L2	B7/CD28	Co-inhibitor	NA	Immune suppression	https://www.ncbi.nlm.nih.gov/pubmed/22611421	NA	NA
+7099	TLR4	toll like receptor 4	1	1	TLR4	TLR4	TLR4	Receptor	Receptor	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/25120541/	NA	NA
+1493	CTLA4	cytotoxic T-lymphocyte associated protein 4	0	1	CTLA4	CTLA4	CTLA4	Receptor	Receptor	Inhibitory	NA	https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA
+6376	CX3CL1	chemokine (C-X3-C motif) ligand 1	0	1	CX3CL1	CX3CL1	CX3CL1	CXC chemokine	Ligand	Stimulatory	NA	https://www.ncbi.nlm.nih.gov/pubmed/12455035 | https://www.ncbi.nlm.nih.gov/pubmed/23890059	NA	NA

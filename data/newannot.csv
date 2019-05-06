@@ -1,0 +1,55 @@
+﻿,pert_iname,pcl_id,pcl_name,pcl_type,pcl_source,pcl_criteria
+1,doxorubicin,ADJUVANT_CHEMOTHERAPY,Anthracyclines,CP,UpToDate,Treatment TNBC
+2,epirubicin,ADJUVANT_CHEMOTHERAPY,Anthracyclines,CP,UpToDate,Treatment TNBC
+3,paclitaxel,ADJUVANT_CHEMOTHERAPY,Taxanes,CP,UpToDate,Treatment TNBC
+4,docetaxel,ADJUVANT_CHEMOTHERAPY,Taxanes,CP,UpToDate,Treatment TNBC
+5,fluorouracil,ADJUVANT_CHEMOTHERAPY,Adjuvant chemotherapy,CP,UpToDate,Treatment TNBC
+6,cyclophosphamide,ADJUVANT_CHEMOTHERAPY,Adjuvant chemotherapy,CP,UpToDate,Treatment TNBC
+7,tamoxifen,ENDOCRINE_THERAPY,Selective estrogen receptor ,CP,UpToDate,Treatment HR+HER2-
+8,formestane,ENDOCRINE_THERAPY,Aromatase inhibitors,CP,UpToDate,Treatment HR+HER2-
+9,exemestane,ENDOCRINE_THERAPY,Aromatase inhibitors,CP,UpToDate,Treatment HR+HER2-
+10,anastrozole,ENDOCRINE_THERAPY,Aromatase inhibitors,CP,UpToDate,Treatment HR+HER2-
+11,letrozole,ENDOCRINE_THERAPY,Aromatase inhibitors,CP,UpToDate,Treatment HR+HER2-
+12,altretamine,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+13,busulfan,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+14,carboplatin,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+15,carmustine,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+16,chlorambucil,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+17,cisplatin,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+18,cyclophosphamide,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+19,dacarbazine,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+20,lomustine,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+21,melphalan,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+22,oxaliplatin,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+23,temozolomide,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+24,thiotepa,CHEMOTHERAPY,ALKYLATING_AGENT,CP,AmericanCancerSociety,Chemotherapy
+25,mercaptopurine,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+26,capecitabine,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+27,cytarabine,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+28,floxuridine,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+29,fludarabine,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+30,gemcitabine,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+31,hydroxyurea,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+32,methotrexate,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+33,pemetrexed,CHEMOTHERAPY,ANTIMETABOLITES,CP,AmericanCancerSociety,Chemotherapy
+34,daunorubicin,CHEMOTHERAPY,Anthracyclines,CP,AmericanCancerSociety,Chemotherapy
+35,actinomycin-D,CHEMOTHERAPY,ANTITUMOR_ANTIBIOTICS,CP,AmericanCancerSociety,Chemotherapy
+36,bleomycin,CHEMOTHERAPY,ANTITUMOR_ANTIBIOTICS,CP,AmericanCancerSociety,Chemotherapy
+37,mitomycin-C,CHEMOTHERAPY,ANTITUMOR_ANTIBIOTICS,CP,AmericanCancerSociety,Chemotherapy
+38,mitoxantrone,CHEMOTHERAPY,ANTITUMOR_ANTIBIOTICS,CP,AmericanCancerSociety,Chemotherapy
+39,docetaxel,CHEMOTHERAPY,MITOTIC_INHIBITORS,CP,AmericanCancerSociety,Chemotherapy
+40,estramustine,CHEMOTHERAPY,MITOTIC_INHIBITORS,CP,AmericanCancerSociety,Chemotherapy
+41,ixabepilone,CHEMOTHERAPY,MITOTIC_INHIBITORS,CP,AmericanCancerSociety,Chemotherapy
+42,paclitaxel,CHEMOTHERAPY,MITOTIC_INHIBITORS,CP,AmericanCancerSociety,Chemotherapy
+43,vinblastine,CHEMOTHERAPY,MITOTIC_INHIBITORS,CP,AmericanCancerSociety,Chemotherapy
+44,vincristine,CHEMOTHERAPY,MITOTIC_INHIBITORS,CP,AmericanCancerSociety,Chemotherapy
+45,vinorelbine,CHEMOTHERAPY,MITOTIC_INHIBITORS,CP,AmericanCancerSociety,Chemotherapy
+46,topotecan,CHEMOTHERAPY,TOPOISOMERASE,CP,AmericanCancerSociety,Chemotherapy
+47,irinotecan,CHEMOTHERAPY,TOPOISOMERASE,CP,AmericanCancerSociety,Chemotherapy
+48,etoposide,CHEMOTHERAPY,TOPOISOMERASE,CP,AmericanCancerSociety,Chemotherapy
+49,teniposide.,CHEMOTHERAPY,TOPOISOMERASE,CP,AmericanCancerSociety,Chemotherapy
+50,mitoxantrone,CHEMOTHERAPY,TOPOISOMERASE,CP,AmericanCancerSociety,Chemotherapy
+51,prednisone,CHEMOTHERAPY,CORTICOSTEROIDS,CP,AmericanCancerSociety,Chemotherapy
+52,methylprednisolone,CHEMOTHERAPY,CORTICOSTEROIDS,CP,AmericanCancerSociety,Chemotherapy
+53,dexamethasone,CHEMOTHERAPY,CORTICOSTEROIDS,CP,AmericanCancerSociety,Chemotherapy
+54,bortezomib,CHEMOTHERAPY,PROTEOSOME_INHIBITOR,CP,AmericanCancerSociety,Chemotherapy
