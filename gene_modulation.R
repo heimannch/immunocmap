@@ -167,8 +167,6 @@ get_modsigs_per_cellid <- function(controls_stats, list_genes, signatures = sigi
 
   sig_mod <- data.frame()
   
-  #sig_list_cell <- vector('list', nrow(controls_stats))
-
   for (i in 1:nrow(controls_stats)){
 
     cell <- as.character(controls_stats[i,2])
@@ -180,75 +178,6 @@ get_modsigs_per_cellid <- function(controls_stats, list_genes, signatures = sigi
     i=i+1
   }
   
-  #names(sig_list_cell) <- as.character(controls_stats$variable)
-  # This list is organized as follows:
-  # 1st level: cell line
-  
-  
   return(sig_mod)
   
 }
-
-
-#2. This function calls the above for each gene that you want to check for modulation and returns a list
-##mod_list[[gene_id]][[type]][[sig_id]] - NOT NECESSARY ANYMORE!
-# 
-# get_list_modsigs <- function(list_genes, signatures, mod_thres = 3, non_mod_thres= 0.004){
-#   
-#   sig_list <- vector('list', nrow(signatures))
-#   
-#   for(i in 1:nrow(list_genes)){
-#     sig_list[[i]] <- get_mod_sigs(list_genes[i,1], signatures$sig_id, mod_thres, non_mod_thres)
-#     i = i+1 
-#   }
-#   
-#   #removing the NULL elements
-#   sig_list <-  sig_list[-which(sapply(sig_list, is.null))]
-#   
-#   return(sig_list)
-# }
-
-
-#UNNECESSARY
-# make_df_modulators <- function(modulation_list, controls_stats, genes, type = "up_mod"){
-# #options para "type" are: "up_mod", "dn_mod", "non_mod"
-#   upperbound <- length(unlist(modulation_list))
-#   
-#   mod_df <- data.frame(sig_id = character(upperbound), gene_id = character(upperbound), cell_id = character(upperbound), time = factor(upperbound), stringsAsFactors=FALSE)
-#   
-#   new_row <- 1
-# 
-# #Structure of the list:  
-# #mod_list[[cell_id]][[gene_id]][[type]][[sig_id]]
-#   
-# for (c in 1:nrow(controls_stats)){
-#   
-#   for (i in 1:length(modulation_list[[c]])){
-#     print(paste("getting info for gene ", i))
-#     #accessing only the modulated signatures
-#     for(j in 1:length(names(modulation_list[[c]][[i]][[type]]))){
-#       mod_df[new_row, 1] <- names(modulation_list[[c]][[i]][[type]][j])
-#       mod_df[new_row, 2] <- as.character(genes[i,2])
-#       mod_df[new_row, 3] <- as.character(controls_stats[c,2])
-#       
-#       new_row <-  new_row + 1
-#       j <-  j+1
-#     }
-#     
-#     i <-  i+1
-#   }
-#   
-#   c <- c+1
-# }
-#   
-#   mod_df$time <- siginfo[match(mod_df$sig_id, siginfo$sig_id),"pert_itime"]
-#   mod_df <- mod_df[!apply(mod_df == "", 1, all),]
-# 
-#   return(mod_df)
-# }
-
-#cell_types <- get_cell_sample_types(mod_df)
-#mod_df$sample_type <-  cell_types[match(mod_df$sig_id, cell_types$sig_id),"sample_type"]
-#mod_df$time <- siginfo[match(mod_df$sig_id, siginfo$sig_id),"pert_itime"]
-
-
