@@ -1,0 +1,1282 @@
+,pert_id,pert_iname,pcl_id,pcl_name,pcl_type,pcl_source
+1,BRD-A52650764,ingenol,CP_PKC_ACTIVATOR,PKC activator,CP,Broad_moa
+2,BRD-A15079084,phorbol-12-myristate-13-acetate,CP_PKC_ACTIVATOR,PKC activator,CP,Broad_moa
+3,BRD-K91145395,prostratin,CP_PKC_ACTIVATOR,PKC activator,CP,Broad_moa
+4,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+5,BRD-K78659596,ixazomib,CP_PROTEASOME_INHIBITOR,Proteasome inhibitor,CP,Broad_moa
+6,BRD-K60230970,MG-132,CP_PROTEASOME_INHIBITOR,Proteasome inhibitor,CP,Broad_moa
+7,BRD-K15935639,z-leu3-VS,CP_PROTEASOME_INHIBITOR,Proteasome inhibitor,CP,Broad_moa
+8,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+9,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+10,BRD-K01436366,XMD-1150,CP_LEUCINE_RICH_REPEAT_KINASE_INHIBITOR,Leucine rich repeat kinase inhibitor,CP,Broad_moa
+11,BRD-K64857848,XMD-885,CP_LEUCINE_RICH_REPEAT_KINASE_INHIBITOR,Leucine rich repeat kinase inhibitor,CP,Broad_moa
+12,BRD-K50387473,XMD-892,CP_LEUCINE_RICH_REPEAT_KINASE_INHIBITOR,Leucine rich repeat kinase inhibitor,CP,Broad_moa
+13,BRD-K33551950,radicicol,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+14,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+15,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+16,ccsbBroad304_05782,ADORA2A,OE_GPCR_SUBSET,GPCR Subset GOF,GOF,Broad_moa
+17,ccsbBroad304_05049,GPBAR1,OE_GPCR_SUBSET,GPCR Subset GOF,GOF,Broad_moa
+18,ccsbBroad304_04933,GPR119,OE_GPCR_SUBSET,GPCR Subset GOF,GOF,Broad_moa
+19,BRD-K36529613,PU-H71,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+20,BRD-K33551950,radicicol,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+21,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+22,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+23,ccsbBroad304_00282,CDKN1A,OE_CELL_CYCLE_INHIBITION,Cell Cycle Inhibition GOF,GOF,Broad_moa
+24,ccsbBroad304_05980,CDKN1B,OE_CELL_CYCLE_INHIBITION,Cell Cycle Inhibition GOF,GOF,Broad_moa
+25,ccsbBroad304_00283,CDKN2C,OE_CELL_CYCLE_INHIBITION,Cell Cycle Inhibition GOF,GOF,Broad_moa
+26,BRD-K41859756,NVP-AUY922,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+27,BRD-K36529613,PU-H71,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+28,BRD-K33551950,radicicol,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+29,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+30,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+31,BRD-K83988098,alvespimycin,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+32,BRD-K51967704,BIIB-021,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+33,BRD-K65503129,CCT-018159,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+34,BRD-A19500257,geldanamycin,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+35,BRD-K41859756,NVP-AUY922,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+36,BRD-K36529613,PU-H71,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+37,BRD-K33551950,radicicol,CP_HSP_INHIBITOR,HSP inhibitor,CP,Broad_moa
+38,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+39,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+40,BRD-A17065207,brefeldin-a,CP_PROTEIN_SYNTHESIS_INHIBITOR,Protein synthesis inhibitor,CP,Broad_moa
+41,BRD-K80348542,cephaeline,CP_PROTEIN_SYNTHESIS_INHIBITOR,Protein synthesis inhibitor,CP,Broad_moa
+42,BRD-A62184259,cycloheximide,CP_PROTEIN_SYNTHESIS_INHIBITOR,Protein synthesis inhibitor,CP,Broad_moa
+43,BRD-A25687296,emetine,CP_PROTEIN_SYNTHESIS_INHIBITOR,Protein synthesis inhibitor,CP,Broad_moa
+44,BRD-K76674262,homoharringtonine,CP_PROTEIN_SYNTHESIS_INHIBITOR,Protein synthesis inhibitor,CP,Broad_moa
+45,BRD-A28970875,puromycin,CP_PROTEIN_SYNTHESIS_INHIBITOR,Protein synthesis inhibitor,CP,Broad_moa
+46,BRD-A20697603,thiostrepton,CP_PROTEIN_SYNTHESIS_INHIBITOR,Protein synthesis inhibitor,CP,Broad_moa
+47,BRD-A26002865,verrucarin-a,CP_PROTEIN_SYNTHESIS_INHIBITOR,Protein synthesis inhibitor,CP,Broad_moa
+48,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+49,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+50,BRD-K93034159,cladribine,CP_RIBONUCLEOTIDE_REDUCTASE_INHIBITOR,Ribonucleotide reductase inhibitor,CP,Broad_moa
+51,BRD-A82371568,clofarabine,CP_RIBONUCLEOTIDE_REDUCTASE_INHIBITOR,Ribonucleotide reductase inhibitor,CP,Broad_moa
+52,BRD-K33106058,cytarabine,CP_RIBONUCLEOTIDE_REDUCTASE_INHIBITOR,Ribonucleotide reductase inhibitor,CP,Broad_moa
+53,BRD-K66788707,fludarabine,CP_RIBONUCLEOTIDE_REDUCTASE_INHIBITOR,Ribonucleotide reductase inhibitor,CP,Broad_moa
+54,BRD-K15108141,gemcitabine,CP_RIBONUCLEOTIDE_REDUCTASE_INHIBITOR,Ribonucleotide reductase inhibitor,CP,Broad_moa
+55,BRD-K72093121,vidarabine,CP_RIBONUCLEOTIDE_REDUCTASE_INHIBITOR,Ribonucleotide reductase inhibitor,CP,Broad_moa
+56,BRD-K18787491,U-0126-EtOH,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+57,CGS001-6189,RPS3A,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+58,CGS001-6193,RPS5,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+59,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+60,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+61,BRD-K89014967,AS-703026,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+62,BRD-K12244279,MEK1-2-inhibitor,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+63,BRD-K49865102,PD-0325901,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+64,BRD-K05104363,PD-184352,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+65,BRD-K88677950,PD-198306,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+66,BRD-K62810658,PD-98059,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+67,BRD-K57080016,selumetinib,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+68,BRD-K18787491,U-0126-EtOH,CP_MEK_INHIBITOR,MEK inhibitor,CP,Broad_moa
+69,CGS001-6189,RPS3A,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+70,CGS001-6193,RPS5,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+71,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+72,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+73,CGS001-2197,FAU,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+74,CGS001-6204,RPS10,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+75,CGS001-6207,RPS13,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+76,CGS001-6208,RPS14,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+77,CGS001-6210,RPS15A,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+78,CGS001-6217,RPS16,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+79,CGS001-6223,RPS19,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+80,CGS001-6233,RPS27A,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+81,CGS001-6188,RPS3,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+82,CGS001-6189,RPS3A,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+83,CGS001-6193,RPS5,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+84,CGS001-6194,RPS6,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+85,CGS001-6201,RPS7,KD_RIBOSOMAL_40S_SUBUNIT,Ribosomal 40s Subunit LOF,LOF,Broad_moa
+86,ccsbBroad304_02048,BCL10,OE_NFKB_ACTIVATION,NFKB Activation GOF,GOF,Broad_moa
+87,ccsbBroad304_00259,CD40,OE_NFKB_ACTIVATION,NFKB Activation GOF,GOF,Broad_moa
+88,ccsbBroad304_02012,FADD,OE_NFKB_ACTIVATION,NFKB Activation GOF,GOF,Broad_moa
+89,ccsbBroad304_06542,LTBR,OE_NFKB_ACTIVATION,NFKB Activation GOF,GOF,Broad_moa
+90,ccsbBroad304_07306,TNFRSF10A,OE_NFKB_ACTIVATION,NFKB Activation GOF,GOF,Broad_moa
+91,ccsbBroad304_07304,TNFRSF10B,OE_NFKB_ACTIVATION,NFKB Activation GOF,GOF,Broad_moa
+92,ccsbBroad304_01688,TNFRSF1A,OE_NFKB_ACTIVATION,NFKB Activation GOF,GOF,Broad_moa
+93,BRD-K69840642,ISOX,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+94,BRD-K16485616,mocetinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+95,BRD-K52522949,NCH-51,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+96,BRD-K13169950,NSC-3852,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+97,CGS001-1314,COPA,KD_VESICULAR_TRANSPORT,Vesicular Transport LOF,LOF,Broad_moa
+98,CGS001-9276,COPB2,KD_VESICULAR_TRANSPORT,Vesicular Transport LOF,LOF,Broad_moa
+99,CGS001-22818,COPZ1,KD_VESICULAR_TRANSPORT,Vesicular Transport LOF,LOF,Broad_moa
+100,BRD-K07888107,depudecin,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+101,BRD-K11558771,droxinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+102,BRD-K77908580,entinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+103,BRD-K13810148,givinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+104,BRD-A39646320,HC-toxin,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+105,BRD-K69840642,ISOX,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+106,BRD-K16485616,mocetinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+107,BRD-K52522949,NCH-51,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+108,BRD-K13169950,NSC-3852,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+109,BRD-K74733595,APHA-compound-8,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+110,BRD-K64606589,apicidin,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+111,BRD-K17743125,belinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+112,BRD-K56957086,dacinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+113,BRD-K07888107,depudecin,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+114,BRD-K11558771,droxinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+115,BRD-K77908580,entinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+116,BRD-K13810148,givinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+117,BRD-A39646320,HC-toxin,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+118,BRD-K69840642,ISOX,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+119,BRD-K16485616,mocetinostat,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+120,BRD-K52522949,NCH-51,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+121,BRD-K13169950,NSC-3852,CP_HDAC_INHIBITOR,HDAC inhibitor,CP,Broad_moa
+122,BRD-K63606607,bufalin,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+123,BRD-A80502530,cinobufagin,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+124,BRD-A10420615,cyclopiazonic-acid,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+125,BRD-A71459254,cymarin,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+126,BRD-K18518344,digitoxigenin,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+127,BRD-A93236127,digitoxin,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+128,BRD-A94756469,digoxin,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+129,BRD-A29082194,gitoxigenin,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+130,BRD-A63998256,helveticoside,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+131,BRD-K74133369,oligomycin-a,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+132,BRD-K05350981,oligomycin-c,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+133,BRD-A68930007,ouabain,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+134,BRD-A34806832,proscillaridin,CP_ATPASE_INHIBITOR,ATPase inhibitor,CP,Broad_moa
+135,BRD-K64890080,BI-2536,CP_BROMODOMAIN_INHIBITOR,Bromodomain Inhibitor,CP,Broad_moa
+136,BRD-K27305650,LY-294002,CP_BROMODOMAIN_INHIBITOR,Bromodomain Inhibitor,CP,Broad_moa
+137,BRD-K22385716,LY-303511,CP_BROMODOMAIN_INHIBITOR,Bromodomain Inhibitor,CP,Broad_moa
+138,BRD-K54330070,SB-202190,CP_BROMODOMAIN_INHIBITOR,Bromodomain Inhibitor,CP,Broad_moa
+139,BRD-K12502280,TG-101348,CP_BROMODOMAIN_INHIBITOR,Bromodomain Inhibitor,CP,Broad_moa
+140,BRD-K50387473,XMD-892,CP_BROMODOMAIN_INHIBITOR,Bromodomain Inhibitor,CP,Broad_moa
+141,ccsbBroad304_06753,POU5F1,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+142,BRD-A62025033,temsirolimus,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+143,BRD-K40175214,torin-1,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+144,ccsbBroad304_06102,DLX3,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+145,ccsbBroad304_00772,HOXA6,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+146,ccsbBroad304_00773,HOXA9,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+147,ccsbBroad304_00778,HOXC10,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+148,ccsbBroad304_06393,HOXC4,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+149,ccsbBroad304_06394,HOXC9,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+150,ccsbBroad304_04496,LHX4,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+151,ccsbBroad304_06753,POU5F1,OE_HOMEOBOX_GENE,Homeobox Gene GOF,GOF,Broad_moa
+152,BRD-A62025033,temsirolimus,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+153,BRD-K40175214,torin-1,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+154,CGS001-5682,PSMA1,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+155,CGS001-5684,PSMA3,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+156,CGS001-5686,PSMA5,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+157,CGS001-5688,PSMA7,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+158,CGS001-5689,PSMB1,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+159,CGS001-5690,PSMB2,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+160,CGS001-5693,PSMB5,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+161,CGS001-5695,PSMB7,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+162,CGS001-5714,PSMD8,KD_PROTEASOME_PATHWAY,Proteasome Pathway LOF,LOF,Broad_moa
+163,BRD-A62025033,temsirolimus,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+164,BRD-K40175214,torin-1,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+165,BRD-K99964838,bosutinib,CP_SRC_INHIBITOR,SRC inhibitor,CP,Broad_moa
+166,BRD-K49328571,dasatinib,CP_SRC_INHIBITOR,SRC inhibitor,CP,Broad_moa
+167,BRD-K47598052,PP-1,CP_SRC_INHIBITOR,SRC inhibitor,CP,Broad_moa
+168,BRD-K95785537,PP-2,CP_SRC_INHIBITOR,SRC inhibitor,CP,Broad_moa
+169,BRD-K19540840,saracatinib,CP_SRC_INHIBITOR,SRC inhibitor,CP,Broad_moa
+170,BRD-U44618005,WH-4023,CP_SRC_INHIBITOR,SRC inhibitor,CP,Broad_moa
+171,BRD-K41337261,ZM-306416,CP_SRC_INHIBITOR,SRC inhibitor,CP,Broad_moa
+172,BRD-K67868012,PI-103,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+173,BRD-U33728988,QL-X-138,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+174,BRD-K89626439,sirolimus,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+175,BRD-A62025033,temsirolimus,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+176,BRD-K40175214,torin-1,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+177,BRD-K69932463,AZD-8055,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+178,BRD-K29733039,deforolimus,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+179,BRD-K06750613,GSK-1059615,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+180,BRD-K67566344,KU-0063794,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+181,BRD-K27305650,LY-294002,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+182,BRD-K09537769,NU-7026,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+183,BRD-K12184916,NVP-BEZ235,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+184,BRD-K94294671,OSI-027,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+185,BRD-K67868012,PI-103,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+186,BRD-U33728988,QL-X-138,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+187,BRD-K89626439,sirolimus,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+188,BRD-A62025033,temsirolimus,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+189,BRD-K40175214,torin-1,CP_MTOR_INHIBITOR,MTOR inhibitor,CP,Broad_moa
+190,BRD-K91623615,ABT-751,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+191,BRD-K79131256,albendazole,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+192,BRD-K32828673,chelidonine,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+193,BRD-K26997899,D-64131,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+194,BRD-K63265447,docetaxel,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+195,BRD-K48935217,epothilone,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+196,BRD-K51318897,fenbendazole,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+197,BRD-K86003836,flubendazole,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+198,BRD-K09638361,IC-261,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+199,BRD-K77987382,mebendazole,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+200,BRD-K12539581,nocodazole,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+201,BRD-K52075715,oxibendazole,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+202,BRD-A28746609,paclitaxel,CP_TUBULIN_INHIBITOR,Tubulin inhibitor,CP,Broad_moa
+203,BRD-K34581968,BMS-536924,CP_IGF_1_INHIBITOR,IGF-1 inhibitor,CP,Broad_moa
+204,BRD-K13049116,BMS-754807,CP_IGF_1_INHIBITOR,IGF-1 inhibitor,CP,Broad_moa
+205,BRD-K08589866,linsitinib,CP_IGF_1_INHIBITOR,IGF-1 inhibitor,CP,Broad_moa
+206,BRD-K09499853,KU-0060648,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+207,BRD-K27305650,LY-294002,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+208,BRD-K09537769,NU-7026,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+209,BRD-K12184916,NVP-BEZ235,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+210,BRD-K67868012,PI-103,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+211,BRD-K97365803,PI-828,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+212,BRD-M16762496,PIK-75,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+213,BRD-K99818283,PIK-90,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+214,BRD-A41692738,TGX-221,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+215,BRD-K41895714,AS-605240,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+216,BRD-K58772419,AZD-6482,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+217,BRD-K52911425,GDC-0941,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+218,BRD-K06750613,GSK-1059615,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+219,BRD-K09499853,KU-0060648,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+220,BRD-K27305650,LY-294002,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+221,BRD-K09537769,NU-7026,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+222,BRD-K12184916,NVP-BEZ235,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+223,BRD-K67868012,PI-103,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+224,BRD-K97365803,PI-828,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+225,BRD-M16762496,PIK-75,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+226,BRD-K99818283,PIK-90,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+227,BRD-A41692738,TGX-221,CP_PI3K_INHIBITOR,PI3K inhibitor,CP,Broad_moa
+228,BRD-K10466330,AVA,CP_NUCLEOPHOSMIN_INHIBITOR,Nucleophosmin inhibitor,CP,Broad_moa
+229,BRD-K61691971,avrainvillamide-analog-1,CP_NUCLEOPHOSMIN_INHIBITOR,Nucleophosmin inhibitor,CP,Broad_moa
+230,BRD-K42573370,avrainvillamide-analog-2,CP_NUCLEOPHOSMIN_INHIBITOR,Nucleophosmin inhibitor,CP,Broad_moa
+231,BRD-K39569857,avrainvillamide-analog-3,CP_NUCLEOPHOSMIN_INHIBITOR,Nucleophosmin inhibitor,CP,Broad_moa
+232,BRD-K25079130,avrainvillamide-analog-4,CP_NUCLEOPHOSMIN_INHIBITOR,Nucleophosmin inhibitor,CP,Broad_moa
+233,BRD-A70731303,avrainvillamide-analog-5,CP_NUCLEOPHOSMIN_INHIBITOR,Nucleophosmin inhibitor,CP,Broad_moa
+234,BRD-K50324045,avrainvillamide-analog-6,CP_NUCLEOPHOSMIN_INHIBITOR,Nucleophosmin inhibitor,CP,Broad_moa
+235,BRD-A35108200,dexamethasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+236,BRD-A93424738,dexamethasone-acetate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+237,BRD-A80638690,floxuridine,CP_DNA_SYNTHESIS_INHIBITOR,DNA synthesis inhibitor,CP,Broad_moa
+238,BRD-K66788707,fludarabine,CP_DNA_SYNTHESIS_INHIBITOR,DNA synthesis inhibitor,CP,Broad_moa
+239,BRD-A48237631,mitomycin-c,CP_DNA_SYNTHESIS_INHIBITOR,DNA synthesis inhibitor,CP,Broad_moa
+240,BRD-K94441233,mevastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+241,BRD-K30097969,pitavastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+242,BRD-K82941592,rosuvastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+243,BRD-A81772229,simvastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+244,BRD-K30697463,desoximetasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+245,BRD-A35108200,dexamethasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+246,BRD-A93424738,dexamethasone-acetate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+247,BRD-U88459701,atorvastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+248,BRD-K81169441,cerivastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+249,BRD-K66296774,fluvastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+250,BRD-K09416995,lovastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+251,BRD-K94441233,mevastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+252,BRD-K30097969,pitavastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+253,BRD-K82941592,rosuvastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+254,BRD-A81772229,simvastatin,CP_HMGCR_INHIBITOR,HMGCR inhibitor,CP,Broad_moa
+255,BRD-K30697463,desoximetasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+256,BRD-A35108200,dexamethasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+257,BRD-A93424738,dexamethasone-acetate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+258,CGS001-5430,POLR2A,KD_RNA_POLYMERASE_ENZYMES,RNA Polymerase Enzymes LOF,LOF,Broad_moa
+259,CGS001-5432,POLR2C,KD_RNA_POLYMERASE_ENZYMES,RNA Polymerase Enzymes LOF,LOF,Broad_moa
+260,CGS001-5433,POLR2D,KD_RNA_POLYMERASE_ENZYMES,RNA Polymerase Enzymes LOF,LOF,Broad_moa
+261,CGS001-5434,POLR2E,KD_RNA_POLYMERASE_ENZYMES,RNA Polymerase Enzymes LOF,LOF,Broad_moa
+262,CGS001-5435,POLR2F,KD_RNA_POLYMERASE_ENZYMES,RNA Polymerase Enzymes LOF,LOF,Broad_moa
+263,CGS001-5438,POLR2I,KD_RNA_POLYMERASE_ENZYMES,RNA Polymerase Enzymes LOF,LOF,Broad_moa
+264,CGS001-5440,POLR2K,KD_RNA_POLYMERASE_ENZYMES,RNA Polymerase Enzymes LOF,LOF,Broad_moa
+265,BRD-K38003476,clocortolone-pivalate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+266,BRD-K94070024,depomedrol,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+267,BRD-K30697463,desoximetasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+268,BRD-A35108200,dexamethasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+269,BRD-A93424738,dexamethasone-acetate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+270,BRD-A90131694,alclometasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+271,BRD-A16478930,amcinonide,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+272,BRD-A17448384,beclometasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+273,BRD-K97810537,beclomethasone-dipropionate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+274,BRD-A02180903,betamethasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+275,BRD-A92177080,betamethasone-acetate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+276,BRD-A82238138,budesonide,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+277,BRD-A26095496,clobetasol,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+278,BRD-K38003476,clocortolone-pivalate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+279,BRD-K94070024,depomedrol,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+280,BRD-K30697463,desoximetasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+281,BRD-A35108200,dexamethasone,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+282,BRD-A93424738,dexamethasone-acetate,CP_GLUCOCORTICOID_RECEPTOR_AGONIST,Glucocorticoid receptor agonist,CP,Broad_moa
+283,CGS001-51182,HSPA14,KD_HEAT_SHOCK_70KDA_PROTEINS,Heat shock 70kDa proteins LOF,LOF,Broad_moa
+284,CGS001-3309,HSPA5,KD_HEAT_SHOCK_70KDA_PROTEINS,Heat shock 70kDa proteins LOF,LOF,Broad_moa
+285,CGS001-3313,HSPA9,KD_HEAT_SHOCK_70KDA_PROTEINS,Heat shock 70kDa proteins LOF,LOF,Broad_moa
+286,CGS001-10525,HYOU1,KD_HEAT_SHOCK_70KDA_PROTEINS,Heat shock 70kDa proteins LOF,LOF,Broad_moa
+287,BRD-K92093830,doxorubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+288,BRD-K85985071,ellipticine,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+289,BRD-K04548931,epirubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+290,BRD-K37798499,etoposide,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+291,BRD-K69650333,idarubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+292,BRD-K08547377,irinotecan,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+293,BRD-K21680192,mitoxantrone,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+294,BRD-K83794624,pirarubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+295,BRD-K56334280,amonafide,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+296,BRD-K98490050,amsacrine,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+297,BRD-A30437061,camptothecin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+298,BRD-A80960055,celastrol,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+299,BRD-K43389675,daunorubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+300,BRD-K92093830,doxorubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+301,BRD-K85985071,ellipticine,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+302,BRD-K04548931,epirubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+303,BRD-K37798499,etoposide,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+304,BRD-K69650333,idarubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+305,BRD-K08547377,irinotecan,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+306,BRD-K21680192,mitoxantrone,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+307,BRD-K83794624,pirarubicin,CP_TOPOISOMERASE_INHIBITOR,Topoisomerase inhibitor,CP,Broad_moa
+308,BRD-K12906962,dichlorobenzamil,CP_T_TYPE_CALCIUM_CHANNEL_BLOCKER,T-type calcium channel blocker,CP,Broad_moa
+309,BRD-K17743697,KB-R7943,CP_T_TYPE_CALCIUM_CHANNEL_BLOCKER,T-type calcium channel blocker,CP,Broad_moa
+310,BRD-K09549677,mibefradil,CP_T_TYPE_CALCIUM_CHANNEL_BLOCKER,T-type calcium channel blocker,CP,Broad_moa
+311,BRD-K78122587,NNC-55-0396,CP_T_TYPE_CALCIUM_CHANNEL_BLOCKER,T-type calcium channel blocker,CP,Broad_moa
+312,BRD-K15409150,penfluridol,CP_T_TYPE_CALCIUM_CHANNEL_BLOCKER,T-type calcium channel blocker,CP,Broad_moa
+313,BRD-K43164539,cholic-acid,CP_BILE_ACID,Bile acid,CP,Broad_moa
+314,BRD-K20986251,lithocholic-acid,CP_BILE_ACID,Bile acid,CP,Broad_moa
+315,BRD-K81062487,taurocholic-acid,CP_BILE_ACID,Bile acid,CP,Broad_moa
+316,BRD-K33572481,taurodeoxycholic-acid,CP_BILE_ACID,Bile acid,CP,Broad_moa
+317,BRD-K80970344,pyrrolidine-dithiocarbamate,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+318,BRD-K02265150,amoxapine,CP_NOREPINEPHRINE_REPUTAKE_INHIBITOR,Norepinephrine reputake inhibitor,CP,Broad_moa
+319,BRD-K38436528,imipramine,CP_NOREPINEPHRINE_REPUTAKE_INHIBITOR,Norepinephrine reputake inhibitor,CP,Broad_moa
+320,BRD-K03319035,maprotiline,CP_NOREPINEPHRINE_REPUTAKE_INHIBITOR,Norepinephrine reputake inhibitor,CP,Broad_moa
+321,BRD-A19195498,trimipramine,CP_NOREPINEPHRINE_REPUTAKE_INHIBITOR,Norepinephrine reputake inhibitor,CP,Broad_moa
+322,BRD-K98548675,parthenolide,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+323,BRD-K80970344,pyrrolidine-dithiocarbamate,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+324,BRD-A79465854,auranofin,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+325,BRD-K15025317,BAY-11-7082,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+326,BRD-K74305673,IKK-2-inhibitor-V,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+327,BRD-K78599730,manumycin-a,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+328,BRD-A45889380,mepacrine,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+329,BRD-K98548675,parthenolide,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+330,BRD-K80970344,pyrrolidine-dithiocarbamate,CP_NFKB_PATHWAY_INHIBITOR,NFkB pathway inhibitor,CP,Broad_moa
+331,CGS001-6906,SERPINA7,KD_SERPIN_PEPTIDASE_INHIBITORS,Serpin peptidase inhibitors LOF,LOF,Broad_moa
+332,CGS001-5055,SERPINB2,KD_SERPIN_PEPTIDASE_INHIBITORS,Serpin peptidase inhibitors LOF,LOF,Broad_moa
+333,CGS001-5268,SERPINB5,KD_SERPIN_PEPTIDASE_INHIBITORS,Serpin peptidase inhibitors LOF,LOF,Broad_moa
+334,CGS001-5269,SERPINB6,KD_SERPIN_PEPTIDASE_INHIBITORS,Serpin peptidase inhibitors LOF,LOF,Broad_moa
+335,BRD-A19195498,trimipramine,CP_TRICYCLIC_ANTIDEPRESSANT,Tricyclic antidepressant,CP,Broad_moa
+336,BRD-A01320529,salmeterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+337,BRD-A50157456,terbutaline-hemisulfate,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+338,BRD-K52989797,clomipramine,CP_TRICYCLIC_ANTIDEPRESSANT,Tricyclic antidepressant,CP,Broad_moa
+339,BRD-K60762818,desipramine,CP_TRICYCLIC_ANTIDEPRESSANT,Tricyclic antidepressant,CP,Broad_moa
+340,BRD-K03319035,maprotiline,CP_TRICYCLIC_ANTIDEPRESSANT,Tricyclic antidepressant,CP,Broad_moa
+341,BRD-K91263825,nortriptyline,CP_TRICYCLIC_ANTIDEPRESSANT,Tricyclic antidepressant,CP,Broad_moa
+342,BRD-K42098891,protriptyline,CP_TRICYCLIC_ANTIDEPRESSANT,Tricyclic antidepressant,CP,Broad_moa
+343,BRD-A19195498,trimipramine,CP_TRICYCLIC_ANTIDEPRESSANT,Tricyclic antidepressant,CP,Broad_moa
+344,BRD-A01320529,salmeterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+345,BRD-A50157456,terbutaline-hemisulfate,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+346,CGS001-3065,HDAC1,KD_HISTONE_DEACETYLASES,Histone deacetylases LOF,LOF,Broad_moa
+347,CGS001-83933,HDAC10,KD_HISTONE_DEACETYLASES,Histone deacetylases LOF,LOF,Broad_moa
+348,CGS001-79885,HDAC11,KD_HISTONE_DEACETYLASES,Histone deacetylases LOF,LOF,Broad_moa
+349,CGS001-9759,HDAC4,KD_HISTONE_DEACETYLASES,Histone deacetylases LOF,LOF,Broad_moa
+350,BRD-A07780951,orciprenaline,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+351,BRD-A22684332,procaterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+352,BRD-A59174698,ritodrine,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+353,BRD-A01320529,salmeterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+354,BRD-A50157456,terbutaline-hemisulfate,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+355,BRD-K28428262,brivanib,CP_FGFR_INHIBITOR,FGFR inhibitor,CP,Broad_moa
+356,BRD-K85402309,dovitinib,CP_FGFR_INHIBITOR,FGFR inhibitor,CP,Broad_moa
+357,BRD-K91696562,orantinib,CP_FGFR_INHIBITOR,FGFR inhibitor,CP,Broad_moa
+358,BRD-K97764662,PD-173074,CP_FGFR_INHIBITOR,FGFR inhibitor,CP,Broad_moa
+359,BRD-A16700644,isoxsuprine,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+360,BRD-A07780951,orciprenaline,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+361,BRD-A22684332,procaterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+362,BRD-A59174698,ritodrine,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+363,BRD-A01320529,salmeterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+364,BRD-A50157456,terbutaline-hemisulfate,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+365,BRD-A36267905,buphenine,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+366,BRD-A65440446,cimaterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+367,BRD-A78322124,dobutamine,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+368,BRD-A97104540,fenoterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+369,BRD-M00539986,formoterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+370,BRD-A16700644,isoxsuprine,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+371,BRD-A07780951,orciprenaline,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+372,BRD-A22684332,procaterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+373,BRD-A59174698,ritodrine,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+374,BRD-A01320529,salmeterol,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+375,BRD-A50157456,terbutaline-hemisulfate,CP_BETA_ADRENERGIC_RECEPTOR_AGONIST,Beta-adrenergic receptor agonist,CP,Broad_moa
+376,CGS001-472,ATM,KD_G2_M_CHECKPOINT,G2 M Checkpoint LOF,LOF,Broad_moa
+377,CGS001-891,CCNB1,KD_G2_M_CHECKPOINT,G2 M Checkpoint LOF,LOF,Broad_moa
+378,CGS001-1111,CHEK1,KD_G2_M_CHECKPOINT,G2 M Checkpoint LOF,LOF,Broad_moa
+379,CGS001-11200,CHEK2,KD_G2_M_CHECKPOINT,G2 M Checkpoint LOF,LOF,Broad_moa
+380,BRD-K10995081,perphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+381,BRD-K01292756,pimozide,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+382,CGS001-5469,MED1,KD_MEDIATOR_COMPLEX,Mediator complex LOF,LOF,Broad_moa
+383,CGS001-80306,MED28,KD_MEDIATOR_COMPLEX,Mediator complex LOF,LOF,Broad_moa
+384,CGS001-10001,MED6,KD_MEDIATOR_COMPLEX,Mediator complex LOF,LOF,Broad_moa
+385,CGS001-9443,MED7,KD_MEDIATOR_COMPLEX,Mediator complex LOF,LOF,Broad_moa
+386,BRD-K20986251,lithocholic-acid,CP_VITAMIN_D_RECEPTOR_AGONIST,Vitamin D receptor agonist,CP,Broad_moa
+387,BRD-K10995081,perphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+388,BRD-K01292756,pimozide,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+389,BRD-K93433262,alfacalcidol,CP_VITAMIN_D_RECEPTOR_AGONIST,Vitamin D receptor agonist,CP,Broad_moa
+390,BRD-K77175907,calcifediol,CP_VITAMIN_D_RECEPTOR_AGONIST,Vitamin D receptor agonist,CP,Broad_moa
+391,BRD-K56429665,calcipotriol,CP_VITAMIN_D_RECEPTOR_AGONIST,Vitamin D receptor agonist,CP,Broad_moa
+392,BRD-A84327315,calcitriol,CP_VITAMIN_D_RECEPTOR_AGONIST,Vitamin D receptor agonist,CP,Broad_moa
+393,BRD-K14550461,doxercalciferol,CP_VITAMIN_D_RECEPTOR_AGONIST,Vitamin D receptor agonist,CP,Broad_moa
+394,BRD-K20986251,lithocholic-acid,CP_VITAMIN_D_RECEPTOR_AGONIST,Vitamin D receptor agonist,CP,Broad_moa
+395,BRD-K10995081,perphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+396,BRD-K01292756,pimozide,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+397,BRD-K76617868,fasudil,CP_PKA_INHIBITOR,PKA inhibitor,CP,Broad_moa
+398,BRD-A55756846,H-7,CP_PKA_INHIBITOR,PKA inhibitor,CP,Broad_moa
+399,BRD-K18742343,H-8,CP_PKA_INHIBITOR,PKA inhibitor,CP,Broad_moa
+400,BRD-K27737647,H-89,CP_PKA_INHIBITOR,PKA inhibitor,CP,Broad_moa
+401,BRD-K70577657,H-9,CP_PKA_INHIBITOR,PKA inhibitor,CP,Broad_moa
+402,BRD-K35559145,levomepromazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+403,BRD-K51671335,levosulpiride,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+404,BRD-K10995081,perphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+405,BRD-K01292756,pimozide,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+406,BRD-K32821942,azathioprine,CP_IMPDH_INHIBITOR,IMPDH inhibitor,CP,Broad_moa
+407,BRD-K92428153,mycophenolate-mofetil,CP_IMPDH_INHIBITOR,IMPDH inhibitor,CP,Broad_moa
+408,BRD-K31542390,mycophenolic-acid,CP_IMPDH_INHIBITOR,IMPDH inhibitor,CP,Broad_moa
+409,CGS001-1974,EIF4A2,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+410,CGS001-1975,EIF4B,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+411,CGS001-1977,EIF4E,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+412,BRD-K35559145,levomepromazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+413,BRD-K51671335,levosulpiride,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+414,BRD-K10995081,perphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+415,BRD-K01292756,pimozide,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+416,CGS001-8892,EIF2B2,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+417,CGS001-8891,EIF2B3,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+418,CGS001-8893,EIF2B5,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+419,CGS001-8894,EIF2S2,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+420,CGS001-1974,EIF4A2,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+421,CGS001-1975,EIF4B,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+422,CGS001-1977,EIF4E,KD_EIF_PROTEINS,EIF Proteins LOF,LOF,Broad_moa
+423,BRD-K35559145,levomepromazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+424,BRD-K51671335,levosulpiride,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+425,BRD-K10995081,perphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+426,BRD-K01292756,pimozide,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+427,CGS001-55746,NUP133,KD_NUCLEOPORIN,Nucleoporin LOF,LOF,Broad_moa
+428,CGS001-79902,NUP85,KD_NUCLEOPORIN,Nucleoporin LOF,LOF,Broad_moa
+429,CGS001-4927,NUP88,KD_NUCLEOPORIN,Nucleoporin LOF,LOF,Broad_moa
+430,CGS001-9688,NUP93,KD_NUCLEOPORIN,Nucleoporin LOF,LOF,Broad_moa
+431,CGS001-6632,SNRPD1,KD_NUCLEOPORIN,Nucleoporin LOF,LOF,Broad_moa
+432,BRD-K77947974,fluspirilene,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+433,BRD-K50891186,GR-103691,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+434,BRD-K05181463,L-741626,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+435,BRD-K35559145,levomepromazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+436,BRD-K51671335,levosulpiride,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+437,BRD-K10995081,perphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+438,BRD-K01292756,pimozide,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+439,BRD-K37814297,acepromazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+440,BRD-K89997465,chlorpromazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+441,BRD-K59058766,chlorprothixene,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+442,BRD-K37289225,clozapine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+443,BRD-K97158071,droperidol,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+444,BRD-K55127134,fluphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+445,BRD-K77947974,fluspirilene,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+446,BRD-K50891186,GR-103691,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+447,BRD-K05181463,L-741626,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+448,BRD-K35559145,levomepromazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+449,BRD-K51671335,levosulpiride,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+450,BRD-K10995081,perphenazine,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+451,BRD-K01292756,pimozide,CP_DOPAMINE_RECEPTOR_ANTAGONIST,Dopamine receptor antagonist,CP,Broad_moa
+452,BRD-K93658967,aloisine,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+453,BRD-K67860401,AR-A014418,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+454,BRD-K09991945,GSK-3-inhibitor-II,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+455,BRD-K04923131,GSK-3-inhibitor-IX,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+456,BRD-K53959060,indirubin,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+457,BRD-K19136521,indirubin-3-monoxime,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+458,BRD-K37312348,kenpaullone,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+459,BRD-K87932577,NSC-693868,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+460,BRD-K59184148,SB-216763,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+461,BRD-K76805682,SB-415286,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+462,BRD-K94176593,TWS-119,CP_GLYCOGEN_SYNTHASE_KINASE_INHIBITOR,Glycogen synthase kinase inhibitor,CP,Broad_moa
+463,BRD-K17349619,HLI-373,CP_MDM_INHIBITOR,MDM inhibitor,CP,Broad_moa
+464,BRD-K84987553,MDM2-inhibitor,CP_MDM_INHIBITOR,MDM inhibitor,CP,Broad_moa
+465,BRD-K00317371,RITA,CP_MDM_INHIBITOR,MDM inhibitor,CP,Broad_moa
+466,BRD-K93095519,SJ-172550,CP_MDM_INHIBITOR,MDM inhibitor,CP,Broad_moa
+467,BRD-K68246049,TTNPB,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+468,BRD-K78373679,Ro-3306,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+469,BRD-K07691486,roscovitine,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+470,CGS001-9966,TNFSF15,KD_TUMOR_NECROSIS_FACTOR_SUPERFAMILY,Tumor necrosis factor superfamily LOF,LOF,Broad_moa
+471,CGS001-7292,TNFSF4,KD_TUMOR_NECROSIS_FACTOR_SUPERFAMILY,Tumor necrosis factor superfamily LOF,LOF,Broad_moa
+472,CGS001-944,TNFSF8,KD_TUMOR_NECROSIS_FACTOR_SUPERFAMILY,Tumor necrosis factor superfamily LOF,LOF,Broad_moa
+473,BRD-K36627727,tamibarotene,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+474,BRD-K06926592,tretinoin,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+475,BRD-K68246049,TTNPB,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+476,BRD-K78373679,Ro-3306,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+477,BRD-K07691486,roscovitine,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+478,BRD-K09132007,D-4476,CP_TGF_BETA_RECEPTOR_INHIBITOR,TGF beta receptor inhibitor,CP,Broad_moa
+479,BRD-K06234293,LY-364947,CP_TGF_BETA_RECEPTOR_INHIBITOR,TGF beta receptor inhibitor,CP,Broad_moa
+480,BRD-K67298865,SB-431542,CP_TGF_BETA_RECEPTOR_INHIBITOR,TGF beta receptor inhibitor,CP,Broad_moa
+481,BRD-K37720887,SB-525334,CP_TGF_BETA_RECEPTOR_INHIBITOR,TGF beta receptor inhibitor,CP,Broad_moa
+482,BRD-K36627727,tamibarotene,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+483,BRD-K06926592,tretinoin,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+484,BRD-K68246049,TTNPB,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+485,BRD-K78373679,Ro-3306,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+486,BRD-K07691486,roscovitine,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+487,CGS001-7994,KAT6A,KD_LYSINE_ACETYLTRANSFERASES,Lysine acetyltransferases LOF,LOF,Broad_moa
+488,CGS001-23522,KAT6B,KD_LYSINE_ACETYLTRANSFERASES,Lysine acetyltransferases LOF,LOF,Broad_moa
+489,CGS001-8202,NCOA3,KD_LYSINE_ACETYLTRANSFERASES,Lysine acetyltransferases LOF,LOF,Broad_moa
+490,BRD-K28168037,fenretinide,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+491,BRD-K76723084,isotretinoin,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+492,BRD-K36627727,tamibarotene,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+493,BRD-K06926592,tretinoin,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+494,BRD-K68246049,TTNPB,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+495,BRD-K78373679,Ro-3306,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+496,BRD-K07691486,roscovitine,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+497,BRD-K93176058,AC-55649,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+498,BRD-K62012036,acitretin,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+499,BRD-K35483542,alitretinoin,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+500,BRD-K06854232,AM-580,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+501,BRD-K28168037,fenretinide,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+502,BRD-K76723084,isotretinoin,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+503,BRD-K36627727,tamibarotene,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+504,BRD-K06926592,tretinoin,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+505,BRD-K68246049,TTNPB,CP_RETINOID_RECEPTOR_AGONIST,Retinoid receptor agonist,CP,Broad_moa
+506,BRD-K78373679,Ro-3306,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+507,BRD-K07691486,roscovitine,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+508,BRD-K93658967,aloisine,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+509,BRD-K07762753,aminopurvalanol-a,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+510,BRD-K13390322,AT-7519,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+511,BRD-K19136521,indirubin-3-monoxime,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+512,BRD-K11636097,JNJ-7706621,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+513,BRD-K37312348,kenpaullone,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+514,BRD-K87932577,NSC-693868,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+515,BRD-K51313569,palbociclib,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+516,BRD-K64800655,PHA-793887,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+517,BRD-K50836978,purvalanol-a,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+518,BRD-K78373679,Ro-3306,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+519,BRD-K07691486,roscovitine,CP_CDK_INHIBITOR,CDK inhibitor,CP,Broad_moa
+520,BRD-K66175015,afatinib,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+521,BRD-K49294207,BIBU-1361,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+522,BRD-K70914287,BIBX-1382,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+523,BRD-K50168500,canertinib,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+524,BRD-K13087974,CGP-52411,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+525,BRD-K85402309,dovitinib,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+526,BRD-K70401845,erlotinib,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+527,BRD-K64052750,gefitinib,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+528,BRD-K85606544,neratinib,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+529,BRD-K48735772,PD-158780,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+530,BRD-K68336408,tyrphostin-AG-1478,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+531,BRD-K59469039,tyrphostin-AG-879,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+532,BRD-U25771771,WZ-4-145,CP_EGFR_INHIBITOR,EGFR inhibitor,CP,Broad_moa
+533,BRD-K05804044,AZ-628,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+534,BRD-K67578145,GDC-0879,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+535,BRD-K39520573,GW-5074,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+536,BRD-U37049823,HG-6-64-01,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+537,BRD-K16478699,PLX-4720,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+538,BRD-K01253243,SB-590885,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+539,BRD-K49810818,sorafenib,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+540,BRD-M64432851,sunitinib,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+541,BRD-K56343971,vemurafenib,CP_RAF_INHIBITOR,RAF inhibitor,CP,Broad_moa
+542,BRD-K99063460,didanosine,CP_NUCLEOSIDE_REVERSE_TRANSCRIPTASE_INHIBITOR,Nucleoside reverse transcriptase inhibitor,CP,Broad_moa
+543,BRD-K93880783,stavudine,CP_NUCLEOSIDE_REVERSE_TRANSCRIPTASE_INHIBITOR,Nucleoside reverse transcriptase inhibitor,CP,Broad_moa
+544,BRD-K85925969,zalcitabine,CP_NUCLEOSIDE_REVERSE_TRANSCRIPTASE_INHIBITOR,Nucleoside reverse transcriptase inhibitor,CP,Broad_moa
+545,BRD-K56001384,antimycin-a,CP_ATP_SYNTHASE_INHIBITOR,ATP synthase inhibitor,CP,Broad_moa
+546,BRD-K74133369,oligomycin-a,CP_ATP_SYNTHASE_INHIBITOR,ATP synthase inhibitor,CP,Broad_moa
+547,BRD-K05350981,oligomycin-c,CP_ATP_SYNTHASE_INHIBITOR,ATP synthase inhibitor,CP,Broad_moa
+548,CGS001-3688,ITGB1,KD_INTEGRIN_SUBUNITS_BETA,Integrin subunits beta LOF,LOF,Broad_moa
+549,CGS001-3691,ITGB4,KD_INTEGRIN_SUBUNITS_BETA,Integrin subunits beta LOF,LOF,Broad_moa
+550,CGS001-3693,ITGB5,KD_INTEGRIN_SUBUNITS_BETA,Integrin subunits beta LOF,LOF,Broad_moa
+551,CGS001-3198,HOXA1,KD_HOXL_SUBCLASS_HOMEOBOXES,HOXL subclass homeoboxes LOF,LOF,Broad_moa
+552,CGS001-3215,HOXB5,KD_HOXL_SUBCLASS_HOMEOBOXES,HOXL subclass homeoboxes LOF,LOF,Broad_moa
+553,CGS001-4223,MEOX2,KD_HOXL_SUBCLASS_HOMEOBOXES,HOXL subclass homeoboxes LOF,LOF,Broad_moa
+554,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+555,CGS001-55127,HEATR1,KD_MINOR_HISTOCOMPATIBILITY_ANTIGENS,Minor histocompatibility antigens LOF,LOF,Broad_moa
+556,CGS001-55746,NUP133,KD_MINOR_HISTOCOMPATIBILITY_ANTIGENS,Minor histocompatibility antigens LOF,LOF,Broad_moa
+557,CGS001-9322,TRIP10,KD_MINOR_HISTOCOMPATIBILITY_ANTIGENS,Minor histocompatibility antigens LOF,LOF,Broad_moa
+558,BRD-K89162000,tandutinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+559,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+560,CGS001-4704,NDUFA9,KD_NADH_UBIQUINONE_OXIDOREDUCTASE_SUPERNUMERARY_SUBUNITS,NADH ubiquinone oxidoreductase supernumerary subunits LOF,LOF,Broad_moa
+561,CGS001-4706,NDUFAB1,KD_NADH_UBIQUINONE_OXIDOREDUCTASE_SUPERNUMERARY_SUBUNITS,NADH ubiquinone oxidoreductase supernumerary subunits LOF,LOF,Broad_moa
+562,CGS001-4714,NDUFB8,KD_NADH_UBIQUINONE_OXIDOREDUCTASE_SUPERNUMERARY_SUBUNITS,NADH ubiquinone oxidoreductase supernumerary subunits LOF,LOF,Broad_moa
+563,CGS001-4724,NDUFS4,KD_NADH_UBIQUINONE_OXIDOREDUCTASE_SUPERNUMERARY_SUBUNITS,NADH ubiquinone oxidoreductase supernumerary subunits LOF,LOF,Broad_moa
+564,BRD-K89162000,tandutinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+565,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+566,CGS001-7481,WNT11,KD_WNT_FAMILY,Wnt family LOF,LOF,Broad_moa
+567,CGS001-7477,WNT7B,KD_WNT_FAMILY,Wnt family LOF,LOF,Broad_moa
+568,CGS001-7483,WNT9A,KD_WNT_FAMILY,Wnt family LOF,LOF,Broad_moa
+569,CGS001-7484,WNT9B,KD_WNT_FAMILY,Wnt family LOF,LOF,Broad_moa
+570,BRD-M64432851,sunitinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+571,BRD-K89162000,tandutinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+572,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+573,CGS001-319100,TAAR6,KD_TRACE_AMINE_RECEPTORS,Trace amine receptors LOF,LOF,Broad_moa
+574,CGS001-83551,TAAR8,KD_TRACE_AMINE_RECEPTORS,Trace amine receptors LOF,LOF,Broad_moa
+575,CGS001-134860,TAAR9,KD_TRACE_AMINE_RECEPTORS,Trace amine receptors LOF,LOF,Broad_moa
+576,CGS001-64750,SMURF2,KD_BMP_SIGNALING,BMP Signaling LOF,LOF,Broad_moa
+577,BRD-K49810818,sorafenib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+578,BRD-M64432851,sunitinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+579,BRD-K89162000,tandutinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+580,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+581,CGS001-657,BMPR1A,KD_BMP_SIGNALING,BMP Signaling LOF,LOF,Broad_moa
+582,CGS001-4086,SMAD1,KD_BMP_SIGNALING,BMP Signaling LOF,LOF,Broad_moa
+583,CGS001-4092,SMAD7,KD_BMP_SIGNALING,BMP Signaling LOF,LOF,Broad_moa
+584,CGS001-57154,SMURF1,KD_BMP_SIGNALING,BMP Signaling LOF,LOF,Broad_moa
+585,CGS001-64750,SMURF2,KD_BMP_SIGNALING,BMP Signaling LOF,LOF,Broad_moa
+586,BRD-K49810818,sorafenib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+587,BRD-M64432851,sunitinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+588,BRD-K89162000,tandutinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+589,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+590,CGS001-1746,DLX2,KD_NKL_SUBCLASS_HOMEOBOXES_AND_PSEUDOGENES,NKL subclass homeoboxes and pseudogenes LOF,LOF,Broad_moa
+591,CGS001-1747,DLX3,KD_NKL_SUBCLASS_HOMEOBOXES_AND_PSEUDOGENES,NKL subclass homeoboxes and pseudogenes LOF,LOF,Broad_moa
+592,CGS001-3087,HHEX,KD_NKL_SUBCLASS_HOMEOBOXES_AND_PSEUDOGENES,NKL subclass homeoboxes and pseudogenes LOF,LOF,Broad_moa
+593,BRD-A12560204,nitrendipine,CP_CALCIUM_CHANNEL_BLOCKER,Calcium channel blocker,CP,Broad_moa
+594,BRD-K99616396,motesanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+595,BRD-K74514084,pazopanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+596,BRD-K49810818,sorafenib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+597,BRD-M64432851,sunitinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+598,BRD-K89162000,tandutinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+599,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+600,BRD-A64297288,amlodipine,CP_CALCIUM_CHANNEL_BLOCKER,Calcium channel blocker,CP,Broad_moa
+601,BRD-A52282606,lacidipine,CP_CALCIUM_CHANNEL_BLOCKER,Calcium channel blocker,CP,Broad_moa
+602,BRD-K62858456,lomerizine,CP_CALCIUM_CHANNEL_BLOCKER,Calcium channel blocker,CP,Broad_moa
+603,BRD-A96107863,nisoldipine,CP_CALCIUM_CHANNEL_BLOCKER,Calcium channel blocker,CP,Broad_moa
+604,BRD-A12560204,nitrendipine,CP_CALCIUM_CHANNEL_BLOCKER,Calcium channel blocker,CP,Broad_moa
+605,BRD-K99616396,motesanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+606,BRD-K74514084,pazopanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+607,BRD-K49810818,sorafenib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+608,BRD-M64432851,sunitinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+609,BRD-K89162000,tandutinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+610,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+611,BRD-K86930074,cediranib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+612,BRD-K27665173,D-64406,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+613,BRD-U37049823,HG-6-64-01,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+614,BRD-K47150025,KI-8751,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+615,BRD-K71035033,masitinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+616,BRD-K13646352,midostaurin,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+617,BRD-K99616396,motesanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+618,BRD-K74514084,pazopanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+619,BRD-K49810818,sorafenib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+620,BRD-M64432851,sunitinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+621,BRD-K89162000,tandutinib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+622,BRD-K53414658,tivozanib,CP_PDGFR_KIT_INHIBITOR,PDGFR/KIT inhibitor,CP,Broad_moa
+623,BRD-K29905972,axitinib,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+624,BRD-K86930074,cediranib,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+625,BRD-K85402309,dovitinib,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+626,BRD-K13646352,midostaurin,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+627,BRD-K74514084,pazopanib,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+628,BRD-K97764662,PD-173074,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+629,BRD-K49810818,sorafenib,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+630,BRD-K20287671,SU-4312,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+631,BRD-M64432851,sunitinib,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+632,BRD-K53414658,tivozanib,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+633,BRD-K59469039,tyrphostin-AG-879,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+634,BRD-K41337261,ZM-306416,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+635,BRD-K67831364,ZM-323881,CP_VEGFR_INHIBITOR,VEGFR inhibitor,CP,Broad_moa
+636,CGS001-5832,ALDH18A1,KD_ALDEHYDE_DEHYDROGENASES,Aldehyde dehydrogenases LOF,LOF,Broad_moa
+637,CGS001-220,ALDH1A3,KD_ALDEHYDE_DEHYDROGENASES,Aldehyde dehydrogenases LOF,LOF,Broad_moa
+638,CGS001-7915,ALDH5A1,KD_ALDEHYDE_DEHYDROGENASES,Aldehyde dehydrogenases LOF,LOF,Broad_moa
+639,CGS001-4329,ALDH6A1,KD_ALDEHYDE_DEHYDROGENASES,Aldehyde dehydrogenases LOF,LOF,Broad_moa
+640,CGS001-4087,SMAD2,KD_SMAD_FAMILY,SMAD family LOF,LOF,Broad_moa
+641,CGS001-4089,SMAD4,KD_SMAD_FAMILY,SMAD family LOF,LOF,Broad_moa
+642,CGS001-4090,SMAD5,KD_SMAD_FAMILY,SMAD family LOF,LOF,Broad_moa
+643,BRD-K33226500,indinavir,CP_HIV_PROTEASE_INHIBITOR,HIV protease inhibitor,CP,Broad_moa
+644,BRD-K99451608,lopinavir,CP_HIV_PROTEASE_INHIBITOR,HIV protease inhibitor,CP,Broad_moa
+645,BRD-K60460488,nelfinavir,CP_HIV_PROTEASE_INHIBITOR,HIV protease inhibitor,CP,Broad_moa
+646,BRD-K51485625,ritonavir,CP_HIV_PROTEASE_INHIBITOR,HIV protease inhibitor,CP,Broad_moa
+647,BRD-K55344148,BU-224,CP_IMIDAZOLINE_LIGAND,Imidazoline ligand,CP,Broad_moa
+648,BRD-K56115039,BU-226,CP_IMIDAZOLINE_LIGAND,Imidazoline ligand,CP,Broad_moa
+649,BRD-K11696279,BU-239,CP_IMIDAZOLINE_LIGAND,Imidazoline ligand,CP,Broad_moa
+650,BRD-K01638814,rilmenidine,CP_IMIDAZOLINE_LIGAND,Imidazoline ligand,CP,Broad_moa
+651,CGS001-11215,AKAP11,KD_A_KINASE_ANCHORING_PROTEINS,Kinase anchoring proteins LOF,LOF,Broad_moa
+652,CGS001-11214,AKAP13,KD_A_KINASE_ANCHORING_PROTEINS,Kinase anchoring proteins LOF,LOF,Broad_moa
+653,CGS001-10142,AKAP9,KD_A_KINASE_ANCHORING_PROTEINS,Kinase anchoring proteins LOF,LOF,Broad_moa
+654,CGS001-329,BIRC2,KD_BACULOVIRAL_IAP_REPEAT_DOMAIN_CONTAINING,Baculoviral IAP repeat domain containing LOF,LOF,Broad_moa
+655,CGS001-330,BIRC3,KD_BACULOVIRAL_IAP_REPEAT_DOMAIN_CONTAINING,Baculoviral IAP repeat domain containing LOF,LOF,Broad_moa
+656,CGS001-4671,NAIP,KD_BACULOVIRAL_IAP_REPEAT_DOMAIN_CONTAINING,Baculoviral IAP repeat domain containing LOF,LOF,Broad_moa
+657,CGS001-6271,S100A1,KD_S100_CALCIUM_BINDING_PROTEINS,S100 calcium binding proteins LOF,LOF,Broad_moa
+658,CGS001-6277,S100A6,KD_S100_CALCIUM_BINDING_PROTEINS,S100 calcium binding proteins LOF,LOF,Broad_moa
+659,CGS001-6285,S100B,KD_S100_CALCIUM_BINDING_PROTEINS,S100 calcium binding proteins LOF,LOF,Broad_moa
+660,BRD-A95513702,androsta-1,4-dien-3,17-dione,CP_AROMATASE_INHIBITOR,Aromatase inhibitor,CP,Broad_moa
+661,BRD-A73741725,exemestane,CP_AROMATASE_INHIBITOR,Aromatase inhibitor,CP,Broad_moa
+662,BRD-A31801025,formestane,CP_AROMATASE_INHIBITOR,Aromatase inhibitor,CP,Broad_moa
+663,CGS001-2957,GTF2A1,KD_GENERAL_TRANSCRIPTION_FACTORS_GROUP_2,General transcription factors group 2 LOF,LOF,Broad_moa
+664,CGS001-2963,GTF2F2,KD_GENERAL_TRANSCRIPTION_FACTORS_GROUP_2,General transcription factors group 2 LOF,LOF,Broad_moa
+665,CGS001-2967,GTF2H3,KD_GENERAL_TRANSCRIPTION_FACTORS_GROUP_2,General transcription factors group 2 LOF,LOF,Broad_moa
+666,CGS001-8243,SMC1A,KD_STRUCTURAL_MAINTENANCE_OF_CHROMOSOMES_PROTEINS,Structural maintenance of chromosomes proteins LOF,LOF,Broad_moa
+667,CGS001-9126,SMC3,KD_STRUCTURAL_MAINTENANCE_OF_CHROMOSOMES_PROTEINS,Structural maintenance of chromosomes proteins LOF,LOF,Broad_moa
+668,CGS001-10051,SMC4,KD_STRUCTURAL_MAINTENANCE_OF_CHROMOSOMES_PROTEINS,Structural maintenance of chromosomes proteins LOF,LOF,Broad_moa
+669,ccsbBroad304_06398,HPN,OE_SERINE_PROTEASES,Serine proteases GOF,GOF,Broad_moa
+670,ccsbBroad304_01302,KLK6,OE_SERINE_PROTEASES,Serine proteases GOF,GOF,Broad_moa
+671,ccsbBroad304_02619,PRSS23,OE_SERINE_PROTEASES,Serine proteases GOF,GOF,Broad_moa
+672,ccsbBroad304_07006,ST14,OE_SERINE_PROTEASES,Serine proteases GOF,GOF,Broad_moa
+673,CGS001-3146,HMGB1,KD_CANONICAL_HIGH_MOBILITY_GROUP_PROTEINS,Canonical high mobility group proteins LOF,LOF,Broad_moa
+674,CGS001-127540,HMGB4,KD_CANONICAL_HIGH_MOBILITY_GROUP_PROTEINS,Canonical high mobility group proteins LOF,LOF,Broad_moa
+675,CGS001-10473,HMGN4,KD_CANONICAL_HIGH_MOBILITY_GROUP_PROTEINS,Canonical high mobility group proteins LOF,LOF,Broad_moa
+676,BRD-K62363391,dapsone,CP_DIHYDROFOLATE_REDUCTASE_INHIBITOR,Dihydrofolate reductase inhibitor,CP,Broad_moa
+677,BRD-K59456551,methotrexate,CP_DIHYDROFOLATE_REDUCTASE_INHIBITOR,Dihydrofolate reductase inhibitor,CP,Broad_moa
+678,BRD-K88429204,pyrimethamine,CP_DIHYDROFOLATE_REDUCTASE_INHIBITOR,Dihydrofolate reductase inhibitor,CP,Broad_moa
+679,BRD-K50859149,sulfafurazole,CP_DIHYDROFOLATE_REDUCTASE_INHIBITOR,Dihydrofolate reductase inhibitor,CP,Broad_moa
+680,ccsbBroad304_04406,PLA2G12B,OE_PHOSPHOLIPASES,Phospholipases GOF,GOF,Broad_moa
+681,ccsbBroad304_07859,PLCB1,OE_PHOSPHOLIPASES,Phospholipases GOF,GOF,Broad_moa
+682,ccsbBroad304_06736,PLCG2,OE_PHOSPHOLIPASES,Phospholipases GOF,GOF,Broad_moa
+683,ccsbBroad304_01216,PLD1,OE_PHOSPHOLIPASES,Phospholipases GOF,GOF,Broad_moa
+684,CGS001-4174,MCM5,KD_MCM_FAMILY,MCM family LOF,LOF,Broad_moa
+685,CGS001-4175,MCM6,KD_MCM_FAMILY,MCM family LOF,LOF,Broad_moa
+686,CGS001-84515,MCM8,KD_MCM_FAMILY,MCM family LOF,LOF,Broad_moa
+687,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+688,CGS001-4193,MDM2,KD_ZINC_FINGERS_RANBP2_TYPE,Zinc fingers RanBP2 type LOF,LOF,Broad_moa
+689,CGS001-23118,TAB2,KD_ZINC_FINGERS_RANBP2_TYPE,Zinc fingers RanBP2 type LOF,LOF,Broad_moa
+690,CGS001-257397,TAB3,KD_ZINC_FINGERS_RANBP2_TYPE,Zinc fingers RanBP2 type LOF,LOF,Broad_moa
+691,CGS001-9406,ZRANB2,KD_ZINC_FINGERS_RANBP2_TYPE,Zinc fingers RanBP2 type LOF,LOF,Broad_moa
+692,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+693,CGS001-5320,PLA2G2A,KD_PHOSPHOLIPASES,Phospholipases LOF,LOF,Broad_moa
+694,CGS001-23236,PLCB1,KD_PHOSPHOLIPASES,Phospholipases LOF,LOF,Broad_moa
+695,CGS001-5335,PLCG1,KD_PHOSPHOLIPASES,Phospholipases LOF,LOF,Broad_moa
+696,CGS001-5338,PLD2,KD_PHOSPHOLIPASES,Phospholipases LOF,LOF,Broad_moa
+697,BRD-K12502280,TG-101348,CP_FLT3_INHIBITOR,FLT3 inhibitor,CP,Broad_moa
+698,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+699,BRD-K23192422,lestaurtinib,CP_FLT3_INHIBITOR,FLT3 inhibitor,CP,Broad_moa
+700,BRD-K13646352,midostaurin,CP_FLT3_INHIBITOR,FLT3 inhibitor,CP,Broad_moa
+701,BRD-K81528515,nilotinib,CP_FLT3_INHIBITOR,FLT3 inhibitor,CP,Broad_moa
+702,BRD-K49810818,sorafenib,CP_FLT3_INHIBITOR,FLT3 inhibitor,CP,Broad_moa
+703,BRD-M64432851,sunitinib,CP_FLT3_INHIBITOR,FLT3 inhibitor,CP,Broad_moa
+704,BRD-K12502280,TG-101348,CP_FLT3_INHIBITOR,FLT3 inhibitor,CP,Broad_moa
+705,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+706,BRD-A83695761,chromanol,CP_POTASSIUM_CHANNEL_BLOCKER,Potassium channel blocker,CP,Broad_moa
+707,BRD-A46179541,doxapram,CP_POTASSIUM_CHANNEL_BLOCKER,Potassium channel blocker,CP,Broad_moa
+708,BRD-K99922388,DPO-1,CP_POTASSIUM_CHANNEL_BLOCKER,Potassium channel blocker,CP,Broad_moa
+709,BRD-K38251852,paxilline,CP_POTASSIUM_CHANNEL_BLOCKER,Potassium channel blocker,CP,Broad_moa
+710,BRD-K13646352,midostaurin,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+711,BRD-K82823804,PD-407824,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+712,BRD-K71512533,SNS-314,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+713,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+714,BRD-K49448285,bisindolylmaleimide,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+715,BRD-K32292990,CGP-53353,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+716,BRD-K79404599,enzastaurin,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+717,BRD-K09991945,GSK-3-inhibitor-II,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+718,BRD-K04923131,GSK-3-inhibitor-IX,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+719,BRD-K13646352,midostaurin,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+720,BRD-K82823804,PD-407824,CP_PKC_INHIBITOR,PKC inhibitor,CP,Broad_moa
+721,BRD-K71512533,SNS-314,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+722,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+723,CGS001-392,ARHGAP1,KD_RHO_GTPASE_ACTIVATING_PROTEINS,Rho GTPase activating proteins LOF,LOF,Broad_moa
+724,CGS001-10395,DLC1,KD_RHO_GTPASE_ACTIVATING_PROTEINS,Rho GTPase activating proteins LOF,LOF,Broad_moa
+725,CGS001-117289,TAGAP,KD_RHO_GTPASE_ACTIVATING_PROTEINS,Rho GTPase activating proteins LOF,LOF,Broad_moa
+726,BRD-K36740062,GSK-1070916,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+727,BRD-K83972459,JWE-035,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+728,BRD-K53665955,MK-5108,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+729,BRD-K21971034,OM-137,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+730,BRD-K77286328,reversine,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+731,BRD-K71512533,SNS-314,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+732,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+733,CGS001-10933,MORF4L1,KD_EMSY_COMPLEX,EMSY complex LOF,LOF,Broad_moa
+734,CGS001-5928,RBBP4,KD_EMSY_COMPLEX,EMSY complex LOF,LOF,Broad_moa
+735,CGS001-5931,RBBP7,KD_EMSY_COMPLEX,EMSY complex LOF,LOF,Broad_moa
+736,BRD-K68488863,ENMD-2076,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+737,BRD-K36740062,GSK-1070916,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+738,BRD-K83972459,JWE-035,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+739,BRD-K53665955,MK-5108,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+740,BRD-K21971034,OM-137,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+741,BRD-K77286328,reversine,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+742,BRD-K71512533,SNS-314,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+743,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+744,BRD-A92826379,lupanine,CP_SODIUM_CHANNEL_BLOCKER,Sodium channel blocker,CP,Broad_moa
+745,BRD-A64092382,mexiletine,CP_SODIUM_CHANNEL_BLOCKER,Sodium channel blocker,CP,Broad_moa
+746,BRD-A64479082,quinidine,CP_SODIUM_CHANNEL_BLOCKER,Sodium channel blocker,CP,Broad_moa
+747,BRD-K92049597,triamterene,CP_SODIUM_CHANNEL_BLOCKER,Sodium channel blocker,CP,Broad_moa
+748,BRD-K68488863,ENMD-2076,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+749,BRD-K36740062,GSK-1070916,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+750,BRD-K83972459,JWE-035,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+751,BRD-K53665955,MK-5108,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+752,BRD-K21971034,OM-137,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+753,BRD-K77286328,reversine,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+754,BRD-K71512533,SNS-314,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+755,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+756,BRD-K75295174,alisertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+757,BRD-K24576554,AT-9283,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+758,BRD-K53561341,aurora-a-inhibitor-i,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+759,BRD-K63923597,barasertib-HQPA,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+760,BRD-K07881437,danusertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+761,BRD-K68488863,ENMD-2076,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+762,BRD-K36740062,GSK-1070916,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+763,BRD-K83972459,JWE-035,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+764,BRD-K53665955,MK-5108,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+765,BRD-K21971034,OM-137,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+766,BRD-K77286328,reversine,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+767,BRD-K71512533,SNS-314,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+768,BRD-K59369769,tozasertib,CP_AURORA_KINASE_INHIBITOR,Aurora kinase inhibitor,CP,Broad_moa
+769,BRD-K26674531,GR-235,CP_FXR_ANTAGONIST,FXR antagonist,CP,Broad_moa
+770,BRD-A59808129,guggulsterone,CP_FXR_ANTAGONIST,FXR antagonist,CP,Broad_moa
+771,BRD-K20986251,lithocholic-acid,CP_FXR_ANTAGONIST,FXR antagonist,CP,Broad_moa
+772,BRD-K88560311,rucaparib,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+773,BRD-K87142802,veliparib,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+774,BRD-K75958195,pizotifen,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+775,BRD-K15588452,R-96544,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+776,BRD-K20742498,RS-39604,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+777,BRD-K30867024,SB-216641,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+778,BRD-A15530910,SDZ-21009,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+779,CGS001-170302,ARX,KD_PRD_CLASS_HOMEOBOXES_AND_PSUDOGENES,PRD class homeoboxes and psudogenes LOF,LOF,Broad_moa
+780,CGS001-83881,MIXL1,KD_PRD_CLASS_HOMEOBOXES_AND_PSUDOGENES,PRD class homeoboxes and psudogenes LOF,LOF,Broad_moa
+781,CGS001-5013,OTX1,KD_PRD_CLASS_HOMEOBOXES_AND_PSUDOGENES,PRD class homeoboxes and psudogenes LOF,LOF,Broad_moa
+782,CGS001-5015,OTX2,KD_PRD_CLASS_HOMEOBOXES_AND_PSUDOGENES,PRD class homeoboxes and psudogenes LOF,LOF,Broad_moa
+783,BRD-K88560311,rucaparib,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+784,BRD-K87142802,veliparib,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+785,BRD-K75958195,pizotifen,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+786,BRD-K15588452,R-96544,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+787,BRD-K20742498,RS-39604,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+788,BRD-K30867024,SB-216641,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+789,BRD-A15530910,SDZ-21009,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+790,BRD-K00615600,AG-14361,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+791,BRD-K61314889,endo-IWR-1,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+792,BRD-K02113016,olaparib,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+793,BRD-K11163873,phenanthridone,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+794,BRD-K11853856,PJ-34,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+795,BRD-K88560311,rucaparib,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+796,BRD-K87142802,veliparib,CP_PARP_INHIBITOR,PARP inhibitor,CP,Broad_moa
+797,BRD-K75958195,pizotifen,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+798,BRD-K15588452,R-96544,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+799,BRD-K20742498,RS-39604,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+800,BRD-K30867024,SB-216641,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+801,BRD-A15530910,SDZ-21009,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+802,BRD-K53737926,amitriptyline,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+803,BRD-A85587465,bemesetron,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+804,BRD-K37289225,clozapine,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+805,BRD-K11911061,GR-127935,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+806,BRD-K46441700,GR-55562,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+807,BRD-K14282469,LY-165163,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+808,BRD-A30435184,metergoline,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+809,BRD-K63165456,norcyclobenzaprine,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+810,BRD-K75958195,pizotifen,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+811,BRD-K15588452,R-96544,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+812,BRD-K20742498,RS-39604,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+813,BRD-K30867024,SB-216641,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+814,BRD-A15530910,SDZ-21009,CP_SEROTONIN_RECEPTOR_ANTAGONIST,Serotonin receptor antagonist,CP,Broad_moa
+815,BRD-A56675431,altizide,CP_NA_K_CL_TRANSPORTER_INHIBITOR,Na-K-Cl transporter inhibitor,CP,Broad_moa
+816,BRD-A95869247,indapamide,CP_NA_K_CL_TRANSPORTER_INHIBITOR,Na-K-Cl transporter inhibitor,CP,Broad_moa
+817,BRD-A59303141,quinethazone,CP_NA_K_CL_TRANSPORTER_INHIBITOR,Na-K-Cl transporter inhibitor,CP,Broad_moa
+818,BRD-K28360340,TW-37,CP_BCL_INHIBITOR,BCL inhibitor,CP,Broad_moa
+819,BRD-K52751261,TAK-715,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+820,BRD-K07736136,VX-702,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+821,BRD-K91900765,VX-745,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+822,BRD-K09499853,KU-0060648,CP_DNA_DEPENDENT_PROTEIN_KINASE_INHIBITOR,DNA dependent protein kinase inhibitor,CP,Broad_moa
+823,BRD-K09537769,NU-7026,CP_DNA_DEPENDENT_PROTEIN_KINASE_INHIBITOR,DNA dependent protein kinase inhibitor,CP,Broad_moa
+824,BRD-K00337317,NU-7441,CP_DNA_DEPENDENT_PROTEIN_KINASE_INHIBITOR,DNA dependent protein kinase inhibitor,CP,Broad_moa
+825,BRD-K51018020,VAMA-37,CP_DNA_DEPENDENT_PROTEIN_KINASE_INHIBITOR,DNA dependent protein kinase inhibitor,CP,Broad_moa
+826,BRD-K28360340,TW-37,CP_BCL_INHIBITOR,BCL inhibitor,CP,Broad_moa
+827,BRD-K52751261,TAK-715,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+828,BRD-K07736136,VX-702,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+829,BRD-K91900765,VX-745,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+830,BRD-K56301217,ABT-737,CP_BCL_INHIBITOR,BCL inhibitor,CP,Broad_moa
+831,BRD-K39111395,BCL2-inhibitor,CP_BCL_INHIBITOR,BCL inhibitor,CP,Broad_moa
+832,BRD-K19295594,gossypol,CP_BCL_INHIBITOR,BCL inhibitor,CP,Broad_moa
+833,BRD-A13807286,HA-14-1,CP_BCL_INHIBITOR,BCL inhibitor,CP,Broad_moa
+834,BRD-K15600710,obatoclax,CP_BCL_INHIBITOR,BCL inhibitor,CP,Broad_moa
+835,BRD-K28360340,TW-37,CP_BCL_INHIBITOR,BCL inhibitor,CP,Broad_moa
+836,BRD-K52751261,TAK-715,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+837,BRD-K07736136,VX-702,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+838,BRD-K91900765,VX-745,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+839,BRD-K06234293,LY-364947,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+840,BRD-K95202259,ML-3163,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+841,BRD-K77133231,PD-169316,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+842,BRD-K54330070,SB-202190,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+843,BRD-K99291625,SB-203580,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+844,BRD-K82091397,SB-239063,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+845,BRD-K96809896,SKF-86002,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+846,BRD-K52751261,TAK-715,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+847,BRD-K07736136,VX-702,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+848,BRD-K91900765,VX-745,CP_P38_MAPK_INHIBITOR,P38 MAPK inhibitor,CP,Broad_moa
+849,ccsbBroad304_08873,P2RY12,OE_PURINERGIC_RECEPTORS_P2Y,Purinergic receptors P2Y GOF,GOF,Broad_moa
+850,ccsbBroad304_06681,P2RY2,OE_PURINERGIC_RECEPTORS_P2Y,Purinergic receptors P2Y GOF,GOF,Broad_moa
+851,ccsbBroad304_01137,P2RY6,OE_PURINERGIC_RECEPTORS_P2Y,Purinergic receptors P2Y GOF,GOF,Broad_moa
+852,ccsbBroad304_05417,P2RY8,OE_PURINERGIC_RECEPTORS_P2Y,Purinergic receptors P2Y GOF,GOF,Broad_moa
+853,BRD-K47983010,BX-795,CP_IKK_INHIBITOR,IKK inhibitor,CP,Broad_moa
+854,BRD-K14618467,IKK-16,CP_IKK_INHIBITOR,IKK inhibitor,CP,Broad_moa
+855,BRD-K74305673,IKK-2-inhibitor-V,CP_IKK_INHIBITOR,IKK inhibitor,CP,Broad_moa
+856,BRD-K51575138,TPCA-1,CP_IKK_INHIBITOR,IKK inhibitor,CP,Broad_moa
+857,BRD-A52193669,withaferin-a,CP_IKK_INHIBITOR,IKK inhibitor,CP,Broad_moa
+858,BRD-K83508485,FK-888,CP_TACHYKININ_ANTAGONIST,Tachykinin antagonist,CP,Broad_moa
+859,BRD-K52394958,GR-159897,CP_TACHYKININ_ANTAGONIST,Tachykinin antagonist,CP,Broad_moa
+860,BRD-K15791587,L-733060,CP_TACHYKININ_ANTAGONIST,Tachykinin antagonist,CP,Broad_moa
+861,BRD-A82590476,SDZ-NKT-343,CP_TACHYKININ_ANTAGONIST,Tachykinin antagonist,CP,Broad_moa
+862,BRD-A84702196,penicillin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+863,BRD-K50464341,berbamine,CP_CALMODULIN_ANTAGONIST,Calmodulin antagonist,CP,Broad_moa
+864,BRD-K45068323,W-13,CP_CALMODULIN_ANTAGONIST,Calmodulin antagonist,CP,Broad_moa
+865,BRD-K68341547,W-9,CP_CALMODULIN_ANTAGONIST,Calmodulin antagonist,CP,Broad_moa
+866,CGS001-6118,RPA2,KD_DNA_REPLICATION,DNA Replication LOF,LOF,Broad_moa
+867,CGS001-6119,RPA3,KD_DNA_REPLICATION,DNA Replication LOF,LOF,Broad_moa
+868,BRD-A84702196,penicillin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+869,CGS001-5111,PCNA,KD_DNA_REPLICATION,DNA Replication LOF,LOF,Broad_moa
+870,CGS001-5427,POLE2,KD_DNA_REPLICATION,DNA Replication LOF,LOF,Broad_moa
+871,CGS001-5887,RAD23B,KD_DNA_REPLICATION,DNA Replication LOF,LOF,Broad_moa
+872,CGS001-6117,RPA1,KD_DNA_REPLICATION,DNA Replication LOF,LOF,Broad_moa
+873,CGS001-6118,RPA2,KD_DNA_REPLICATION,DNA Replication LOF,LOF,Broad_moa
+874,CGS001-6119,RPA3,KD_DNA_REPLICATION,DNA Replication LOF,LOF,Broad_moa
+875,BRD-A84702196,penicillin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+876,BRD-A75368507,demeclocycline,CP_BACTERIAL_30S_RIBOSOMAL_SUBUNIT_INHIBITOR,Bacterial 30S ribosomal subunit inhibitor,CP,Broad_moa
+877,BRD-A88774919,doxycycline,CP_BACTERIAL_30S_RIBOSOMAL_SUBUNIT_INHIBITOR,Bacterial 30S ribosomal subunit inhibitor,CP,Broad_moa
+878,BRD-A45140972,meclocycline,CP_BACTERIAL_30S_RIBOSOMAL_SUBUNIT_INHIBITOR,Bacterial 30S ribosomal subunit inhibitor,CP,Broad_moa
+879,BRD-K11905747,spectinomycin,CP_BACTERIAL_30S_RIBOSOMAL_SUBUNIT_INHIBITOR,Bacterial 30S ribosomal subunit inhibitor,CP,Broad_moa
+880,BRD-A15493168,tetracycline,CP_BACTERIAL_30S_RIBOSOMAL_SUBUNIT_INHIBITOR,Bacterial 30S ribosomal subunit inhibitor,CP,Broad_moa
+881,BRD-A74500471,ethambutol,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+882,BRD-K18574842,nafcillin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+883,BRD-A84702196,penicillin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+884,BRD-K52735702,cefdinir,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+885,BRD-K04993501,cefixime,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+886,BRD-A67981824,cefotaxime,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+887,BRD-K63641886,cefuroxime,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+888,BRD-K90733503,cephalexin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+889,BRD-K05673000,dicloxacillin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+890,BRD-A74500471,ethambutol,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+891,BRD-K18574842,nafcillin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+892,BRD-A84702196,penicillin,CP_BACTERIAL_CELL_WALL_SYNTHESIS_INHIBITOR,Bacterial cell wall synthesis inhibitor,CP,Broad_moa
+893,CGS001-5499,PPP1CA,KD_PROTEIN_PHOSPHATASE_CATALYTIC_SUBUNITS,Protein phosphatase catalytic subunits LOF,LOF,Broad_moa
+894,CGS001-5516,PPP2CB,KD_PROTEIN_PHOSPHATASE_CATALYTIC_SUBUNITS,Protein phosphatase catalytic subunits LOF,LOF,Broad_moa
+895,CGS001-5531,PPP4C,KD_PROTEIN_PHOSPHATASE_CATALYTIC_SUBUNITS,Protein phosphatase catalytic subunits LOF,LOF,Broad_moa
+896,CGS001-207,AKT1,KD_IL4_PATHWAY,IL4 Pathway LOF,LOF,Broad_moa
+897,CGS001-3565,IL4,KD_IL4_PATHWAY,IL4 Pathway LOF,LOF,Broad_moa
+898,CGS001-3566,IL4R,KD_IL4_PATHWAY,IL4 Pathway LOF,LOF,Broad_moa
+899,CGS001-3716,JAK1,KD_IL4_PATHWAY,IL4 Pathway LOF,LOF,Broad_moa
+900,BRD-K17008822,BD-1008,CP_SIGMA_RECEPTOR_ANTAGONIST,Sigma receptor antagonist,CP,Broad_moa
+901,BRD-K29668683,BD-1063,CP_SIGMA_RECEPTOR_ANTAGONIST,Sigma receptor antagonist,CP,Broad_moa
+902,BRD-A15435692,BMY-14802,CP_SIGMA_RECEPTOR_ANTAGONIST,Sigma receptor antagonist,CP,Broad_moa
+903,CGS001-5294,PIK3CG,KD_PI3K_SIGNALING,PI3K Signaling LOF,LOF,Broad_moa
+904,BRD-A65671304,candesartan-cilextil,CP_ANGIOTENSIN_RECEPTOR_ANTAGONIST,Angiotensin receptor antagonist,CP,Broad_moa
+905,BRD-K60038276,irbesartan,CP_ANGIOTENSIN_RECEPTOR_ANTAGONIST,Angiotensin receptor antagonist,CP,Broad_moa
+906,BRD-K78485176,olmesartan-medoxomil,CP_ANGIOTENSIN_RECEPTOR_ANTAGONIST,Angiotensin receptor antagonist,CP,Broad_moa
+907,BRD-K11373525,ZD-7155,CP_ANGIOTENSIN_RECEPTOR_ANTAGONIST,Angiotensin receptor antagonist,CP,Broad_moa
+908,CGS001-5294,PIK3CG,KD_PI3K_SIGNALING,PI3K Signaling LOF,LOF,Broad_moa
+909,CGS001-472,ATM,KD_PI3K_SIGNALING,PI3K Signaling LOF,LOF,Broad_moa
+910,CGS001-3706,ITPKA,KD_PI3K_SIGNALING,PI3K Signaling LOF,LOF,Broad_moa
+911,CGS001-5286,PIK3C2A,KD_PI3K_SIGNALING,PI3K Signaling LOF,LOF,Broad_moa
+912,CGS001-5289,PIK3C3,KD_PI3K_SIGNALING,PI3K Signaling LOF,LOF,Broad_moa
+913,CGS001-5290,PIK3CA,KD_PI3K_SIGNALING,PI3K Signaling LOF,LOF,Broad_moa
+914,CGS001-5294,PIK3CG,KD_PI3K_SIGNALING,PI3K Signaling LOF,LOF,Broad_moa
+915,BRD-K61192372,capecitabine,CP_THYMIDYLATE_SYNTHASE_INHIBITOR,Thymidylate synthase inhibitor,CP,Broad_moa
+916,BRD-K11630072,carmofur,CP_THYMIDYLATE_SYNTHASE_INHIBITOR,Thymidylate synthase inhibitor,CP,Broad_moa
+917,BRD-K89839824,raltitrexed,CP_THYMIDYLATE_SYNTHASE_INHIBITOR,Thymidylate synthase inhibitor,CP,Broad_moa
+918,BRD-A85234536,N6-cyclopentyladenosine,CP_ADENOSINE_RECEPTOR_AGONIST,Adenosine receptor agonist,CP,Broad_moa
+919,BRD-A35338386,NECA,CP_ADENOSINE_RECEPTOR_AGONIST,Adenosine receptor agonist,CP,Broad_moa
+920,BRD-A48430263,pioglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+921,BRD-A81866333,CGS-21680,CP_ADENOSINE_RECEPTOR_AGONIST,Adenosine receptor agonist,CP,Broad_moa
+922,BRD-A64933752,CV-1808,CP_ADENOSINE_RECEPTOR_AGONIST,Adenosine receptor agonist,CP,Broad_moa
+923,BRD-K40578143,GR-79236,CP_ADENOSINE_RECEPTOR_AGONIST,Adenosine receptor agonist,CP,Broad_moa
+924,BRD-A48809242,IB-MECA,CP_ADENOSINE_RECEPTOR_AGONIST,Adenosine receptor agonist,CP,Broad_moa
+925,BRD-A85234536,N6-cyclopentyladenosine,CP_ADENOSINE_RECEPTOR_AGONIST,Adenosine receptor agonist,CP,Broad_moa
+926,BRD-A35338386,NECA,CP_ADENOSINE_RECEPTOR_AGONIST,Adenosine receptor agonist,CP,Broad_moa
+927,BRD-A48430263,pioglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+928,ccsbBroad304_01777,WNT1,OE_WNT_FAMILY,Wnt family GOF,GOF,Broad_moa
+929,ccsbBroad304_07135,WNT10B,OE_WNT_FAMILY,Wnt family GOF,GOF,Broad_moa
+930,ccsbBroad304_01779,WNT5A,OE_WNT_FAMILY,Wnt family GOF,GOF,Broad_moa
+931,ccsbBroad304_07136,WNT9A,OE_WNT_FAMILY,Wnt family GOF,GOF,Broad_moa
+932,BRD-K86465814,HO-013,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+933,BRD-K40656405,L-165041,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+934,BRD-K54708045,nTZDpa,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+935,BRD-A48430263,pioglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+936,ccsbBroad304_00859,IL12A,OE_INTERLEUKINS,Interleukins GOF,GOF,Broad_moa
+937,ccsbBroad304_00860,IL13,OE_INTERLEUKINS,Interleukins GOF,GOF,Broad_moa
+938,ccsbBroad304_00863,IL15,OE_INTERLEUKINS,Interleukins GOF,GOF,Broad_moa
+939,ccsbBroad304_06448,IL18,OE_INTERLEUKINS,Interleukins GOF,GOF,Broad_moa
+940,BRD-K96263742,GW-7647,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+941,BRD-K86465814,HO-013,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+942,BRD-K40656405,L-165041,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+943,BRD-K54708045,nTZDpa,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+944,BRD-A48430263,pioglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+945,CGS001-136259,KLF14,KD_KRUPPEL_LIKE_TRANSCRIPTION_FACTORS,Kruppel like transcription factors LOF,LOF,Broad_moa
+946,CGS001-10365,KLF2,KD_KRUPPEL_LIKE_TRANSCRIPTION_FACTORS,Kruppel like transcription factors LOF,LOF,Broad_moa
+947,CGS001-51274,KLF3,KD_KRUPPEL_LIKE_TRANSCRIPTION_FACTORS,Kruppel like transcription factors LOF,LOF,Broad_moa
+948,CGS001-25865,PRKD2,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+949,CGS001-8935,SKAP2,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+950,BRD-K96263742,GW-7647,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+951,BRD-K86465814,HO-013,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+952,BRD-K40656405,L-165041,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+953,BRD-K54708045,nTZDpa,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+954,BRD-A48430263,pioglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+955,CGS001-210,ALAD,KD_AHSP_PATHWAY,AHSP Pathway LOF,LOF,Broad_moa
+956,CGS001-2235,FECH,KD_AHSP_PATHWAY,AHSP Pathway LOF,LOF,Broad_moa
+957,CGS001-2623,GATA1,KD_AHSP_PATHWAY,AHSP Pathway LOF,LOF,Broad_moa
+958,CGS001-7389,UROD,KD_AHSP_PATHWAY,AHSP Pathway LOF,LOF,Broad_moa
+959,CGS001-25865,PRKD2,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+960,CGS001-8935,SKAP2,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+961,BRD-K96263742,GW-7647,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+962,BRD-K86465814,HO-013,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+963,BRD-K40656405,L-165041,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+964,BRD-K54708045,nTZDpa,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+965,BRD-A48430263,pioglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+966,CGS001-207,AKT1,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+967,CGS001-208,AKT2,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+968,CGS001-10000,AKT3,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+969,CGS001-2475,MTOR,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+970,CGS001-5170,PDPK1,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+971,CGS001-25865,PRKD2,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+972,CGS001-8935,SKAP2,KD_AKT_SIGNALING,Akt Signaling LOF,LOF,Broad_moa
+973,BRD-K96263742,GW-7647,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+974,BRD-K86465814,HO-013,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+975,BRD-K40656405,L-165041,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+976,BRD-K54708045,nTZDpa,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+977,BRD-A48430263,pioglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+978,BRD-K05396879,15-delta-prostaglandin-j2,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+979,BRD-K46018455,bezafibrate,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+980,BRD-A61858259,CAY-10415,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+981,BRD-A93000692,ciglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+982,BRD-K39965020,doconexent,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+983,BRD-K82983861,GW-0742,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+984,BRD-A15415227,GW-1929,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+985,BRD-K14880289,GW-501516,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+986,BRD-K96263742,GW-7647,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+987,BRD-K86465814,HO-013,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+988,BRD-K40656405,L-165041,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+989,BRD-K54708045,nTZDpa,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+990,BRD-A48430263,pioglitazone,CP_PPAR_RECEPTOR_AGONIST,PPAR receptor agonist,CP,Broad_moa
+991,BRD-K78280988,anandamide,CP_CANNABINOID_RECEPTOR_AGONIST,Cannabinoid receptor agonist,CP,Broad_moa
+992,BRD-K18799075,BAY-59-3074,CP_CANNABINOID_RECEPTOR_AGONIST,Cannabinoid receptor agonist,CP,Broad_moa
+993,BRD-K65285700,GP-1a,CP_CANNABINOID_RECEPTOR_AGONIST,Cannabinoid receptor agonist,CP,Broad_moa
+994,BRD-K10705233,GW-405833,CP_CANNABINOID_RECEPTOR_AGONIST,Cannabinoid receptor agonist,CP,Broad_moa
+995,BRD-K63150726,JTE-907,CP_CANNABINOID_RECEPTOR_AGONIST,Cannabinoid receptor agonist,CP,Broad_moa
+996,BRD-K17796732,JWH-015,CP_CANNABINOID_RECEPTOR_AGONIST,Cannabinoid receptor agonist,CP,Broad_moa
+997,BRD-K86958018,olvanil,CP_CANNABINOID_RECEPTOR_AGONIST,Cannabinoid receptor agonist,CP,Broad_moa
+998,BRD-K68095457,palmitoylethanolamide,CP_CANNABINOID_RECEPTOR_AGONIST,Cannabinoid receptor agonist,CP,Broad_moa
+999,CGS001-533,ATP6V0B,KD_V_TYPE_ATPASES,V type ATPases LOF,LOF,Broad_moa
+1000,CGS001-527,ATP6V0C,KD_V_TYPE_ATPASES,V type ATPases LOF,LOF,Broad_moa
+1001,CGS001-523,ATP6V1A,KD_V_TYPE_ATPASES,V type ATPases LOF,LOF,Broad_moa
+1002,CGS001-9296,ATP6V1F,KD_V_TYPE_ATPASES,V type ATPases LOF,LOF,Broad_moa
+1003,BRD-A23637604,oxymetholone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1004,BRD-A55393291,testosterone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1005,BRD-A48720949,testosterone-propionate,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1006,BRD-K10467831,tibolone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1007,BRD-K72541103,JAK3-inhibitor-I,CP_JAK_INHIBITOR,JAK inhibitor,CP,Broad_moa
+1008,BRD-K04546108,JAK3-inhibitor-VI,CP_JAK_INHIBITOR,JAK inhibitor,CP,Broad_moa
+1009,BRD-K23192422,lestaurtinib,CP_JAK_INHIBITOR,JAK inhibitor,CP,Broad_moa
+1010,BRD-K12502280,TG-101348,CP_JAK_INHIBITOR,JAK inhibitor,CP,Broad_moa
+1011,BRD-K52850071,WHI-P154,CP_JAK_INHIBITOR,JAK inhibitor,CP,Broad_moa
+1012,BRD-A23637604,oxymetholone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1013,BRD-A55393291,testosterone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1014,BRD-A48720949,testosterone-propionate,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1015,BRD-K10467831,tibolone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1016,BRD-K82164249,andarine,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1017,BRD-A39290993,cyproterone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1018,BRD-K16621777,enobosarm,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1019,BRD-A94793051,gestrinone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1020,BRD-K18523449,mestanolone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1021,BRD-K88679075,methandriol,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1022,BRD-A23637604,oxymetholone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1023,BRD-A55393291,testosterone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1024,BRD-A48720949,testosterone-propionate,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1025,BRD-K10467831,tibolone,CP_ANDROGEN_RECEPTOR_MODULATOR,Androgen receptor modulator,CP,Broad_moa
+1026,CGS001-2237,FEN1,KD_NON_HOMOLOGOUS_END_JOINING,Non Homologous End Joining LOF,LOF,Broad_moa
+1027,CGS001-10111,RAD50,KD_NON_HOMOLOGOUS_END_JOINING,Non Homologous End Joining LOF,LOF,Broad_moa
+1028,CGS001-7518,XRCC4,KD_NON_HOMOLOGOUS_END_JOINING,Non Homologous End Joining LOF,LOF,Broad_moa
+1029,CGS001-7520,XRCC5,KD_NON_HOMOLOGOUS_END_JOINING,Non Homologous End Joining LOF,LOF,Broad_moa
+1030,BRD-K76617868,fasudil,CP_RHO_ASSOCIATED_KINASE_INHIBITOR,Rho associated kinase inhibitor,CP,Broad_moa
+1031,BRD-K77793136,hydroxyfasudil,CP_RHO_ASSOCIATED_KINASE_INHIBITOR,Rho associated kinase inhibitor,CP,Broad_moa
+1032,BRD-K46678324,RHO-kinase-inhibitor-II,CP_RHO_ASSOCIATED_KINASE_INHIBITOR,Rho associated kinase inhibitor,CP,Broad_moa
+1033,BRD-K44084986,Y-27632,CP_RHO_ASSOCIATED_KINASE_INHIBITOR,Rho associated kinase inhibitor,CP,Broad_moa
+1034,CGS001-344387,CDKL4,KD_CYCLIN_DEPENDENT_KINASES,Cyclin dependent kinases LOF,LOF,Broad_moa
+1035,CGS001-8558,CDK10,KD_CYCLIN_DEPENDENT_KINASES,Cyclin dependent kinases LOF,LOF,Broad_moa
+1036,CGS001-1017,CDK2,KD_CYCLIN_DEPENDENT_KINASES,Cyclin dependent kinases LOF,LOF,Broad_moa
+1037,CGS001-1019,CDK4,KD_CYCLIN_DEPENDENT_KINASES,Cyclin dependent kinases LOF,LOF,Broad_moa
+1038,CGS001-1021,CDK6,KD_CYCLIN_DEPENDENT_KINASES,Cyclin dependent kinases LOF,LOF,Broad_moa
+1039,CGS001-1025,CDK9,KD_CYCLIN_DEPENDENT_KINASES,Cyclin dependent kinases LOF,LOF,Broad_moa
+1040,CGS001-344387,CDKL4,KD_CYCLIN_DEPENDENT_KINASES,Cyclin dependent kinases LOF,LOF,Broad_moa
+1041,BRD-A09495397,bicuculline,CP_GABA_RECEPTOR_ANTAGONIST,GABA receptor antagonist,CP,Broad_moa
+1042,BRD-A04668240,CGP-52432,CP_GABA_RECEPTOR_ANTAGONIST,GABA receptor antagonist,CP,Broad_moa
+1043,BRD-A85025557,NCS-382,CP_GABA_RECEPTOR_ANTAGONIST,GABA receptor antagonist,CP,Broad_moa
+1044,BRD-K57718010,pentylenetetrazol,CP_GABA_RECEPTOR_ANTAGONIST,GABA receptor antagonist,CP,Broad_moa
+1045,BRD-A24122750,saclofen,CP_GABA_RECEPTOR_ANTAGONIST,GABA receptor antagonist,CP,Broad_moa
+1046,BRD-A50928468,norgestrel,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1047,BRD-K64994968,progesterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1048,BRD-A11990600,lorazepam,CP_BENZODIAZEPINE_RECEPTOR_AGONIST,Benzodiazepine receptor agonist,CP,Broad_moa
+1049,BRD-K00532621,midazolam,CP_BENZODIAZEPINE_RECEPTOR_AGONIST,Benzodiazepine receptor agonist,CP,Broad_moa
+1050,BRD-K57930253,nitrazepam,CP_BENZODIAZEPINE_RECEPTOR_AGONIST,Benzodiazepine receptor agonist,CP,Broad_moa
+1051,BRD-K44876623,zolpidem,CP_BENZODIAZEPINE_RECEPTOR_AGONIST,Benzodiazepine receptor agonist,CP,Broad_moa
+1052,BRD-A39415247,norethisterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1053,BRD-A04756508,norgestimate,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1054,BRD-A50928468,norgestrel,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1055,BRD-K64994968,progesterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1056,CGS001-9459,ARHGEF6,KD_XLMR_GROUP_2,X linked mental retardation group 2 LOF,LOF,Broad_moa
+1057,CGS001-170302,ARX,KD_XLMR_GROUP_2,X linked mental retardation group 2 LOF,LOF,Broad_moa
+1058,CGS001-8239,USP9X,KD_XLMR_GROUP_2,X linked mental retardation group 2 LOF,LOF,Broad_moa
+1059,BRD-K94832621,Y-134,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1060,BRD-K05151076,ZK-164015,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1061,BRD-A39415247,norethisterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1062,BRD-A04756508,norgestimate,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1063,BRD-A50928468,norgestrel,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1064,BRD-K64994968,progesterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1065,BRD-K34776109,glimepiride,CP_KCNJ11,KCNJ11,CP,Broad_moa
+1066,BRD-K12219985,glipizide,CP_KCNJ11,KCNJ11,CP,Broad_moa
+1067,BRD-K80396088,gliquidone,CP_KCNJ11,KCNJ11,CP,Broad_moa
+1068,BRD-K00206590,P-1075,CP_KCNJ11,KCNJ11,CP,Broad_moa
+1069,BRD-K94832621,Y-134,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1070,BRD-K05151076,ZK-164015,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1071,BRD-A39415247,norethisterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1072,BRD-A04756508,norgestimate,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1073,BRD-A50928468,norgestrel,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1074,BRD-K64994968,progesterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1075,BRD-K29950728,clomifene,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1076,BRD-A83237092,fulvestrant,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1077,BRD-K63828191,raloxifene,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1078,BRD-K04210847,tamoxifen,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1079,BRD-K67174588,toremifene,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1080,BRD-K94832621,Y-134,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1081,BRD-K05151076,ZK-164015,CP_ESTROGEN_RECEPTOR_ANTAGONIST,Estrogen receptor antagonist,CP,Broad_moa
+1082,BRD-A39415247,norethisterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1083,BRD-A04756508,norgestimate,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1084,BRD-A50928468,norgestrel,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1085,BRD-K64994968,progesterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1086,BRD-A29731977,17-hydroxyprogesterone-caproate,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1087,BRD-K39391626,ethylestrenol,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1088,BRD-K90543092,levonorgestrel,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1089,BRD-K82216340,medroxyprogesterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1090,BRD-K12002134,megestrol,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1091,BRD-A35989968,megestrol-acetate,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1092,BRD-K27351809,nomegestrol-acetate,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1093,BRD-K96037667,norethindrone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1094,BRD-A39415247,norethisterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1095,BRD-A04756508,norgestimate,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1096,BRD-A50928468,norgestrel,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1097,BRD-K64994968,progesterone,CP_PROGESTERONE_RECEPTOR_AGONIST,Progesterone receptor agonist,CP,Broad_moa
+1098,CGS001-3590,IL11RA,KD_INTERLEUKIN_RECEPTORS,Interleukin receptors LOF,LOF,Broad_moa
+1099,CGS001-3566,IL4R,KD_INTERLEUKIN_RECEPTORS,Interleukin receptors LOF,LOF,Broad_moa
+1100,CGS001-3572,IL6ST,KD_INTERLEUKIN_RECEPTORS,Interleukin receptors LOF,LOF,Broad_moa
+1101,BRD-K30240666,clemastine,CP_HRH1,HRH1,CP,Broad_moa
+1102,BRD-K82795137,loratadine,CP_HRH1,HRH1,CP,Broad_moa
+1103,BRD-K47323024,methapyrilene,CP_HRH1,HRH1,CP,Broad_moa
+1104,CGS001-9112,MTA1,KD_GATA_ZINC_FINGER_DOMAIN_CONTAINING,GATA Zinc finger domain containing LOF,LOF,Broad_moa
+1105,CGS001-57504,MTA3,KD_GATA_ZINC_FINGER_DOMAIN_CONTAINING,GATA Zinc finger domain containing LOF,LOF,Broad_moa
+1106,CGS001-7227,TRPS1,KD_GATA_ZINC_FINGER_DOMAIN_CONTAINING,GATA Zinc finger domain containing LOF,LOF,Broad_moa
+1107,CGS001-1615,DARS,KD_AMINOACYL_TRNA_SYNTHETASES_CLASS_II,Aminoacyl tRNA synthetases class II LOF,LOF,Broad_moa
+1108,CGS001-2617,GARS,KD_AMINOACYL_TRNA_SYNTHETASES_CLASS_II,Aminoacyl tRNA synthetases class II LOF,LOF,Broad_moa
+1109,CGS001-3735,KARS,KD_AMINOACYL_TRNA_SYNTHETASES_CLASS_II,Aminoacyl tRNA synthetases class II LOF,LOF,Broad_moa
+1110,BRD-K08206212,entecavir,CP_REVERSE_TRANSCRIPTASE_INHIBITOR,Reverse transcriptase inhibitor,CP,Broad_moa
+1111,BRD-K15502390,nevirapine,CP_REVERSE_TRANSCRIPTASE_INHIBITOR,Reverse transcriptase inhibitor,CP,Broad_moa
+1112,BRD-K93880783,stavudine,CP_REVERSE_TRANSCRIPTASE_INHIBITOR,Reverse transcriptase inhibitor,CP,Broad_moa
+1113,BRD-K72903603,zidovudine,CP_REVERSE_TRANSCRIPTASE_INHIBITOR,Reverse transcriptase inhibitor,CP,Broad_moa
+1114,BRD-A39290993,cyproterone,CP_PROGESTERONE_RECEPTOR_ANTAGONIST,Progesterone receptor antagonist,CP,Broad_moa
+1115,BRD-K16621777,enobosarm,CP_PROGESTERONE_RECEPTOR_ANTAGONIST,Progesterone receptor antagonist,CP,Broad_moa
+1116,BRD-K39391626,ethylestrenol,CP_PROGESTERONE_RECEPTOR_ANTAGONIST,Progesterone receptor antagonist,CP,Broad_moa
+1117,BRD-A94793051,gestrinone,CP_PROGESTERONE_RECEPTOR_ANTAGONIST,Progesterone receptor antagonist,CP,Broad_moa
+1118,BRD-A44780397,mifepristone,CP_PROGESTERONE_RECEPTOR_ANTAGONIST,Progesterone receptor antagonist,CP,Broad_moa
+1119,BRD-K45033733,famciclovir,CP_DNA_POLYMERASE_INHIBITOR,DNA polymerase inhibitor,CP,Broad_moa
+1120,BRD-K22662435,ganciclovir,CP_DNA_POLYMERASE_INHIBITOR,DNA polymerase inhibitor,CP,Broad_moa
+1121,BRD-K46435977,valaciclovir,CP_DNA_POLYMERASE_INHIBITOR,DNA polymerase inhibitor,CP,Broad_moa
+1122,CGS001-1327,COX4I1,KD_MITOCHONDRIAL_COMPLEX_IV,Mitochondrial complex IV LOF,LOF,Broad_moa
+1123,CGS001-9377,COX5A,KD_MITOCHONDRIAL_COMPLEX_IV,Mitochondrial complex IV LOF,LOF,Broad_moa
+1124,CGS001-1329,COX5B,KD_MITOCHONDRIAL_COMPLEX_IV,Mitochondrial complex IV LOF,LOF,Broad_moa
+1125,ccsbBroad304_04496,LHX4,OE_LIM_CLASS_HOMEOBOXES,LIM class homeoboxes GOF,GOF,Broad_moa
+1126,ccsbBroad304_10157,LHX8,OE_LIM_CLASS_HOMEOBOXES,LIM class homeoboxes GOF,GOF,Broad_moa
+1127,ccsbBroad304_03761,LHX9,OE_LIM_CLASS_HOMEOBOXES,LIM class homeoboxes GOF,GOF,Broad_moa
+1128,CGS001-219333,USP12,KD_UBIQUITIN_SPECIFIC_PEPTIDASES,Ubiquitin-specific peptidases LOF,LOF,Broad_moa
+1129,CGS001-9097,USP14,KD_UBIQUITIN_SPECIFIC_PEPTIDASES,Ubiquitin-specific peptidases LOF,LOF,Broad_moa
+1130,CGS001-7874,USP7,KD_UBIQUITIN_SPECIFIC_PEPTIDASES,Ubiquitin-specific peptidases LOF,LOF,Broad_moa
+1131,BRD-K82562631,tolmetin,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1132,ccsbBroad304_01074,NDUFS3,OE_NADH_UBIQUINONE_OXIDOREDUCTASE_CORE_SUBUNITS,NADH ubiquinone oxidoreductase core subunits GOF,GOF,Broad_moa
+1133,ccsbBroad304_10064,NDUFS7,OE_NADH_UBIQUINONE_OXIDOREDUCTASE_CORE_SUBUNITS,NADH ubiquinone oxidoreductase core subunits GOF,GOF,Broad_moa
+1134,ccsbBroad304_01078,NDUFV2,OE_NADH_UBIQUINONE_OXIDOREDUCTASE_CORE_SUBUNITS,NADH ubiquinone oxidoreductase core subunits GOF,GOF,Broad_moa
+1135,BRD-K38323065,phenacetin,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1136,BRD-K82562631,tolmetin,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1137,BRD-A74667430,etodolac,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1138,BRD-K12513978,fenbufen,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1139,BRD-A44090213,indoprofen,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1140,BRD-K65146499,nabumetone,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1141,BRD-K38323065,phenacetin,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1142,BRD-K82562631,tolmetin,CP_CYCLOOXYGENASE_INHIBITOR,Cyclooxygenase inhibitor,CP,Broad_moa
+1143,CGS001-6663,SOX10,KD_SRY_SEX_DETERMINING_REGION_Y_BOXES,SRY LOF,LOF,Broad_moa
+1144,CGS001-6664,SOX11,KD_SRY_SEX_DETERMINING_REGION_Y_BOXES,SRY LOF,LOF,Broad_moa
+1145,CGS001-6657,SOX2,KD_SRY_SEX_DETERMINING_REGION_Y_BOXES,SRY LOF,LOF,Broad_moa
+1146,CGS001-6658,SOX3,KD_SRY_SEX_DETERMINING_REGION_Y_BOXES,SRY LOF,LOF,Broad_moa
+1147,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1148,BRD-K02950022,BMS-299897,CP_GAMMA_SECRETASE_INHIBITOR,Gamma secretase inhibitor,CP,Broad_moa
+1149,BRD-A68929948,DAPT-GSI-IX,CP_GAMMA_SECRETASE_INHIBITOR,Gamma secretase inhibitor,CP,Broad_moa
+1150,BRD-K22010301,JLK-6,CP_GAMMA_SECRETASE_INHIBITOR,Gamma secretase inhibitor,CP,Broad_moa
+1151,BRD-A39747742,estradiol-valerate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1152,BRD-A18620900,estriol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1153,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1154,BRD-K06895174,cisapride,CP_SEROTONIN_RECEPTOR_AGONIST,Serotonin receptor agonist,CP,Broad_moa
+1155,BRD-K47659338,EMD-386088,CP_SEROTONIN_RECEPTOR_AGONIST,Serotonin receptor agonist,CP,Broad_moa
+1156,BRD-A49370193,Ro-60-0175,CP_SEROTONIN_RECEPTOR_AGONIST,Serotonin receptor agonist,CP,Broad_moa
+1157,BRD-K46766488,S-14506,CP_SEROTONIN_RECEPTOR_AGONIST,Serotonin receptor agonist,CP,Broad_moa
+1158,BRD-A39747742,estradiol-valerate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1159,BRD-A18620900,estriol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1160,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1161,CGS001-8900,CCNA1,KD_CYCLINS,Cyclins LOF,LOF,Broad_moa
+1162,CGS001-595,CCND1,KD_CYCLINS,Cyclins LOF,LOF,Broad_moa
+1163,CGS001-902,CCNH,KD_CYCLINS,Cyclins LOF,LOF,Broad_moa
+1164,CGS001-57018,CCNL1,KD_CYCLINS,Cyclins LOF,LOF,Broad_moa
+1165,BRD-A91452556,estradiol-cypionate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1166,BRD-A39747742,estradiol-valerate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1167,BRD-A18620900,estriol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1168,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1169,BRD-K02283807,GR-32191,CP_THROMBOXANE_RECEPTOR_ANTAGONIST,Thromboxane receptor antagonist,CP,Broad_moa
+1170,BRD-K89402695,L-655240,CP_THROMBOXANE_RECEPTOR_ANTAGONIST,Thromboxane receptor antagonist,CP,Broad_moa
+1171,BRD-K67277431,picotamide,CP_THROMBOXANE_RECEPTOR_ANTAGONIST,Thromboxane receptor antagonist,CP,Broad_moa
+1172,BRD-A18917088,estradiol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1173,BRD-A36066264,estradiol-benzoate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1174,BRD-A91452556,estradiol-cypionate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1175,BRD-A39747742,estradiol-valerate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1176,BRD-A18620900,estriol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1177,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1178,CGS001-24140,FTSJ1,KD_XLMR_GROUP_1,X linked mental retardation group 1 LOF,LOF,Broad_moa
+1179,CGS001-4204,MECP2,KD_XLMR_GROUP_1,X linked mental retardation group 1 LOF,LOF,Broad_moa
+1180,CGS001-5063,PAK3,KD_XLMR_GROUP_1,X linked mental retardation group 1 LOF,LOF,Broad_moa
+1181,BRD-K62374253,rufloxacin,CP_BACTERIAL_DNA_GYRASE_INHIBITOR,Bacterial DNA gyrase inhibitor,CP,Broad_moa
+1182,BRD-A18917088,estradiol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1183,BRD-A36066264,estradiol-benzoate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1184,BRD-A91452556,estradiol-cypionate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1185,BRD-A39747742,estradiol-valerate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1186,BRD-A18620900,estriol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1187,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1188,BRD-K76534306,enrofloxacin,CP_BACTERIAL_DNA_GYRASE_INHIBITOR,Bacterial DNA gyrase inhibitor,CP,Broad_moa
+1189,BRD-A74980173,gatifloxacin,CP_BACTERIAL_DNA_GYRASE_INHIBITOR,Bacterial DNA gyrase inhibitor,CP,Broad_moa
+1190,BRD-K71926323,marbofloxacin,CP_BACTERIAL_DNA_GYRASE_INHIBITOR,Bacterial DNA gyrase inhibitor,CP,Broad_moa
+1191,BRD-K66615216,moxifloxacin,CP_BACTERIAL_DNA_GYRASE_INHIBITOR,Bacterial DNA gyrase inhibitor,CP,Broad_moa
+1192,BRD-K62374253,rufloxacin,CP_BACTERIAL_DNA_GYRASE_INHIBITOR,Bacterial DNA gyrase inhibitor,CP,Broad_moa
+1193,BRD-A18917088,estradiol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1194,BRD-A36066264,estradiol-benzoate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1195,BRD-A91452556,estradiol-cypionate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1196,BRD-A39747742,estradiol-valerate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1197,BRD-A18620900,estriol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1198,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1199,CGS001-7097,TLR2,KD_TOLL_LIKE_RECEPTORS,Toll like receptors LOF,LOF,Broad_moa
+1200,CGS001-7099,TLR4,KD_TOLL_LIKE_RECEPTORS,Toll like receptors LOF,LOF,Broad_moa
+1201,CGS001-7100,TLR5,KD_TOLL_LIKE_RECEPTORS,Toll like receptors LOF,LOF,Broad_moa
+1202,BRD-K95309561,dienestrol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1203,BRD-K45330754,diethylstilbestrol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1204,BRD-K04046242,equilin,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1205,BRD-A18917088,estradiol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1206,BRD-A36066264,estradiol-benzoate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1207,BRD-A91452556,estradiol-cypionate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1208,BRD-A39747742,estradiol-valerate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1209,BRD-A18620900,estriol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1210,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1211,BRD-K66766661,17-beta-estradiol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1212,BRD-K97509413,coumestrol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1213,BRD-K42095107,daidzein,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1214,BRD-A27143604,diarylpropionitrile,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1215,BRD-K95309561,dienestrol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1216,BRD-K45330754,diethylstilbestrol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1217,BRD-K04046242,equilin,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1218,BRD-A18917088,estradiol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1219,BRD-A36066264,estradiol-benzoate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1220,BRD-A91452556,estradiol-cypionate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1221,BRD-A39747742,estradiol-valerate,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1222,BRD-A18620900,estriol,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1223,BRD-K81839095,estrone,CP_ESTROGEN_RECEPTOR_AGONIST,Estrogen receptor agonist,CP,Broad_moa
+1224,ccsbBroad304_02761,SIRT3,OE_SIRTUINS,Sirtuins GOF,GOF,Broad_moa
+1225,ccsbBroad304_07880,SIRT5,OE_SIRTUINS,Sirtuins GOF,GOF,Broad_moa
+1226,ccsbBroad304_03332,SIRT6,OE_SIRTUINS,Sirtuins GOF,GOF,Broad_moa
+1227,CGS001-5594,MAPK1,KD_MITOGEN_ACTIVATED_PROTEIN_KINASES,Mitogen activated protein kinases LOF,LOF,Broad_moa
+1228,CGS001-1432,MAPK14,KD_MITOGEN_ACTIVATED_PROTEIN_KINASES,Mitogen activated protein kinases LOF,LOF,Broad_moa
+1229,CGS001-5595,MAPK3,KD_MITOGEN_ACTIVATED_PROTEIN_KINASES,Mitogen activated protein kinases LOF,LOF,Broad_moa
+1230,CGS001-5601,MAPK9,KD_MITOGEN_ACTIVATED_PROTEIN_KINASES,Mitogen activated protein kinases LOF,LOF,Broad_moa
+1231,ccsbBroad304_03683,APOM,OE_LIPOCALINS,Lipocalins GOF,GOF,Broad_moa
+1232,ccsbBroad304_00931,LCN2,OE_LIPOCALINS,Lipocalins GOF,GOF,Broad_moa
+1233,ccsbBroad304_06852,RBP4,OE_LIPOCALINS,Lipocalins GOF,GOF,Broad_moa
+1234,BRD-K52721684,PCO-400,CP_POTASSIUM_CHANNEL_ACTIVATOR,Potassium channel activator,CP,Broad_moa
+1235,BRD-K45117373,Y-26763,CP_POTASSIUM_CHANNEL_ACTIVATOR,Potassium channel activator,CP,Broad_moa
+1236,BRD-K95609758,BMS-191011,CP_POTASSIUM_CHANNEL_ACTIVATOR,Potassium channel activator,CP,Broad_moa
+1237,BRD-K32526544,DCEBIO,CP_POTASSIUM_CHANNEL_ACTIVATOR,Potassium channel activator,CP,Broad_moa
+1238,BRD-K24526313,levcromakalim,CP_POTASSIUM_CHANNEL_ACTIVATOR,Potassium channel activator,CP,Broad_moa
+1239,BRD-K00206590,P-1075,CP_POTASSIUM_CHANNEL_ACTIVATOR,Potassium channel activator,CP,Broad_moa
+1240,BRD-K52721684,PCO-400,CP_POTASSIUM_CHANNEL_ACTIVATOR,Potassium channel activator,CP,Broad_moa
+1241,BRD-K45117373,Y-26763,CP_POTASSIUM_CHANNEL_ACTIVATOR,Potassium channel activator,CP,Broad_moa
+1242,CGS001-338,APOB,KD_APOLIPOPROTEINS,Apolipoproteins LOF,LOF,Broad_moa
+1243,CGS001-344,APOC2,KD_APOLIPOPROTEINS,Apolipoproteins LOF,LOF,Broad_moa
+1244,CGS001-348,APOE,KD_APOLIPOPROTEINS,Apolipoproteins LOF,LOF,Broad_moa
+1245,ccsbBroad304_00046,AKT1,OE_AKT_SIGNALING,Akt Signaling GOF,GOF,Broad_moa
+1246,ccsbBroad304_00047,AKT2,OE_AKT_SIGNALING,Akt Signaling GOF,GOF,Broad_moa
+1247,ccsbBroad304_07529,AKT3,OE_AKT_SIGNALING,Akt Signaling GOF,GOF,Broad_moa
+1248,BRD-K31238592,devazepide,CP_CCK_RECEPTOR_ANTAGONIST,CCK receptor antagonist,CP,Broad_moa
+1249,BRD-K33864865,LY-225910,CP_CCK_RECEPTOR_ANTAGONIST,CCK receptor antagonist,CP,Broad_moa
+1250,BRD-K35629949,SR-27897,CP_CCK_RECEPTOR_ANTAGONIST,CCK receptor antagonist,CP,Broad_moa
+1251,CGS001-3673,ITGA2,KD_INTEGRIN_SUBUNITS_ALPHA,Integrin subunits alpha LOF,LOF,Broad_moa
+1252,CGS001-3675,ITGA3,KD_INTEGRIN_SUBUNITS_ALPHA,Integrin subunits alpha LOF,LOF,Broad_moa
+1253,CGS001-3685,ITGAV,KD_INTEGRIN_SUBUNITS_ALPHA,Integrin subunits alpha LOF,LOF,Broad_moa
+1254,CGS001-25966,C2CD2,KD_C2_DOMAIN_CONTAINING,C2 domain containing LOF,LOF,Broad_moa
+1255,CGS001-22841,RAB11FIP2,KD_C2_DOMAIN_CONTAINING,C2 domain containing LOF,LOF,Broad_moa
+1256,CGS001-7405,UVRAG,KD_C2_DOMAIN_CONTAINING,C2 domain containing LOF,LOF,Broad_moa
+1257,ccsbBroad304_06007,CISH,OE_SUPRESSORS_OF_CYTOKINE_SIGNALING,Supressors of cytokine signaling GOF,GOF,Broad_moa
+1258,ccsbBroad304_02028,SOCS2,OE_SUPRESSORS_OF_CYTOKINE_SIGNALING,Supressors of cytokine signaling GOF,GOF,Broad_moa
+1259,ccsbBroad304_04767,SOCS4,OE_SUPRESSORS_OF_CYTOKINE_SIGNALING,Supressors of cytokine signaling GOF,GOF,Broad_moa
+1260,BRD-A51820102,econazole,CP_STEROL_DEMETHYLASE_INHIBITOR,Sterol demethylase inhibitor,CP,Broad_moa
+1261,BRD-K29113274,ketoconazole,CP_STEROL_DEMETHYLASE_INHIBITOR,Sterol demethylase inhibitor,CP,Broad_moa
+1262,BRD-K86204871,terconazole,CP_STEROL_DEMETHYLASE_INHIBITOR,Sterol demethylase inhibitor,CP,Broad_moa
+1263,BRD-K90864987,cobalt(II)-chloride,CP_HIF_ACTIVATOR,HIF activator,CP,Broad_moa
+1264,BRD-K88701661,dimercaptosuccinic-acid,CP_HIF_ACTIVATOR,HIF activator,CP,Broad_moa
+1265,BRD-K44432556,VU-0418946-1,CP_HIF_ACTIVATOR,HIF activator,CP,Broad_moa
+1266,BRD-K76907295,VU-0418947-2,CP_HIF_ACTIVATOR,HIF activator,CP,Broad_moa
+1267,ccsbBroad304_06220,FOS,OE_FOS_TRANSCRIPTION_FACTOR_FAMILY,FOS transcription factor family GOF,GOF,Broad_moa
+1268,ccsbBroad304_01858,FOSL1,OE_FOS_TRANSCRIPTION_FACTOR_FAMILY,FOS transcription factor family GOF,GOF,Broad_moa
+1269,ccsbBroad304_00587,FOSL2,OE_FOS_TRANSCRIPTION_FACTOR_FAMILY,FOS transcription factor family GOF,GOF,Broad_moa
+1270,CGS001-5585,PKN1,KD_C2_DOMAIN_CONTAINING_PROTEIN_KINASES,C2 domain containing protein kinases LOF,LOF,Broad_moa
+1271,CGS001-5579,PRKCB,KD_C2_DOMAIN_CONTAINING_PROTEIN_KINASES,C2 domain containing protein kinases LOF,LOF,Broad_moa
+1272,CGS001-5588,PRKCQ,KD_C2_DOMAIN_CONTAINING_PROTEIN_KINASES,C2 domain containing protein kinases LOF,LOF,Broad_moa
+1273,CGS001-2068,ERCC2,KD_GENERAL_TRANSCRIPTION_FACTORS_GROUP_1,General transcription factors group 1 LOF,LOF,Broad_moa
+1274,CGS001-2969,GTF2I,KD_GENERAL_TRANSCRIPTION_FACTORS_GROUP_1,General transcription factors group 1 LOF,LOF,Broad_moa
+1275,CGS001-2976,GTF3C2,KD_GENERAL_TRANSCRIPTION_FACTORS_GROUP_1,General transcription factors group 1 LOF,LOF,Broad_moa
+1276,ccsbBroad304_00561,FGFR1,OE_TARGETS_OF_VEGFR_INHIBITORS,Targets of VEGFR inhibitors GOF,GOF,Broad_moa
+1277,ccsbBroad304_00580,FLT1,OE_TARGETS_OF_VEGFR_INHIBITORS,Targets of VEGFR inhibitors GOF,GOF,Broad_moa
+1278,ccsbBroad304_06708,PDGFRB,OE_TARGETS_OF_VEGFR_INHIBITORS,Targets of VEGFR inhibitors GOF,GOF,Broad_moa
+1279,CGS001-10038,PARP2,KD_POLY_ADP_RIBOSE_POLYMERASES,Poly ADP ribose polymerases LOF,LOF,Broad_moa
+1280,CGS001-143,PARP4,KD_POLY_ADP_RIBOSE_POLYMERASES,Poly ADP ribose polymerases LOF,LOF,Broad_moa
+1281,CGS001-80351,TNKS2,KD_POLY_ADP_RIBOSE_POLYMERASES,Poly ADP ribose polymerases LOF,LOF,Broad_moa

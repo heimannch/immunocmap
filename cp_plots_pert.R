@@ -1,6 +1,6 @@
 #Code to make plots of differential expression across genes and compounds
 
-#source('gene_modulation.R')
+source('gene_modulation.R')
 library(pheatmap)
 library(ggrepel)
 
@@ -228,11 +228,11 @@ plot_z_by_pcl <- function(gene_id, tidy_z, my_pcl, pcl_annot, cell_display = FAL
   
   gene_symbol <- subset(tcga_genes, pr_gene_id == gene_id, pr_gene_symbol)
   
+  #organizing the list of cell lines that are present in the tidy_z df
+  celllines <- subset(siginfo, sig_id %in% tidy_z$sig_id, cell_id) %>% distinct()
+  
   ##control data for the selected genes and cell lines
-  celllines <- subset(siginfo, sig_id %in% mod_list$sig_id, cell_id) %>% distinct()
-  print(celllines)
   sigs_control <- list_ctl %>% filter(cell_id %in% celllines$cell_id) %>% select(sig_id)
-  print(sigs_control)
   ctl_z <- get_zscores(gene_id, sigs_control$sig_id)
   
   
