@@ -7,15 +7,17 @@ library(data.table)
 #At ISB
 #User needs to be connected with 'smb://bassonn/CancerRegulome14'
 
-siginfo_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_sig_info.txt"
-sig_metrics_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_sig_metrics.txt.gz"
-cellinfo_path <-  "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_cell_info.txt"
-geneinfo_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_gene_info.txt.gz"
-geneinfo_lm_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_gene_info_delta_landmark.txt.gz"
-pertinfo_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_pert_info.txt"
-pertmetrics_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_pert_metrics.txt.gz"
-instinfo_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_inst_info.txt.gz"
-ds_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx"
+folder_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/"
+
+siginfo_path <- paste(folder_path, "GSE92742_Broad_LINCS_sig_info.txt", sep = "")
+sig_metrics_path <- paste(folder_path,"GSE92742_Broad_LINCS_sig_metrics.txt.gz", sep = "")
+cellinfo_path <-  paste(folder_path,"GSE92742_Broad_LINCS_cell_info.txt", sep = "")
+geneinfo_path <- paste(folder_path,"GSE92742_Broad_LINCS_gene_info.txt.gz", sep = "")
+geneinfo_lm_path <- paste(folder_path, "GSE92742_Broad_LINCS_gene_info_delta_landmark.txt.gz", sep = "")
+pertinfo_path <- paste(folder_path, "GSE92742_Broad_LINCS_pert_info.txt", sep = "")
+pertmetrics_path <- paste(folder_path,"GSE92742_Broad_LINCS_pert_metrics.txt.gz", sep = "")
+instinfo_path <- paste(folder_path,"GSE92742_Broad_LINCS_inst_info.txt.gz", sep = "")
+ds_path <- paste(folder_path,"GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx", sep = "")
 
 #Files saved locally
 pcl_path <- "data/pcls.csv"
