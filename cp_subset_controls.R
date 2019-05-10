@@ -91,13 +91,14 @@ get_z_threshold <- function(cell_id, list_ctls = list_ctl, pert = FALSE){
 get_z_list <- function(list_cells = "all", tissue = FALSE, list_ctls = list_ctl, pert = FALSE){
 #by default, it is returned a list with all cell lines with controls.
 #The user needs to input a cell line name, but it can be changed by supplying a primary site name
-  
+
+#Geting the list of cell_id requested  
   if(tissue != FALSE){
     cells <- subset(list_ctls, primary_site %in% tissue, cell_id)
     cells <- unique(cells$cell_id)
-  }else if(list_cells == "all"){
+  }else if(any(list_cells == "all")){
     cells <- subset(cellinfo, cell_id %in% list_ctl$cell_id)
-    cells <- unique(cells$cell_id) 
+    cells <- unique(cells$cell_id)
   }else{
     cells <- unique(list_cells) 
   }
