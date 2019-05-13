@@ -7,6 +7,7 @@
 source('load_data.R')
 library(stringr)
 library(skimr)
+library(plyr)
 library(dplyr)
 
 # 1. Selection of controls for analysis of COMPOUNDS!
@@ -88,7 +89,7 @@ get_z_threshold <- function(cell_id, list_ctls = list_ctl, pert = FALSE){
 }
 
 #Creating a list of the summary statistics of the 1% and 99% quantiles of z-scores of controls for a given cell line
-get_z_list <- function(list_cells = "all", tissue = FALSE, list_ctls = list_ctl, pert = FALSE){
+get_z_list <- function(list_cells = "MCF7", tissue = FALSE, list_ctls = list_ctl, pert = FALSE){
 #by default, it is returned a list with all cell lines with controls.
 #The user needs to input a cell line name, but it can be changed by supplying a primary site name
 
@@ -96,9 +97,9 @@ get_z_list <- function(list_cells = "all", tissue = FALSE, list_ctls = list_ctl,
   if(tissue != FALSE){
     cells <- subset(list_ctls, primary_site %in% tissue, cell_id)
     cells <- unique(cells$cell_id)
-  }else if(any(list_cells == "all")){
-    cells <- subset(cellinfo, cell_id %in% list_ctl$cell_id)
-    cells <- unique(cells$cell_id)
+  # }else if(any(list_cells == "all")){
+  #   cells <- subset(cellinfo, cell_id %in% list_ctl$cell_id)
+  #   cells <- unique(cells$cell_id)
   }else{
     cells <- unique(list_cells) 
   }
