@@ -1,13 +1,16 @@
 #Module to load all the data in. Needs to be connected with the 'smb://bassonn/CancerRegulome14' server at ISB.
+#!/usr/bin/env Rscript
 
 library(data.table)
 
 
+#User should set the UNIX path to files by running: 'export CMAP_HOME=path/to/files'
 
-#At ISB
-#User needs to be connected with 'smb://bassonn/CancerRegulome14'
+#default folder_path is: "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/"
+#For the default option, user at ISB needs to be connected with 'smb://bassonn/CancerRegulome14'
 
-folder_path <- "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/"
+folder_path <- Sys.getenv("CMAP_HOME")
+
 
 siginfo_path <- paste(folder_path, "GSE92742_Broad_LINCS_sig_info.txt", sep = "")
 sig_metrics_path <- paste(folder_path,"GSE92742_Broad_LINCS_sig_metrics.txt.gz", sep = "")
