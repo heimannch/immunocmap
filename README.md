@@ -7,6 +7,7 @@ For a tutorial, please refer to the file ```cp_analysis_TNBC_cells.Rmd```.
 The code is developed entirely in **R** using the **R Studio** development environment. In addition, the following packages are used:
 - ```cmapR```
 - ```dplyr```
+- ```data.table```
 - ```ggplot2```
 - ```ggrepel```
 - ```pheatmap```
