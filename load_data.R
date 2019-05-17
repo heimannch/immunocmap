@@ -1,26 +1,24 @@
-#Module to load all the data in. Needs to be connected with the 'smb://bassonn/CancerRegulome14' server at ISB.
+#Module to load all the data in.
 #!/usr/bin/env Rscript
 
 library(data.table)
 
 
-#User should set the UNIX path to files by running: 'export CMAP_HOME=path/to/files'
+#User should set the UNIX path to files by running in the command line: 'export CMAP_HOME=path/to/files'
 
-#default folder_path is: "/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742/"
-#For the default option, user at ISB needs to be connected with 'smb://bassonn/CancerRegulome14'
 
 folder_path <- Sys.getenv("CMAP_HOME")
 
 
-siginfo_path <- paste(folder_path, "GSE92742_Broad_LINCS_sig_info.txt", sep = "")
-sig_metrics_path <- paste(folder_path,"GSE92742_Broad_LINCS_sig_metrics.txt.gz", sep = "")
-cellinfo_path <-  paste(folder_path,"GSE92742_Broad_LINCS_cell_info.txt", sep = "")
-geneinfo_path <- paste(folder_path,"GSE92742_Broad_LINCS_gene_info.txt.gz", sep = "")
-geneinfo_lm_path <- paste(folder_path, "GSE92742_Broad_LINCS_gene_info_delta_landmark.txt.gz", sep = "")
-pertinfo_path <- paste(folder_path, "GSE92742_Broad_LINCS_pert_info.txt", sep = "")
-pertmetrics_path <- paste(folder_path,"GSE92742_Broad_LINCS_pert_metrics.txt.gz", sep = "")
-instinfo_path <- paste(folder_path,"GSE92742_Broad_LINCS_inst_info.txt.gz", sep = "")
-ds_path <- paste(folder_path,"GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx", sep = "")
+siginfo_path <- paste(folder_path, "/GSE92742_Broad_LINCS_sig_info.txt", sep = "")
+sig_metrics_path <- paste(folder_path,"/GSE92742_Broad_LINCS_sig_metrics.txt.gz", sep = "")
+cellinfo_path <-  paste(folder_path,"/GSE92742_Broad_LINCS_cell_info.txt", sep = "")
+geneinfo_path <- paste(folder_path,"/GSE92742_Broad_LINCS_gene_info.txt.gz", sep = "")
+geneinfo_lm_path <- paste(folder_path, "/GSE92742_Broad_LINCS_gene_info_delta_landmark.txt.gz", sep = "")
+pertinfo_path <- paste(folder_path, "/GSE92742_Broad_LINCS_pert_info.txt", sep = "")
+pertmetrics_path <- paste(folder_path,"/GSE92742_Broad_LINCS_pert_metrics.txt.gz", sep = "")
+instinfo_path <- paste(folder_path,"/GSE92742_Broad_LINCS_inst_info.txt.gz", sep = "")
+ds_path <- paste(folder_path,"/GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx", sep = "")
 
 #Files saved locally
 pcl_path <- "data/pcls.csv"

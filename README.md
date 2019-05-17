@@ -18,8 +18,18 @@ The ```cmapR``` package is not available in CRAN as for this moment. To install 
 ```devtools::install_github("cmap/cmapR")```
 
 # Data
+
 All the data used for this project is available for download at [GSE92742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742). 
+The files needed in this project are:
+```GSE92742_Broad_LINCS_sig_info.txt```
+```GSE92742_Broad_LINCS_sig_metrics.txt.gz```
+```GSE92742_Broad_LINCS_cell_info.txt```
+```GSE92742_Broad_LINCS_gene_info.txt.gz```
+```GSE92742_Broad_LINCS_gene_info_delta_landmark.txt.gz```
+```GSE92742_Broad_LINCS_pert_info.txt```
+```GSE92742_Broad_LINCS_pert_metrics.txt.gz```
+```GSE92742_Broad_LINCS_inst_info.txt.gz```
+```GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx```
 
-The ```load_data.R``` file takes care of loading the data for users at the Institute of Systems Biology (ISB). For these users, the necessary files are available at the ```smb://bassonn/CancerRegulome14``` server. If you are connected to this server, there is no need to download the data.
 
-One can set a different path to the data by setting the variable ```CMAP_HOME``` to the desired location. The present default is the folder at the ISB server.
+The ```load_data.R``` file takes care of loading the data. Users need to set the path to the downloaded data by setting the variable ```CMAP_HOME``` to the desired location, by running in the command line: ```export CMAP_HOME=path/to/files```

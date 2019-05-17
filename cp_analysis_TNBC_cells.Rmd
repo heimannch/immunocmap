@@ -1,58 +1,104 @@
 ---
-title: "Analysis of CMap signatures of COMPOUNDS and its effects on Cancer Immunomodulators Genes in Triple Negative Breast Cancer (TNBC) cell lines"
+title: "Analysis of Connectivity Map signatures of *compounds* and its effects on Cancer Immunomodulators Genes in Triple Negative Breast Cancer (TNBC) cell lines"
 output: html_notebook
 ---
 
+
 In this notebook I am going to check the distribution of differential z-scores of expression data for the genes mapped as cancer immunomodulators by the TCGA PanImmune Group.
+
 The idea here is to compare the expression level for signatures with more than 3 replicates. After that, I will take a closer look at the signatures that seem to strongly modulate our genes of interest, and then subset this analysis by classes of drugs.
 
+*improve intro*
 
-```{r, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE, results='hide'}
 #loads all metadata and drugs annotation into memory
-#User at ISB needs to be connected with 'smb://bassonn/CancerRegulome14'
+#User needs to set the path for the Cmap files by running 'export CMAP_HOME=path/to/files'
+#Other alternative is to use use the following line of code to set the files path for this session. 
+Sys.setenv(CMAP_HOME="/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742")
 source("load_data.R")
 ```
 
 
-```{r, warning=FALSE, message=FALSE}
-source("cp_subset_controls.R") #returns list of controls, contains functions to calculate threshold and returns "sig", the list of signatures with compounds and 3 or more replicates
-```
-
-
-```{r, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE, results='hide'}
 #Functions for querying level 5 data and computing up and down modulation
 source("gene_modulation.R")
 #Functions for generating specific plots
 source("cp_plots_pert.R")
 ```
+
+
 #1. Collecting the data and classifying up and down modulation
 
-The classification is made based on a threshold calculated based on the controls. We take the mean of z-scores that separate the 1% and 99% of z-scores of expression of the controls.
+The gene expression data for the controls is used for the classification if a treatment is up or down-modulating the expression of a gene. The file `cp_subset_controls.R` contains functions to manipulate the controls and also outputs the dataframes `list_ctl` and `sigs`.  
 
-Not all cell lines on Cmap have controls. As such, the analysis is available only for cell lines from the following tissues:
-```{r}
-list_ctl %>% group_by(primary_site)
+
+`list_ctl` contains the identification of all experiments in Cmap that are controls for perturbations with compounds. For more information about the controls in the Cmap dataset, refer to the question ["What are the perturbagen types and controls in the CMap dataset?" at the Connectopedia](https://clue.io/connectopedia/perturbagen_types_and_controls). 
+
+`sigs` is a dataframe with all experiments with compounds that have 3 or more replicates.
+
+```{r, warning=FALSE, message=FALSE, results='hide'}
+source("cp_subset_controls.R") #returns list of controls, contains functions to calculate threshold and returns "sig", the list of signatures with compounds and 3 or more replicates
 ```
 
 
-A first step is to compute if genes are up or down modulated by drugs. This is done by comparing with the gene expression data for the controls. The function 'get_z_list' computes the mean of z-scores that separate the 1% and 99% of z-scores of expression of the controls. In this case, we will compute the thereshold of modulation for 4 cell lines: "BT20", "MCF10A", "MDAMB231", "HS578T" - all of them are classified as Triple Negative Breast Cancer (TNBC) cells.
-
+The list of controls is organized as follows:
 ```{r}
-#Computing the threshold of "modulating z-score for a cell line". One can search using the cell line name, or a tissue of origin. Set to "FALSE" the variable that is not going to be used. Set list_cells = "all" to collect data to all cell lines (that have a control, and for experiments with more than 3 replicates)
+head(list_ctl) 
+```
+The dataframe `list_ctl` contains information on the identification of the experiment performed (`sig_id`) and the associated identification of the perturbagen (`pert_iname`), cell line (`cell_id`) and its primary site and type, and the duration of the treatment (`pert_time`).
+
+
+A first step is to compute if genes are up or down modulated by drugs. This is done by comparing with the gene expression data for the controls. The function `get_z_list` computes the mean of z-scores that separate the 1% and 99% of z-scores of expression of the controls across all genes measured. In this case, we will compute the threshold of modulation for 4 cell lines: "BT20", "MCF10A", "MDAMB231", "HS578T" - all of them are classified as Triple Negative Breast Cancer (TNBC) cells.
+
+```{r, message=FALSE}
+#Computing the threshold of "modulating z-score for a cell line". One can search using the cell line name, or a tissue of origin. Set to "FALSE" the variable that is not going to be used. Set list_cells = "all" to collect data of all cell lines (that have a control, and for experiments with more than 3 replicates)
 
 z_control <- get_z_list(list_cells = c("BT20", "MCF10A", "MDAMB231", "HS578T"), tissue = FALSE)
+z_control
+```
 
+The `z_control` dataframe contains the summary statistics of z-scores that separate the 1% and 99% of z-scores of expression of the controls associated with the cell lines or tissues selected. The `mean` column have the mean of the absolute values of z-scores, and this value will be used as a threshold for determining if the z-score associated of a gene in a given treatment is considered up or down modulated.  
+
+To compute this, the function ```get_modsigs_per_cellid``` takes as arguments the control threshold of modulation (`control_stats`), the list of genes of interest (`list_genes`) and the list of signatures of interest (`signatures`).
+
+In this notebook, the list of genes of our interest is stored in the dataframe `tcga_genes`, uploaded with the `load_data.R` script and stored in the `data` folder. This dataframe lists genes with immunomodulatory activity. However, a user can enter any vector of genes (using their *Entrez ID* number) of interest.
+
+The list of signatures used here, `sigs`, includes all perturbations with compounds and have 3 or more replicates.
+
+```{r}
 #Using the threshold to classify the expression of all perturbations in a given cell line
-mod_df <- get_modsigs_per_cellid(z_control, tcga_genes[,1], signatures = sigs)
+mod_df <- get_modsigs_per_cellid(control_stats = z_control, list_genes = tcga_genes[,1], signatures = sigs)
 
 head(mod_df)
 ```
-The mod_df object lists all signatures (sig_id) that are related to the cell lines of interest and contains the z-score for each of the immunomodulatory genes (pr_gene_id), including the annotation if this sig_id up or down-modulates the gene.
 
-#Adding annotation of compounds
+The `mod_df` object lists all signatures (`sig_id`) that are related to the cell lines of interest and contains the z-score for each of the immunomodulatory genes (`pr_gene_id`), including the annotation if this sig_id up or down-modulates the gene.
 
-The default drug annotation was developed by the Broad Institute and is based on the mechanism of action of a compound. One can add more annotation and include different criteria to classification (eg, drugs with different MoA but used for the same type of cell lines)
+# Adding annotation of compounds
 
+It may be of interest to analyze the results obtained at `mod_df` with the lenses of the 
+Analysis of the up and down modulation of immunomodulatory genes after treatment with drugs can includ
+The default drug annotation was developed by the Broad Institute and is based on the mechanism of action of a compound. 
+
+One can add more annotation and include different criteria to classification (eg, drugs with different MoA but used for the same type of cell lines)
+
+The information required for a new annotation of a drug, in order, is as follow:
+
+- "pert_id": `pert_id` is the identifier used at Cmap to uniquely address a particular compound. A same compound can have more than one `pert_id`. Example:"BRD-K85606544". For more information about BRD ID, refer to [What is a BRD ID?](https://clue.io/connectopedia/what_is_a_brd_id) 
+
+- "pert_iname": `pert_iname` is the name commonly used for the compound (may have differences with names of commercially available drugs). Special attention should be taken in this field, as this is the most commonly used for grouping of results on the level of perturbations. Example: "neratinib"
+
+- "pcl_id": the name of the perturbagen class. The pattern adopted by the Broad Institute for this field consists of starting with "CP_" as a way to design a compound, followed by the description of the class with words separated by underscores. Special attention should be taken in this field, as this is the most commonly used for grouping of results on the PCL level. Example: "CP_HER2_TARGET"
+
+- "pcl_name": similar to `pcl_id`, without any guideline to formatting. Example: "HER2 Inhibitor"    
+
+- "pcl_type": for compound annotation, default is "CP".     
+
+- "pcl_source": source of the annotation. In this example, the classification of neratinib was obtained in Drugbank, so this field would contain "Drugbank"   
+
+- "pcl_criteria": this field is flexible, as it should contain a meta annotation. For example, the annotation of neratinib as a drug that target the HER2 gene is important in the context of treatment of breast cancer. But another annotation available for this same compound is that it is an EGFR Inhibitor, and this is based on its mechanism of action. This field of annotation should be seen as a way to annotate the rationale behind the annotation, and potentially simplify data manipulation in other stages. Example: "Treatment HER2+ breast cancer"
+
+## Adding one annotation at the time
 ```{r}
 #Adding one annotation at the time - It is saved in the "pclsCustom.csv" file, so it only needs to be uploaded once
 
@@ -60,6 +106,10 @@ The default drug annotation was developed by the Broad Institute and is based on
 # pcl_custom <- add_annot(pcl_custom, "BRD-K19687926", "lapatinib", "CP_HER2_TARGET","HER2 Antagonist", "CP","Drugbank","Treatment HER2+ breast cancer")
 # pcl_custom <- add_annot(pcl_custom, "BRD-M07438658", "lapatinib", "CP_HER2_TARGET","HER2 Antagonist", "CP","Drugbank","Treatment HER2+ breast cancer")
 ```
+
+It is saved in the "pclsCustom.csv" file, so it only needs to be uploaded once
+
+## Uploading a file with extra annotation
 
 Another option involves uploading a csv file with new annotations:
 ```{r}
