@@ -1,14 +1,86 @@
 ---
-title: "Analysis of Connectivity Map signatures of *compounds* and its effects on Cancer Immunomodulators Genes in Triple Negative Breast Cancer (TNBC) cell lines"
-output: html_notebook
+title: "Mining Drug Response in Cell Lines for possible implications for Immune Response"
+author: "Carolina Heimann"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    highlight: tango
+   
 ---
 
+# 1. Introduction
 
-In this notebook I am going to check the distribution of differential z-scores of expression data for the genes mapped as cancer immunomodulators by the TCGA PanImmune Group.
+This notebook walks through the process of accessing the Connectivity Map - a dataset with transcriptional responses to chemical, genetic and disease perturbation in cell lines - and using its data to analyze drug response effects on genes involved with immunomodulation of cancer in cell lines. 
 
-The idea here is to compare the expression level for signatures with more than 3 replicates. After that, I will take a closer look at the signatures that seem to strongly modulate our genes of interest, and then subset this analysis by classes of drugs.
 
-*improve intro*
+Besides this introduction section, this notebook also has one section explaining data manipulation steps and a section with a use case. The use case involves the analysis of the 65 immunomodulator genes present in the Connectivity Map dataset, in experiments involving drugs and triple negative breast cancer (TNBC) cell lines. 
+ 
+
+## Gene Expression Data - the Connectivity Map
+
+The Connectivity Map (Cmap) dataset is available for download at [GSE92742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742).
+
+The files needed in this project are:
+
+`GSE92742_Broad_LINCS_sig_info.txt`
+
+`GSE92742_Broad_LINCS_sig_metrics.txt.gz`
+
+`GSE92742_Broad_LINCS_cell_info.txt`
+
+`GSE92742_Broad_LINCS_gene_info.txt.gz`
+
+`GSE92742_Broad_LINCS_gene_info_delta_landmark.txt.gz`
+
+`GSE92742_Broad_LINCS_pert_info.txt`
+
+`GSE92742_Broad_LINCS_pert_metrics.txt.gz`
+
+`GSE92742_Broad_LINCS_inst_info.txt.gz`
+
+`GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx`
+
+
+
+The file `GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx` contains the gene expression values of the 12,328 genes measured in the Connectivity Map dataset across 473,647 different experiments (1). The gene expression profile for each experiment is called a signature, and is the response of cells from one cell line to one perturbagen in a given dose and time following the treatment. The remaining files contain metadata about the conditions of each experiment. The manipulation of these files uses the `cmapR` package (2), and the next sections will focus on procedures to use this data. 
+
+
+## Immunomodulatory genes
+
+
+
+A summarization of genes associated with immune modulation of cancer is available [here](https://docs.google.com/spreadsheets/d/1aqOXYsU1ubkbxIZI_5p8ZRootgOAT0KweMA3LvSZ7HY/). This table was elaborated by the The Cancer Genome Atlas (TCGA) PanImmune Group.
+
+Not all genes listed as cancer immunomodulators were measured by the Connectivity Map project. The subset of 65 immunomodulatory genes present in the dataset is stored in the file `data/tcga_at_cmap.csv` and this group of genes will be used for the analysis in this notebook. 
+
+
+## Triple Negative Breast Cancer cell lines
+
+
+
+This use case will focus on the 65 immunomodulator genes measured or inferred in the Connectivity Map dataset, and in the experiments involving drugs and triple negative breast cancer (TNBC) cell lines. 
+
+The classification of TNBC is based on the status of three receptors frequently used in breast cancer categorization: estrogen receptor (ER), progesterone receptor (PR), and human epithelial receptor 2 (HER2). As the name suggests, a triple negative breast cancer cell has a negative status for these three markers. (3) This subtype of breast cancer poses several challenges for treatment and there is research showing that immune modulation can influence the prognosis of the treatment.(4) 
+
+There are four TNBC cell lines in Cmap: BT20, HS578T, MCF10A, and MDAMB231. The choice of this group of cell lines is based on the assumption that a group of cell lines with shared characteristics can yield more generalizable information, avoiding biases that might be related to one particular cell line.
+
+**References:**
+
+1. Subramanian A, et al. A Next Generation Connectivity Map: L1000 Platform And The First 1,000,000 Profiles. Cell. 2017/12/1. 171(6):1437–1452
+
+2. Enache O, et al. The GCTx format and cmap{Py, R, M} packages: resources for the optimized storage and integrated traversal of dense matrices of data and annotations. bioRxiv 227041; doi: https://doi.org/10.1101/227041
+
+3. Dai X, et al. Breast cancer cell line classification and its relevance with breast tumor subtyping. J Cancer. 2017; 8(16):3131-3141. 
+
+4. Disis M, Stanton S. Triple-negative breast cancer: immune modulation as the new treatment paradigm. Am Soc Clin Oncol Educ Book. 2015:e25-30
+
+
+
+# 2. Data manipulation
+
+As a first step, let's upload the data.
 
 ```{r, warning=FALSE, message=FALSE, results='hide'}
 #loads all metadata and drugs annotation into memory
@@ -17,7 +89,16 @@ The idea here is to compare the expression level for signatures with more than 3
 Sys.setenv(CMAP_HOME="/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742")
 source("load_data.R")
 ```
+Besides the Connectivity Map data, this script also loaded files stored in the `data` folder. Their description and names in this session are: 
 
+- `pcl_custom` : list of annotation of Pertubagen Classes (PCLs), i.e., classes that can be used to group drugs, such as shared mechanism of actions. More information on PCLs and how to include annotation in this table is provided in a subsequent section.
+
+- `pcl_tidy` : list of annotation of Pertubagen Classes (PCLs) as published by Subramanian et al (1).
+
+- `tcga_genes` : list of immunomodulator genes that are present in the Connectivity Map dataset. This dataframe also includes the annotation of these genes, in terms of classification and functions in Immune Response.
+
+
+Functions for data manipulation and generation of plots are stored in separated scripts. Let's upload them now:
 
 ```{r, warning=FALSE, message=FALSE, results='hide'}
 #Functions for querying level 5 data and computing up and down modulation
@@ -27,14 +108,16 @@ source("cp_plots_pert.R")
 ```
 
 
-#1. Collecting the data and classifying up and down modulation
+## 2.1. Querying the data and classifying up and down modulation
 
-The gene expression data for the controls is used for the classification if a treatment is up or down-modulating the expression of a gene. The file `cp_subset_controls.R` contains functions to manipulate the controls and also outputs the dataframes `list_ctl` and `sigs`.  
+The Connectivity Map dataset contains data of gene expression level for controls, i.e., cell lines that were not treated with any compound. In this case, a control experiment consisted in exposing the cell line to either water, DMSO or no treatment at all. For more information about the controls in the Cmap dataset, refer to the question ["What are the perturbagen types and controls in the CMap dataset?" at the Connectopedia](https://clue.io/connectopedia/perturbagen_types_and_controls). 
 
 
-`list_ctl` contains the identification of all experiments in Cmap that are controls for perturbations with compounds. For more information about the controls in the Cmap dataset, refer to the question ["What are the perturbagen types and controls in the CMap dataset?" at the Connectopedia](https://clue.io/connectopedia/perturbagen_types_and_controls). 
+The gene expression data for the controls is used for the classification if a treatment is up or down-modulating the expression of a gene. The file `cp_subset_controls.R` outputs the dataframes `list_ctl` and `sigs` and contains functions to manipulate the controls.  
 
-`sigs` is a dataframe with all experiments with compounds that have 3 or more replicates.
+`list_ctl` contains the identification of all experiments in Cmap that are controls for perturbations with compounds. 
+
+`sigs` is a dataframe with all experiments with **compounds** that have **3 or more replicates**.
 
 ```{r, warning=FALSE, message=FALSE, results='hide'}
 source("cp_subset_controls.R") #returns list of controls, contains functions to calculate threshold and returns "sig", the list of signatures with compounds and 3 or more replicates
@@ -48,7 +131,7 @@ head(list_ctl)
 The dataframe `list_ctl` contains information on the identification of the experiment performed (`sig_id`) and the associated identification of the perturbagen (`pert_iname`), cell line (`cell_id`) and its primary site and type, and the duration of the treatment (`pert_time`).
 
 
-A first step is to compute if genes are up or down modulated by drugs. This is done by comparing with the gene expression data for the controls. The function `get_z_list` computes the mean of z-scores that separate the 1% and 99% of z-scores of expression of the controls across all genes measured. In this case, we will compute the threshold of modulation for 4 cell lines: "BT20", "MCF10A", "MDAMB231", "HS578T" - all of them are classified as Triple Negative Breast Cancer (TNBC) cells.
+With the data of the controls, we can compute if genes are up or down modulated by drugs. This is done by comparing the gene expression value of a gene under treatment with the gene expression data for the controls. The function `get_z_list` computes the mean of z-scores that separates the 1% and 99% of z-scores of expression of the controls across all genes measured. In this case, we will compute the threshold of modulation for 4 cell lines: "BT20", "MCF10A", "MDAMB231", "HS578T" - all of them are classified as Triple Negative Breast Cancer (TNBC) cells.
 
 ```{r, message=FALSE}
 #Computing the threshold of "modulating z-score for a cell line". One can search using the cell line name, or a tissue of origin. Set to "FALSE" the variable that is not going to be used. Set list_cells = "all" to collect data of all cell lines (that have a control, and for experiments with more than 3 replicates)
@@ -65,53 +148,66 @@ In this notebook, the list of genes of our interest is stored in the dataframe `
 
 The list of signatures used here, `sigs`, includes all perturbations with compounds and have 3 or more replicates.
 
-```{r}
+```{r, warning=FALSE}
 #Using the threshold to classify the expression of all perturbations in a given cell line
-mod_df <- get_modsigs_per_cellid(control_stats = z_control, list_genes = tcga_genes[,1], signatures = sigs)
+mod_df <- get_modsigs_per_cellid(controls_stats = z_control, list_genes = tcga_genes[,1], signatures = sigs)
 
 head(mod_df)
 ```
 
-The `mod_df` object lists all signatures (`sig_id`) that are related to the cell lines of interest and contains the z-score for each of the immunomodulatory genes (`pr_gene_id`), including the annotation if this sig_id up or down-modulates the gene.
+The `mod_df` object lists all signatures (`sig_id`) that are related to the cell lines of interest and contains the z-score for each of the immunomodulatory genes (`pr_gene_id`), including the annotation if this signature has this gene up or down-modulated.
 
-# Adding annotation of compounds
+## 2.2. Adding annotation of compounds - PCL
 
-It may be of interest to analyze the results obtained at `mod_df` with the lenses of the 
-Analysis of the up and down modulation of immunomodulatory genes after treatment with drugs can includ
-The default drug annotation was developed by the Broad Institute and is based on the mechanism of action of a compound. 
+It may be of interest to analyze the results obtained at `mod_df` in terms if drugs with similarities (mechanism of action, application, chemical structure, etc) have similar patterns of up and down modulation.
 
-One can add more annotation and include different criteria to classification (eg, drugs with different MoA but used for the same type of cell lines)
+The CMap dataset already designated a classification of the perturbations, called **Perturbagen Classes (PCL)**. Definition of the PCL class, according to the team that created the Connectivity Map dataset, can be described as follows:
 
-The information required for a new annotation of a drug, in order, is as follow:
+> Compound PCLs are identified by first grouping compounds that share the same mechanism of action (MoA) or biological functions as determined from the literature. Then (...) existing data [is] analyzed for these groupings to assess whether the members give similar gene expression signatures, thus confirming their shared activity. 
+ 
+More information on PCL is available at [What are Perturbagen Classes (PCLs)?](https://clue.io/connectopedia/pcls)
 
-- "pert_id": `pert_id` is the identifier used at Cmap to uniquely address a particular compound. A same compound can have more than one `pert_id`. Example:"BRD-K85606544". For more information about BRD ID, refer to [What is a BRD ID?](https://clue.io/connectopedia/what_is_a_brd_id) 
+The PCL classification developed by the CMap team is stored in this session in the `pcl_tidy` object. 
 
-- "pert_iname": `pert_iname` is the name commonly used for the compound (may have differences with names of commercially available drugs). Special attention should be taken in this field, as this is the most commonly used for grouping of results on the level of perturbations. Example: "neratinib"
+However, one may want to add more annotations of compounds, and even include different criteria of classification (e.g., drugs with different MoA but used for the same type of treatment). To allow the inclusion of more annotation of drugs, there are two different strategies: add one annotation at a time (with the function `add_annot`), or upload a .csv file with all annotations desired. Both approaches will be described in detail next.
 
-- "pcl_id": the name of the perturbagen class. The pattern adopted by the Broad Institute for this field consists of starting with "CP_" as a way to design a compound, followed by the description of the class with words separated by underscores. Special attention should be taken in this field, as this is the most commonly used for grouping of results on the PCL level. Example: "CP_HER2_TARGET"
+Regardless of the alternative chosen, the information required for a new annotation of a drug, in order, is as follows:
 
-- "pcl_name": similar to `pcl_id`, without any guideline to formatting. Example: "HER2 Inhibitor"    
+- **pert_id**: `pert_id` is the identifier used at Cmap to uniquely address a particular compound. A same compound can have more than one `pert_id`, due to differences of information between vendors. Example:"BRD-K85606544". For more information about BRD ID, refer to [What is a BRD ID?](https://clue.io/connectopedia/what_is_a_brd_id) and [Why do some perturbagens have more than one BRD ID?](https://clue.io/connectopedia/some_perts_have_over_one_brdid)
 
-- "pcl_type": for compound annotation, default is "CP".     
+- **pert_iname**: `pert_iname` is the name commonly used for the compound (may have differences with names of commercially available drugs). Special attention should be taken in this field, as this is the most commonly used for grouping of results on the level of perturbations. Example: "neratinib"
 
-- "pcl_source": source of the annotation. In this example, the classification of neratinib was obtained in Drugbank, so this field would contain "Drugbank"   
+- **pcl_id**: the name of the perturbagen class. The pattern adopted by the Broad Institute for this field consists of starting with "CP_" as a way to design a compound, followed by the description of the class with words separated by underscores. Special attention should be taken in this field, as this is the most commonly used for grouping of results on the PCL level. Example: "CP_HER2_TARGET"
 
-- "pcl_criteria": this field is flexible, as it should contain a meta annotation. For example, the annotation of neratinib as a drug that target the HER2 gene is important in the context of treatment of breast cancer. But another annotation available for this same compound is that it is an EGFR Inhibitor, and this is based on its mechanism of action. This field of annotation should be seen as a way to annotate the rationale behind the annotation, and potentially simplify data manipulation in other stages. Example: "Treatment HER2+ breast cancer"
+- **pcl_name**: similar to `pcl_id`, without any guideline to formatting. Example: "HER2 Inhibitor"    
 
-## Adding one annotation at the time
+- **pcl_type**: for compound annotation, default is "CP".     
+
+- **pcl_source**: source of the annotation. In this example, the classification of neratinib was obtained in the Drugbank database, so this field would contain "Drugbank"   
+
+- **pcl_criteria**: this field is flexible, as it should contain a meta annotation. For example, the annotation of neratinib as a drug that target the HER2 gene is important in the context of treatment of breast cancer. But another annotation available for this same compound is that it is an EGFR Inhibitor, and this is based on its mechanism of action. This field of annotation should be seen as a way to annotate the rationale behind the annotation, and potentially simplify data manipulation in other stages. Example: "Treatment HER2+ breast cancer"
+
+
+For information of the **pert_id** and **pert_iname** available in the Connectivity Map, refer to the `pertinfo` dataframe.
+
+
+
+### a. Adding one annotation at a time
+
+The function `add_annot` is used for the inclusion of one annotation at a time, and it takes as first argument an existing dataframe with PCL annotation, and the other arguments are the required fields for a new drug annotation.
+We have uploaded the "pclsCustom.csv" file as the `pcl_custom` dataframe, and we will use it as the initial annotation dataframe. Any annotation included with this funtion is automatically saved in the "pclsCustom.csv" file, so it only needs to be uploaded once.
 ```{r}
 #Adding one annotation at the time - It is saved in the "pclsCustom.csv" file, so it only needs to be uploaded once
 
-# pcl_custom <- add_annot(pcl_custom, "BRD-K85606544", "neratinib", "CP_HER2_TARGET","HER2 Inhibitor", "CP","Drugbank","Treatment HER2+ breast cancer")
-# pcl_custom <- add_annot(pcl_custom, "BRD-K19687926", "lapatinib", "CP_HER2_TARGET","HER2 Antagonist", "CP","Drugbank","Treatment HER2+ breast cancer")
-# pcl_custom <- add_annot(pcl_custom, "BRD-M07438658", "lapatinib", "CP_HER2_TARGET","HER2 Antagonist", "CP","Drugbank","Treatment HER2+ breast cancer")
+# pcl_custom <- add_annot(pcl_custom, pert_id ="BRD-K85606544", pert_iname = "neratinib", pcl_id = "CP_HER2_TARGET", pcl_name = "HER2 Inhibitor", pcl_type = "CP", pcl_source = "Drugbank", pcl_criteria = "Treatment HER2+ breast cancer")
+# pcl_custom <- add_annot(pcl_custom, pert_id ="BRD-K19687926", pert_iname = "lapatinib", pcl_id = "CP_HER2_TARGET", pcl_name = "HER2 Antagonist", pcl_type = "CP", pcl_source = "Drugbank",pcl_criteria = "Treatment HER2+ breast cancer")
+# pcl_custom <- add_annot(pcl_custom, pert_id ="BRD-M07438658", pert_iname = "lapatinib", pcl_id = "CP_HER2_TARGET", pcl_name = "HER2 Antagonist", pcl_type = "CP", pcl_source = "Drugbank", pcl_criteria = "Treatment HER2+ breast cancer")
 ```
 
-It is saved in the "pclsCustom.csv" file, so it only needs to be uploaded once
 
-## Uploading a file with extra annotation
+### b. Uploading a file with extra annotations
 
-Another option involves uploading a csv file with new annotations:
+Another option involves uploading a csv file with new annotations. Note that this file should have all annotation parameters named and ordered as described above. 
 ```{r}
 new_annots <- read.csv("data/newannot.csv", header = TRUE, row.names = 1, stringsAsFactors = FALSE)
 
@@ -124,12 +220,46 @@ new_annots <- merge(new_annots, ids, by = "pert_iname")
 pcl_custom <- rbind(pcl_custom, new_annots)
 ```
 
-#Case of Use 1: Boxplots of z-cores for a given gene across different drugs, grouped by cell lines and perturbagen classes
-```{r}
-#select the gene of interest (refer to pr_gene_id codes in tcga_genes table for other options)
-gene <- "1493"
+This approach of adding annotation is **_not_** automatically saved in the "pclsCustom.csv" file. In this case, the `newannot.csv` file should be kept in case the annotation will be used in the future.
 
-#select the PCLs of interest (refer to pcl_id on pcl annotation table)
+
+# 3. Use cases 
+
+Now that all data and functions are loaded, let's see some use cases of how the Connectivity Map dataset can be used to analyze the cancer immunomodulator genes (summarized in the `tcga_genes` dataframe) expression levels after treatment with compounds.
+
+The dataframe `mod_df`, created in **Querying and classifying up and down modulation** section with the `get_modsigs_per_cellid()` function, is in the format taken by all these functions. Besides this, in most of the cases the user is supposed to choose the name of the drug (all options are available in the `sigs` dataframe) or a group of drugs by their `pcl_id` in the `pcl_custom` dataframe. Note that cell lines were not treated with all drugs used in the Connectivity Map data collection. In the case of the TNBC cell lines, they were treated with only 176 drugs:
+
+```{r}
+sigs %>% 
+  dplyr::filter(cell_id %in% c("BT20", "MCF10A", "MDAMB231", "HS578T")) %>% 
+  dplyr::select(pert_iname) %>% 
+  unique() %>% 
+  head()
+```
+
+As mentioned previously, the annotation of these drugs can be adjusted according to the goals of analysis.
+
+
+## 3.1. Use Case 1: Boxplots of z-cores for a given gene across different drugs, grouped by cell lines and perturbagen classes
+
+As a first step of visualizing the data, we can select a group of compounds or PCLs and plot the distribution of gene expression for one particular gene.
+
+Assuming an interest of checking the effect of these drugs on the CTLA4 gene, one can visualize the standardized gene expression distribution across different drugs. Most drug and cell line combinations have more than one gene signature available in the dataset, providing enough data to observe the distribution of expression data for a given situation.
+
+This visualization adopts a normalized and relative gene expression data, also available at the Connectivity Map dataset. As a consequence, the boxplots have a horizontal line at z-score = 0 (red dotted line), as a way to improve the comparison of the present distribution with the median of the distribution of the gene expression across all experiments in the dataset.
+
+To start, let's select the gene and PCLs of interest. 
+
+The genes available to query are summarized below:
+```{r}
+levels(tcga_genes$pr_gene_symbol)
+```
+
+```{r}
+#select the gene of interest (refer to pr_gene_symbol codes in tcga_genes table for other options)
+gene <- "CTLA4"
+
+#select the PCLs of interest (refer to pcl_id on pcl_custom dataframe)
 
 pcls <- c("CP_CDK46_INHIBITOR", "CP_HER2_TARGET" , "CP_PARP_INHIBITOR" )
 
@@ -138,40 +268,65 @@ pcls_label <- c(control = "Controls", CP_CDK46_INHIBITOR = "CDK4/6 Inhibitors", 
 
 ```
 
-```{r}
-plot_z_by_pcl(gene_id = gene, tidy_z = mod_df, my_pcl = pcls, pcl_annot = pcl_custom, pcl_labels = pcls_label)
+```{r, warning=FALSE}
+plot_z_by_pcl(gene_symbol = gene, tidy_z = mod_df, my_pcl = pcls, pcl_annot = pcl_custom, pcl_labels = pcls_label)
 ```
 
-This plot is also saved as a png figure in the current working directory.
+This image is also saved as a _png_ figure in the current working directory, and the name is the selected gene.
+
+This plot shows that most of the analyzed drugs cause expression levels to disperse around the median expression of CTLA4. Besides some outliers in almost all cases, another interesting observation is the effect of olaparib on the CTLA4 gene across multiple experiments. The distribution looks shifted to the left, which may open the hypothesis that olaparib has an inhibitory effect on the CTLA4 gene. 
 
 In case you want to generate boxplots for all immunomodulator genes for a given class of compounds:
 ```{r}
-#genes <- as.data.frame(tcga_genes$pr_gene_id)
+#genes <- as.data.frame(tcga_genes$pr_gene_symbol)
 
 #apply(genes,1, plot_z_by_pcl, tidy_z = mod_list, my_pcl = pcls, pcl_annot = pcl_annot, pcl_labels = pcls_label)
 ```
 
 
 
-#Case of Use 2: Plot the number of times that a compound up and down modulate genes, across all cell lines
+## 3.2. Use Case 2: Plot the number of times that a compound up and down modulate genes, across all cell lines
+
+One question that the visualization of the distribution of gene expression data can create is if a given compound or PCL has a up or down modulation effect in the genes. The `mod_df` dataframe already organizes if a gene is up, down or not modulated when submitted to a given treatment, but we can see if all experiments with a given drug have the same effect.
+
+For example, let's take a closer look on the up and down modulation of drugs classified as PARP inhibitors. Olaparib and veliparib are the two drugs with this annotation that were tested against the 4 TNBC cell lines ("BT20", "MCF10A", "MDAMB231", "HS578T").
+
+The `make_freq_mod` function takes the `mod_df` dataframe and computes the frequency that a given combination of cell line (`cell_id`), gene (`pr_gene_symbol`) and drug (`pert_iname`) is up (`n_up`) and down (`n_dn`) modulated.
+
 
 ```{r}
+make_freq_mod(tidy_mod = mod_df, name_cp_pcl = "CP_PARP_INHIBITOR", by.pcl = TRUE, pcl_annot = pcl_custom) %>% head()
+```
+
+In this results, we can see in row 3, that across all 8 experiments (`total`) where a BT20 cell line is treated with the drug olaparib, the gene BTN3A1 is down modulated in 3 (`n_dn`), which represents 37.5% (`freq_dn`) of all experiments. On the other hand, there is only 1 experiment with up-modulation (`n_up`), which represents 12.5% (`freq_up`) of the `total`. The last column, `diff`, is the difference between frequencies, i.e., `freq_up` - `freq_dn`.
+
+The first visualization of patterns of up and down-modualtion is to create a scatterplot with up-modulation x down-modulation. This table has data segregated in cell lines, but we will group them all together to analyze the 4 cell lines as a group. In addition, since we are interested in the behavior of the class of drugs, the data for the two drugs will also be merged. The function `plot_count_mod()` takes care of the manipulation of data and outputs a scatterplot of the number of signatures associated with a drug or PCL that are upmodulating a given gene, including labels for extremes.
+  
+
+```{r, warning= FALSE}
 #The number of experiments across different cell lines and compounds may differ. You can adjust the x and y axis with the 'x_scale' and 'y_scale' parameters. The threshold for labelling points in the x and y axis are, respectively, 'x_label' and 'y_label'.
 
 plot_count_mod(mod_df, name_cp_pcl = "CP_PARP_INHIBITOR", by.pcl = TRUE, pcl_annot = pcl_custom, x_scale = c(0,25), y_scale = c(0,40), x_label = 15, y_label = 19)
 ```
 
-A given compound is used in more than one signature. In this plot, we can see if a compound (or a class of compounds) has a more strong effect in up or down modulation across different genes - for example, the gene TLR4 has more cases of up-modulation (17) than down-modulation (2) in all experiments of the PARP Inhibitors in TNBC cell lines.
+In this plot, we can see if a compound (or a class of compounds) has a more strong effect in up or down modulation across different genes - for example, the gene TLR4 has more cases of up-modulation (17) than down-modulation (2) in all experiments of the PARP Inhibitors in TNBC cell lines. This plot also includes the annotation of Immune Checkpoint of the genes - for example, the TLR4 gene has a stimulatory effect on the immune system. The "NA" Immune Checkpoint label refers to genes with not established annotation to their 
+
+In addition, one can create a plot based on a single compound. The name of the compound should be informed in the `name_cp_pcl` argument, and the `by.pcl` argument should be set to `FALSE`. 
+
+```{r, warning=FALSE}
+plot_count_mod(mod_df, name_cp_pcl = "olaparib", by.pcl = FALSE, pcl_annot = pcl_custom, x_scale = c(0,10), y_scale = c(0,20), x_label = 5, y_label = 12)
+```
 
 
-#Case of Use 3: Plot heatmap of differential expression 
+## 3.3. Use Case 3: Plot heatmap of differential expression 
 
-The above case only counts the number of occurences of up and down modulation
+The previous use case is not very scalable to show more than one drug or PCL. To increase the visualization of the effect of more than one drug on all cancer immunomodulatory genes, one can use the function `plot_heatmap_mod`. This function plots a heatmap with the difference of frequency of up modulation and down modulation of a gene submitted to a drug treatment. The rows (drugs) and columns (genes) are hierarchically clustered to highlight eventual patterns. In addition, the drugs have an annotation of their mechanism of action (when available), and the genes have the annotation of their immune checkpoint (either inhibitory or stimulatory) and their category of activity in the immune response.
+
 
 ```{r}
 plot_heatmap_mod(tidy_mod = mod_df, name_cp_pcl = c("CP_PARP_INHIBITOR"), by.pcl = TRUE, by.cell = FALSE, pcl_annot = pcl_custom, filename = "heatmap.png", width = 15)
 ```
 
-For an improved visualization, this plot is saved as a file in the current working directory (this can be changed in the 'filename' parameter).
-
+For an improved visualization, this plot is also saved as a _.png_ file in the current working directory (this can be changed in the 'filename' parameter).
+In this case, we can see that olaparib and veliparib, despite being both PARP inhibitors, have an overall different pattern of modulation of the immunomodulator genes. 
 

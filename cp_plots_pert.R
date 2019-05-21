@@ -211,8 +211,9 @@ plot_heatmap_mod <- function(tidy_mod, name_cp_pcl, by.pcl = FALSE, by.cell = FA
   annot_df$pr_gene_symbol <-  NULL
 
   #Now everything is ready for plotting the heatmap  
-
-  p <- pheatmap(freqs_wide[,1:65], annotation_row = annot_df_rows, annotation_col = annot_df, filename = filename, width = width)
+  
+  p <- pheatmap(freqs_wide[,1:65], annotation_row = annot_df_rows, annotation_col = annot_df, angle_col = 45, filename = filename, width = width)
+  return(pheatmap(freqs_wide[,1:65], annotation_row = annot_df_rows, annotation_col = annot_df, fontsize = 5, angle_col = 45, width = width))
   
 }
 
@@ -221,12 +222,12 @@ plot_heatmap_mod <- function(tidy_mod, name_cp_pcl, by.pcl = FALSE, by.cell = FA
 #of all signatures in a given combination of compound, cell line and gene.
 #The function outputs a file with the boxplots and also print the plot.
 
-plot_z_by_pcl <- function(gene_id, tidy_z, my_pcl, pcl_annot, cell_display = FALSE, cell_labels = FALSE, pcl_labels = FALSE){
+plot_z_by_pcl <- function(gene_symbol, tidy_z, my_pcl, pcl_annot, cell_display = FALSE, cell_labels = FALSE, pcl_labels = FALSE){
   
   #selecting associated compounds
   pert_list <- subset(pcl_annot, pcl_id %in% my_pcl, c(pert_iname, pcl_id))
   
-  gene_symbol <- subset(tcga_genes, pr_gene_id == gene_id, pr_gene_symbol)
+  gene_id <- subset(tcga_genes, pr_gene_symbol == gene_symbol, pr_gene_id)
   
   #organizing the list of cell lines that are present in the tidy_z df
   celllines <- subset(siginfo, sig_id %in% tidy_z$sig_id, cell_id) %>% distinct()
@@ -278,9 +279,9 @@ plot_z_by_pcl <- function(gene_id, tidy_z, my_pcl, pcl_annot, cell_display = FAL
       xlab("Compound name")+
       ylab("z-score")+
       theme_bw()+
-      ggtitle(as.character(gene_symbol$pr_gene_symbol))+
+      ggtitle(as.character(gene_symbol))+
       theme(axis.text.x = element_text(angle = 45, hjust = 1))+
-      ggsave(paste(gene_symbol$pr_gene_symbol, ".png"), width = 15, height = 15)
+      ggsave(paste(gene_symbol, ".png"), width = 15, height = 15)
     
   }else{
     p <- ggplot(plot_table)+
@@ -291,9 +292,9 @@ plot_z_by_pcl <- function(gene_id, tidy_z, my_pcl, pcl_annot, cell_display = FAL
       xlab("Compound name")+
       ylab("z-score")+
       theme_bw()+
-      ggtitle(as.character(gene_symbol$pr_gene_symbol))+
+      ggtitle(as.character(gene_symbol))+
       theme(axis.text.x = element_text(angle = 45, hjust = 1))+
-      ggsave(paste(gene_symbol$pr_gene_symbol, ".png"), width = 15, height = 15) 
+      ggsave(paste(gene_symbol, ".png"), width = 15, height = 15) 
   }
   print(p)
 }

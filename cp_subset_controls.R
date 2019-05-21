@@ -97,9 +97,9 @@ get_z_list <- function(list_cells = "MCF7", tissue = FALSE, list_ctls = list_ctl
   if(tissue != FALSE){
     cells <- subset(list_ctls, primary_site %in% tissue, cell_id)
     cells <- unique(cells$cell_id)
-  # }else if(any(list_cells == "all")){
-  #   cells <- subset(cellinfo, cell_id %in% list_ctl$cell_id)
-  #   cells <- unique(cells$cell_id)
+  }else if(any(list_cells == "all")){
+    cells <- subset(cellinfo, cell_id %in% list_ctl$cell_id)
+    cells <- unique(cells$cell_id)
   }else{
     cells <- unique(list_cells) 
   }
