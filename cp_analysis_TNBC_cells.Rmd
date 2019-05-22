@@ -20,7 +20,7 @@ Besides this introduction section, this notebook also has one section explaining
 
 ## Gene Expression Data - the Connectivity Map
 
-The Connectivity Map (Cmap) dataset is available for download at [GSE92742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742).
+The Connectivity Map (CMap) dataset is available for download at [GSE92742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742).
 
 The files needed in this project are:
 
@@ -64,7 +64,7 @@ This use case will focus on the 65 immunomodulator genes measured or inferred in
 
 The classification of TNBC is based on the status of three receptors frequently used in breast cancer categorization: estrogen receptor (ER), progesterone receptor (PR), and human epithelial receptor 2 (HER2). As the name suggests, a triple negative breast cancer cell has a negative status for these three markers. (3) This subtype of breast cancer poses several challenges for treatment and there is research showing that immune modulation can influence the prognosis of the treatment.(4) 
 
-There are four TNBC cell lines in Cmap: BT20, HS578T, MCF10A, and MDAMB231. The choice of this group of cell lines is based on the assumption that a group of cell lines with shared characteristics can yield more generalizable information, avoiding biases that might be related to one particular cell line.
+There are four TNBC cell lines in CMap: BT20, HS578T, MCF10A, and MDAMB231. The choice of this group of cell lines is based on the assumption that a group of cell lines with shared characteristics can yield more generalizable information, avoiding biases that might be related to one particular cell line.
 
 **References:**
 
@@ -84,7 +84,7 @@ As a first step, let's upload the data.
 
 ```{r, warning=FALSE, message=FALSE, results='hide'}
 #loads all metadata and drugs annotation into memory
-#User needs to set the path for the Cmap files by running 'export CMAP_HOME=path/to/files'
+#User needs to set the path for the CMap files by running 'export CMAP_HOME=path/to/files'
 #Other alternative is to use use the following line of code to set the files path for this session. 
 Sys.setenv(CMAP_HOME="/Volumes/CancerRegulome14/users/gqin/CMap/PhI_GSE92742")
 source("load_data.R")
@@ -115,7 +115,7 @@ The Connectivity Map dataset contains data of gene expression level for controls
 
 The gene expression data for the controls is used for the classification if a treatment is up or down-modulating the expression of a gene. The file `cp_subset_controls.R` outputs the dataframes `list_ctl` and `sigs` and contains functions to manipulate the controls.  
 
-`list_ctl` contains the identification of all experiments in Cmap that are controls for perturbations with compounds. 
+`list_ctl` contains the identification of all experiments in CMap that are controls for perturbations with compounds. 
 
 `sigs` is a dataframe with all experiments with **compounds** that have **3 or more replicates**.
 
@@ -173,7 +173,7 @@ However, one may want to add more annotations of compounds, and even include dif
 
 Regardless of the alternative chosen, the information required for a new annotation of a drug, in order, is as follows:
 
-- **pert_id**: `pert_id` is the identifier used at Cmap to uniquely address a particular compound. A same compound can have more than one `pert_id`, due to differences of information between vendors. Example:"BRD-K85606544". For more information about BRD ID, refer to [What is a BRD ID?](https://clue.io/connectopedia/what_is_a_brd_id) and [Why do some perturbagens have more than one BRD ID?](https://clue.io/connectopedia/some_perts_have_over_one_brdid)
+- **pert_id**: `pert_id` is the identifier used at CMap to uniquely address a particular compound. A same compound can have more than one `pert_id`, due to differences of information between vendors. Example:"BRD-K85606544". For more information about BRD ID, refer to [What is a BRD ID?](https://clue.io/connectopedia/what_is_a_brd_id) and [Why do some perturbagens have more than one BRD ID?](https://clue.io/connectopedia/some_perts_have_over_one_brdid)
 
 - **pert_iname**: `pert_iname` is the name commonly used for the compound (may have differences with names of commercially available drugs). Special attention should be taken in this field, as this is the most commonly used for grouping of results on the level of perturbations. Example: "neratinib"
 

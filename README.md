@@ -21,17 +21,28 @@ The ```cmapR``` package is not available in CRAN as for this moment. To install 
 
 All the data used for this project is available for download at [GSE92742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742). 
 The files needed in this project are:
+
 ```GSE92742_Broad_LINCS_sig_info.txt```
+
 ```GSE92742_Broad_LINCS_sig_metrics.txt.gz```
+
 ```GSE92742_Broad_LINCS_cell_info.txt```
+
 ```GSE92742_Broad_LINCS_gene_info.txt.gz```
+
 ```GSE92742_Broad_LINCS_gene_info_delta_landmark.txt.gz```
+
 ```GSE92742_Broad_LINCS_pert_info.txt```
+
 ```GSE92742_Broad_LINCS_pert_metrics.txt.gz```
+
 ```GSE92742_Broad_LINCS_inst_info.txt.gz```
+
 ```GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx```
 
 
 The ```load_data.R``` file takes care of loading the data. Users need to set the path to the downloaded data by setting the variable ```CMAP_HOME``` to the desired location.
+
 For example, in unix bash shell, this can be set by running: ```export CMAP_HOME=path/to/files```
-In a R Session, this can be set with the command ```Sys.setenv(CMAP_HOME="path/to/file")```
+
+In a R Session, this can be set with the command ```Sys.setenv(CMAP_HOME="path/to/files")```
