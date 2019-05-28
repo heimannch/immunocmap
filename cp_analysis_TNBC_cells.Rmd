@@ -239,8 +239,42 @@ sigs %>%
 
 As mentioned previously, the annotation of these drugs can be adjusted according to the goals of analysis.
 
+The genes available to query are summarized below:
+```{r}
+levels(tcga_genes$pr_gene_symbol)
+```
 
-## 3.1. Use Case 1: Boxplots of z-cores for a given gene across different drugs, grouped by cell lines and perturbagen classes
+
+## 3.1. Use Case 1: List of perturbations that generate the highest absolute mean of z-scores for a selected gene
+
+In case an user is interested in a particular immunomodulatory gene and wants to know which drugs are expected to have a strong effect in changing the expression levels of this gene, a straightforward strategy is to compute the summary statistics of all experiments of a given drug. Summary statistics, such as the mean, can be used as a criteria to select drugs with highest values.
+
+The function `get_top_pert_pergene` takes the `mod_df` dataframe and the gene of interest and returns the list with the drug and cell line combinations that have the highest values of a selected statistics, set by the `stats_selector` parameter, with the default of arranging by mean.
+```{r}
+#select the gene of interest
+gene <- "CTLA4"
+```
+
+If there is a list of drugs to use in this analysis, it can be informed with the `pert_list` parameter. The default is `pert_list = "all"` , which computes the summary statistics for all drugs available in the `mod_df` dataframe. You can also select if you want to see the results of all combinations of drug treatment and cell lines `by_cell = TRUE`), or only drug treatment (`by_cell = FALSE`) The number of rows in the output can be set with the `n_pert` parameter.
+
+```{r, warning=FALSE}
+#available stats_selector to select from are: "mean", "sd", "p0", "p25", "p50", "p75", "p100" - where p denotes the quantile
+
+top_pert <- get_top_pert_pergene(mod_df, gene_symbol = gene, pert_list = "all", stats_selector = "mean", by_cell = FALSE, n_pert = 20)
+top_pert
+```
+
+In this example, the drug CGP-60474 yield the highest value of mean of z-score value for the CTLA4 gene across all the 24 experiments with this drug and the 4 TNBC cell lines.
+
+In case there is interest in segregating these results by each cell line and drug teatment combination, setting the paramenter `by_cell` to `TRUE` provides this information.
+```{r, warning= FALSE}
+top_pert <- get_top_pert_pergene(mod_df, gene_symbol = gene, pert_list = "all", stats_selector = "mean", by_cell = TRUE, n_pert = 10)
+top_pert
+```
+ 
+ In this example, the CGP-60474 drug also appears as the drug in the set of experiments with the highest means of differential expression for the CTLA4 gene, especially for the MDAMB231 cell line.
+
+## 3.2. Use Case 2: Boxplots of z-cores for a given gene across different drugs, grouped by cell lines and perturbagen classes
 
 As a first step of visualizing the data, we can select a group of compounds or PCLs and plot the distribution of gene expression for one particular gene.
 
@@ -250,10 +284,7 @@ This visualization adopts a normalized and relative gene expression data, also a
 
 To start, let's select the gene and PCLs of interest. 
 
-The genes available to query are summarized below:
-```{r}
-levels(tcga_genes$pr_gene_symbol)
-```
+
 
 ```{r}
 #select the gene of interest (refer to pr_gene_symbol codes in tcga_genes table for other options)
@@ -285,7 +316,7 @@ In case you want to generate boxplots for all immunomodulator genes for a given 
 
 
 
-## 3.2. Use Case 2: Plot the number of times that a compound up and down modulate genes, across all cell lines
+## 3.3. Use Case 3: Plot the number of times that a compound up and down modulate genes, across all cell lines
 
 One question that the visualization of the distribution of gene expression data can create is if a given compound or PCL has a up or down modulation effect in the genes. The `mod_df` dataframe already organizes if a gene is up, down or not modulated when submitted to a given treatment, but we can see if all experiments with a given drug have the same effect.
 
@@ -318,7 +349,7 @@ plot_count_mod(mod_df, name_cp_pcl = "olaparib", by.pcl = FALSE, pcl_annot = pcl
 ```
 
 
-## 3.3. Use Case 3: Plot heatmap of differential expression 
+## 3.4. Use Case 4: Plot heatmap of differential expression 
 
 The previous use case is not very scalable to show more than one drug or PCL. To increase the visualization of the effect of more than one drug on all cancer immunomodulatory genes, one can use the function `plot_heatmap_mod`. This function plots a heatmap with the difference of frequency of up modulation and down modulation of a gene submitted to a drug treatment. The rows (drugs) and columns (genes) are hierarchically clustered to highlight eventual patterns. In addition, the drugs have an annotation of their mechanism of action (when available), and the genes have the annotation of their immune checkpoint (either inhibitory or stimulatory) and their category of activity in the immune response.
 
@@ -329,4 +360,7 @@ plot_heatmap_mod(tidy_mod = mod_df, name_cp_pcl = c("CP_PARP_INHIBITOR"), by.pcl
 
 For an improved visualization, this plot is also saved as a _.png_ file in the current working directory (this can be changed in the 'filename' parameter).
 In this case, we can see that olaparib and veliparib, despite being both PARP inhibitors, have an overall different pattern of modulation of the immunomodulator genes. 
+
+
+
 

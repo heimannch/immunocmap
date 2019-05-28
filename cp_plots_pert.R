@@ -4,20 +4,6 @@ source('gene_modulation.R')
 library(pheatmap)
 library(ggrepel)
 
-#TODO: incuir a função que seleciona os compounds with higher means of expression 
-# ```{r}
-# stats_pert %>% filter(n >2) %>% group_by(cell_id, pr_gene_id, pert_iname) %>% arrange(desc(abs(as.numeric(mean)))) %>% select(cell_id, pert_iname, n, mean, sd, p0, p25, p50, p75, p100, hist) %>%  head(20)
-# ```
-# Plotting this comparison for the drug with the highest means of z-score for this gene
-# ```{r}
-# #organizing the table for plotting
-# ctl <- ctl_z %>% make_full_table %>% select(cell_id, pr_gene_id, pert_iname, z_score)
-# pert_list <- stats_pert %>% filter(n >2) %>% group_by(cell_id, pr_gene_id) %>% arrange(desc(abs(as.numeric(mean)))) %>% select(cell_id, pr_gene_id, pert_iname, mean) %>%  head(20)
-# 
-# pert <- mod_list %>% filter(pr_gene_id == my_gene & pert_iname %in% pert_list$pert_iname) %>% select(cell_id, pr_gene_id, pert_iname, z_score)
-# 
-# plot_table <- rbind(as.data.frame(ctl), as.data.frame(pert))
-
 
 #General Functions
 
@@ -70,6 +56,53 @@ make_freq_mod <- function(tidy_mod, name_cp_pcl, by.pcl = FALSE, pcl_annot = FAL
   #Computing the difference between frequency of up and down expression
   freqs <- freqs %>% mutate(diff = freq_up - freq_dn)
   return(freqs)
+}
+
+#the summary statistics of z-scores for a given gene across all compounds and returns the list of compounds 
+#that generate the highest mean of up or down expression
+get_top_pert_pergene <- function(tidy_mod, gene_symbol, pert_list = "all", stats_selector = "mean", by_cell = TRUE, n_pert = as.numeric(nrow(tidy_mod))){
+  
+  #pert_list: "all" selects all perturbations that are associated with the signatures in tidy_mod. User can define a vector with names of compounds 
+  gene_id <- subset(tcga_genes, pr_gene_symbol == gene_symbol, pr_gene_id)
+  
+  #Including pert_iname and cell_id data on the tidy_mod table
+  pert_cell_info <- siginfo %>% select(sig_id, pert_iname, cell_id)
+  tidy_mod_full <- merge(pert_cell_info, tidy_mod, by= "sig_id")
+  
+  #selecting all compounds associated with the signatures provided
+  if(pert_list == "all"){
+    pert_list <- as.vector(tidy_mod_full$pert_iname)
+  }
+  
+  #Organizing the data manipulation chosen with the "by_cell" parameter
+  
+  if(by_cell == TRUE){
+    group_columns1 <- c("pr_gene_id", "cell_id", "pert_iname", "z_score")
+    group_columns2 <- c("pr_gene_id", "cell_id", "pert_iname")
+  }else{
+    group_columns1 <- c("pr_gene_id", "pert_iname", "z_score")
+    group_columns2 <- c("pr_gene_id", "pert_iname")
+  }
+  
+  #Calculating the summary statistics for each combination of gene_id and pert_iname
+  stats_pert <- tidy_mod_full %>% filter(pr_gene_id %in% gene_id & pert_iname %in% pert_list) %>% 
+    select_(.dots = group_columns1) 
+  
+  stats_pert <- stats_pert %>% 
+    group_by_(.dots = group_columns2) %>% skimr::skim_to_wide(z_score)
+  
+  #the columns are in character format, so let's change them to numeric
+  stats_cols <- c("n", "mean", "sd", "p0", "p25", "p50", "p75", "p100")
+  stats_pert[stats_cols] <- lapply(stats_pert[stats_cols], as.numeric)
+  
+  
+  final_cols <- c(group_columns2, stats_cols)
+  #Selecting the combination of cell lines and perturbations that have the highest absolute value for the selected statistic
+  top_pert <- stats_pert %>% filter(n >2) %>% group_by_(match(group_columns2,names(tidy_mod_full))) %>% 
+    arrange(desc(abs(get(stats_selector)))) %>% ungroup() %>% 
+    select_(.dots = final_cols) %>% head(as.numeric(n_pert))
+  
+  return(top_pert)
 }
 
 
