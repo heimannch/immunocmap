@@ -5,7 +5,14 @@ library(pheatmap)
 library(ggrepel)
 
 
-#General Functions
+#------------------------------------------------General Functions-----------------------------------------------------------#
+
+#' Merges the siginfo and cellinfo dataframes based on the sig_id.
+#' 
+#' This function is useful for downstream analysis that consider data related to perturbations and cell info.
+#' @param list_of_sigs dataframe with the signature of interest. May contain other information, but signatures need to be in a column named sig_id.
+#' @return Dataframe with all columns present in the siginfo and cellinfo dataframes, including additional columns in the original dataset
+#' 
 
 make_full_table <- function(list_of_sigs){
   

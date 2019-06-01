@@ -12,7 +12,7 @@ output:
 
 # 1. Introduction
 
-This notebook walks through the process of accessing the Connectivity Map - a dataset with transcriptional responses to chemical, genetic and disease perturbation in cell lines - and using its data to analyze drug response effects on genes involved with immunomodulation of cancer in cell lines. 
+This notebook walks through the process of accessing the Connectivity Map (1) - a dataset with transcriptional responses to chemical, genetic and disease perturbation in cell lines - and using its data to analyze drug response effects on genes involved with immunomodulation of cancer in cell lines. 
 
 
 Besides this introduction section, this notebook also has one section explaining data manipulation steps and a section with a use case. The use case involves the analysis of the 65 immunomodulator genes present in the Connectivity Map dataset, in experiments involving drugs and triple negative breast cancer (TNBC) cell lines. 
@@ -105,6 +105,8 @@ Functions for data manipulation and generation of plots are stored in separated 
 source("gene_modulation.R")
 #Functions for generating specific plots
 source("cp_plots_pert.R")
+#Functions for statistical tests between controls and treatments
+source("cp_hypothesis_tests.R")
 ```
 
 
@@ -135,8 +137,9 @@ With the data of the controls, we can compute if genes are up or down modulated 
 
 ```{r, message=FALSE}
 #Computing the threshold of "modulating z-score for a cell line". One can search using the cell line name, or a tissue of origin. Set to "FALSE" the variable that is not going to be used. Set list_cells = "all" to collect data of all cell lines (that have a control, and for experiments with more than 3 replicates)
+cell_lines <- c("BT20", "MCF10A", "MDAMB231", "HS578T")
 
-z_control <- get_z_list(list_cells = c("BT20", "MCF10A", "MDAMB231", "HS578T"), tissue = FALSE)
+z_control <- get_z_list(list_cells = cell_lines, tissue = FALSE)
 z_control
 ```
 
@@ -250,6 +253,8 @@ levels(tcga_genes$pr_gene_symbol)
 In case an user is interested in a particular immunomodulatory gene and wants to know which drugs are expected to have a strong effect in changing the expression levels of this gene, a straightforward strategy is to compute the summary statistics of all experiments of a given drug. Summary statistics, such as the mean, can be used as a criteria to select drugs with highest values.
 
 The function `get_top_pert_pergene` takes the `mod_df` dataframe and the gene of interest and returns the list with the drug and cell line combinations that have the highest values of a selected statistics, set by the `stats_selector` parameter, with the default of arranging by mean.
+
+In this example, we will take a look on the CTLA4 gene.
 ```{r}
 #select the gene of interest
 gene <- "CTLA4"
@@ -264,15 +269,15 @@ top_pert <- get_top_pert_pergene(mod_df, gene_symbol = gene, pert_list = "all", 
 top_pert
 ```
 
-In this example, the drug CGP-60474 yield the highest value of mean of z-score value for the CTLA4 gene across all the 24 experiments with this drug and the 4 TNBC cell lines.
+In this example, the drug CGP-60474 yields the highest value of mean of z-score value for the CTLA4 gene across all the 24 experiments with this drug and the 4 TNBC cell lines.
 
-In case there is interest in segregating these results by each cell line and drug teatment combination, setting the paramenter `by_cell` to `TRUE` provides this information.
+In case there is interest in segregating these results by each cell line and drug teatment combination, setting the paramenter `by_cell` to `TRUE` provides this information. In the following example, we are also requesting to the combination that had the highest value across all experiments.
 ```{r, warning= FALSE}
-top_pert <- get_top_pert_pergene(mod_df, gene_symbol = gene, pert_list = "all", stats_selector = "mean", by_cell = TRUE, n_pert = 10)
-top_pert
+top_pert <- get_top_pert_pergene(mod_df, gene_symbol = gene, pert_list = "all", stats_selector = "p100", by_cell = TRUE, n_pert = 10)
+top_pert %>% select(pr_gene_id, cell_id, pert_iname, mean, p100)
 ```
  
- In this example, the CGP-60474 drug also appears as the drug in the set of experiments with the highest means of differential expression for the CTLA4 gene, especially for the MDAMB231 cell line.
+ In this example, the CGP-60474 drug also appears as the drug in the set of experiments with the highest value of differential expression for the CTLA4 gene, especially for the MDAMB231 cell line.
 
 ## 3.2. Use Case 2: Boxplots of z-cores for a given gene across different drugs, grouped by cell lines and perturbagen classes
 
@@ -362,5 +367,61 @@ For an improved visualization, this plot is also saved as a _.png_ file in the c
 In this case, we can see that olaparib and veliparib, despite being both PARP inhibitors, have an overall different pattern of modulation of the immunomodulator genes. 
 
 
+## 3.5. Use Case 5: Comparing gene expression data between treatment and controls
+
+The use of statistical methods to compare treatment and controls gene expression data can provide an alternative way of analyzing the combination of available drugs and immunomodulatory genes in the dataset.
+
+Functions related with this use case are available at the `cp_hypothesis_tests.R` script. Here we are going to use the `test_all` function. To use this function, we will need to collect a few more data:
+
+```{r, message=FALSE}
+#augmenting the information in the `mod_df` table, with data from the perturbations used
+mod_df_full <- make_full_table(mod_df)
+
+#the z-score gene expression of the controls will also need to be provided in tidy format
+ctl_z <- get_zscores(tcga_genes[,1], list_ctl[list_ctl$cell_id %in% cell_lines,1])
+```
+We will use these two dataframes as input for the `test_all` function. The `mod_df_full` dataframe contains the z-scores for each immunomodulatory gene across several drugs. The `ctl_z` dataframe contains the data of z-scores for each immunomodulatory gene in the control signatures. With this data, we can compute the Welch's t-test statistics comparing expression of genes of interest between experimental/perturbation groups and controls.
+
+Here we are going to analyze all genes present in the `tcga_genes` dataframe. However, it is possible to subset the analysis by setting the `gene_list` argument to the desired genes.
+
+```{r, include=FALSE}
+ttests <- test_all(gene_list = tcga_genes[,1], mod_df = mod_df_full, ctl_df = ctl_z)
+```
+
+The resulting dataframe should contain a row for each combination of drug (`pert_iname`) and gene. Just as a sanity check, let's confirm if this happened:
+```{r}
+nrow(tcga_genes)*length(unique(mod_df_full$pert_iname))
+nrow(ttests)
+```
+
+Let's take a look on the dataframe with the results of the tests.
+```{r}
+head(ttests)
+```
+
+In this small sample of results, we can see that the gene HMGB1 (`pr_gene_id = 3146`) has a significant, if we consider p-value < 0.05, lower mean of differential expression when treated with WYE-125132 when compared with the differential expression of this gene in control experiments.
+
+We can also plot the results of these tests with a heatmap reporting the common logarithm of the p-value of the two-sample Welch’s t-test, adjusting the sign in a way that up modulation has a positive value (red color) and down modulation of a gene has a negative value (blue color). 
+Besides this adaptation, the function to plot heatmaps needs a wide table. The function `ph_wide` takes the `ttests` dataframe and organizes it in the required format for plotting. 
+```{r}
+ph_wide <- test_wide(ttests)
+ph_wide[1:5, 1:5]
+```
+
+In the first row of this table, we can see that the absolute log10 of the p-value of the test of the drug A-443644 is 0.5447. The positive sign indicates that the sign of change was positive - in other words, the mean of expression of ARG1 gene when treated with A-443644 is higher than the control's. Also, if you want to compute the p-value of a given combination of gene and drug, you just need to use the negative of the value in each cell as the exponent of 10. For example:
+
+- ARG1 and A-443644: p-value = 10^(-0.5447027) = 0.2852971
+
+- ARG1 and ABT-737: p-value = 10^(-1.642784) = 0.02276229
+
+Now that we have the data in the adequate format, we can plot a heatmap, using the function `plot_heatmap_test`. For an improved visualization, this function also saves the heatmap as a __png__ file, in the location and name set by the `filename` parameter. You can also change the size of the file by changing the `height` and `width` parameters. Both rows (drugs) and columns (genes) are hierarchically clustered, and the distance criteria for clustering can be set with the `clustering_distance_rows` and `clustering_distance_cols` - the options are "euclidean", "correlation" and other supported by dist (type ?dist in the R console for more information).
+
+```{r}
+plot_heatmap_test(ttests, ph_wide, clustering_distance_rows = "correlation",
+  clustering_distance_cols = "correlation", filename = "heatmap.png", height = 25, width = 15)
+```
 
 
+
+Annotation of the mechanism of action (when available) of drugs is included, as well as the annotation of gene immune checkpoint (either inhibitory or stimulatory) and the category of activity in the immune response.
+Not only does this method allow for a through visualization of several combinations of experiments, but also supports the use of different statistical methods for comparison of two samples and the filter based on p-values and/or distinct parameters of experiments.
